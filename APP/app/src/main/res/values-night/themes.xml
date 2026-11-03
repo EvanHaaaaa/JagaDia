@@ -2,6 +2,11 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.JagaDiaApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/teal_primary</item>
+        <item name="colorOnPrimary">@color/teal_on_primary</item>
+        <item name="colorPrimaryVariant">@color/teal_primary_variant</item>
+        <item name="android:windowBackground">@color/teal_background</item>
+        <item name="colorSurface">@color/teal_surface</item>
+        <item name="colorOnSurface">@color/white</item>
     </style>
 </resources>

@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">JagaDiaApp</string>
+    <string name="app_name">JagaDia</string>
+    <string name="app_title">JagaDia</string>
+    <string name="app_subtitle">Aplikasi Keamanan &amp; Perlindungan</string>
 </resources>
