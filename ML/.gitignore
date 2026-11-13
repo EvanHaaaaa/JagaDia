@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files (keep folder structure via .gitkeep, ignore large data)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/external/*
+!data/external/.gitkeep
+
+# Trained models (except .gitkeep)
+models/*
+!models/.gitkeep
+
+# MLflow tracking
+mlruns/
+.mlflow/
+
+# OS generated files
+.DS_Store
+Thumbs.db
