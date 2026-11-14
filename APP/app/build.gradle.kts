@@ -1,8 +1,11 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
 }
 
 android {
+    val localProps = Properties().apply { rootProject.file("local.properties").inputStream().use { load(it) } }
     namespace = "com.example.jagadiaapp"
     compileSdk {
         version = release(37)
@@ -16,6 +19,8 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "ORS_API_KEY", "\"${localProps.getProperty("ORS_API_KEY", "")}\"")
     }
 
     buildTypes {
@@ -30,6 +35,8 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
+    buildFeatures { buildConfig = true }
 }
 
 dependencies {
@@ -41,4 +48,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
+    implementation("org.maplibre.gl:android-sdk:13.7.1")
 }
