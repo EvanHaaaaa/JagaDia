@@ -63,9 +63,9 @@ Alasan memilih MapLibre + OpenFreeMap + ORS: semuanya gratis dan tidak memerluka
 ```
 JagaDia/
 ├── APP/                  # Aplikasi Android (buka folder ini di Android Studio)
-│   └── README.md
+│   └── AppDevelopment.md
 ├── ML/                   # Pengembangan model Machine Learning
-│   └── README.md
+│   └── ModelsDevelopment.md
 └── README.md             # File ini: gambaran umum + aturan Git
 ```
 
