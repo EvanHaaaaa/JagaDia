@@ -1,0 +1,26 @@
+# Core
+pandas==2.2.*
+geopandas==0.14.*
+shapely==2.0.*
+numpy==1.26.*
+scikit-learn==1.5.*
+xgboost==2.0.*
+lightgbm==4.5.*
+mlflow==2.12.*
+fastapi==0.111.*
+uvicorn[standard]==0.30.*
+python-dotenv==1.0.*
+# GIS & visualisasi
+folium==0.16.*
+geojson==3.1.*
+# GNN (optional)
+torch==2.3.*
+torch-geometric==2.5.*
+# Scheduler / async
+celery==5.4.*
+redis==5.0.*
+# Authentication & security
+pyjwt==2.9.*
+# Testing
+pytest==8.2.*
+pytest-asyncio==0.23.*
