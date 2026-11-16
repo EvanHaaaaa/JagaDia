@@ -1,5 +1,9 @@
 package com.example.jagadiaapp
 
+import android.view.GestureDetector
+import android.view.MotionEvent
+import androidx.activity.OnBackPressedCallback
+import kotlin.math.abs
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -64,6 +68,30 @@ class OnboardingActivity : AppCompatActivity() {
     private val permissionPage = pages.lastIndex
     private var page = 0
 
+    private val swipeDetector by lazy {
+        GestureDetector(this, object : GestureDetector.SimpleOnGestureListener() {
+            override fun onFling(
+                e1: MotionEvent?, e2: MotionEvent,
+                velocityX: Float, velocityY: Float
+            ): Boolean {
+                if (e1 == null) return false
+                val dx = e2.x - e1.x
+                val dy = e2.y - e1.y
+                val minDistance = 80 * resources.displayMetrics.density
+                if (abs(dx) > minDistance && abs(dx) > abs(dy)) {
+                    goPrev()
+                    return true
+                }
+                return false
+            }
+        })
+    }
+
+    override fun dispatchTouchEvent(ev: MotionEvent): Boolean {
+        swipeDetector.onTouchEvent(ev)
+        return super.dispatchTouchEvent(ev)
+    }
+
     private lateinit var tvEyebrow: TextView
     private lateinit var tvTitle: TextView
     private lateinit var tvDesc: TextView
@@ -117,12 +145,7 @@ class OnboardingActivity : AppCompatActivity() {
         markerB = findViewById(R.id.markerB)
 
         // Lanjut: halaman 1 -> 2 -> 3 -> halaman izin
-        btnNext.setOnClickListener {
-            if (page < permissionPage) {
-                page++
-                render()
-            }
-        }
+        btnNext.setOnClickListener { goNext() }
 
         // Lewati: dari halaman intro loncat ke halaman izin; dari halaman izin langsung ke peta
         tvSkip.setOnClickListener {
@@ -158,7 +181,21 @@ class OnboardingActivity : AppCompatActivity() {
         // Nanti saja: langsung ke peta tanpa meminta izin
         tvLater.setOnClickListener { goToMap() }
 
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                if (page > 0) goPrev() else finish()
+            }
+        })
+
         render()
+    }
+
+    private fun goNext() {
+        if (page < permissionPage) { page++; render() }
+    }
+
+    private fun goPrev() {
+        if (page > 0) { page--; render() }
     }
 
     private fun render() {
