@@ -1,0 +1,1034 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head >
+  <body>
+    
+    <table>
+      <thead>
+        <tr><th><b>periode_data</b></th><th><b>wilayah</b></th><th><b>kecamatan</b></th><th><b>kelurahan</b></th><th><b>latitude</b></th><th><b>longitude</b></th><th><b>jenis_rawan</b></th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>DURI PULO</td><td>-6170529</td><td>106819195</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>DURI PULO</td><td>-6170492</td><td>106819266</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMBORA</td><td>DURI SELATAN</td><td>-6160866</td><td>106802437</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMBORA</td><td>DURI SELATAN</td><td>-6159615</td><td>106804436</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMBORA</td><td>DURI UTARA</td><td>-6155287</td><td>106801734</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>JOHAR BARU</td><td>GALUR</td><td>-6175543</td><td>106864988</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>JOHAR BARU</td><td>GALUR</td><td>-6175111</td><td>106865040</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>JOHAR BARU</td><td>GALUR</td><td>-6175112</td><td>106865039</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>JOHAR BARU</td><td>GALUR</td><td>-6172347</td><td>106858766</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>GAMBIR</td><td>-6170508</td><td>106819208</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>GAMBIR</td><td>-6170502</td><td>106819334</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>GAMBIR</td><td>-6170493</td><td>106819222</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>GANDARIA SELATAN</td><td>-6270603</td><td>106794011</td><td>PENGAMEN (COSTPLAY)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>GANDARIA SELATAN</td><td>-6270602</td><td>106794013</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GANDARIA UTARA</td><td>-6255134625</td><td>106790561</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GANDARIA UTARA</td><td>-62528033</td><td>1067910853</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GANDARIA UTARA</td><td>-6260608</td><td>106796564</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GANDARIA UTARA</td><td>-6257020</td><td>106796946</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GANDARIA UTARA</td><td>-6249414</td><td>106791798</td><td>PENGAMEN (MANUSIA SILVER)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PASAR REBO</td><td>GEDONG</td><td>-6332646</td><td>106903690</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PASAR REBO</td><td>GEDONG</td><td>-6330735</td><td>106900265</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PASAR REBO</td><td>GEDONG</td><td>-6330693</td><td>106900178</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PASAR REBO</td><td>GEDONG</td><td>-6330643</td><td>106900176</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>GELORA</td><td>-62078017</td><td>1067926867</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>GELORA</td><td>-6221803</td><td>106798754</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>GELORA</td><td>-6207673</td><td>106797444</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>GLODOK</td><td>-6146316</td><td>106812982</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>GLODOK</td><td>-6.1436272</td><td>106815126</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>GLODOK</td><td>-6.1435083</td><td>106813027</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>GLODOK</td><td>-6.1433714</td><td>106815292</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>GONDANGDIA</td><td>-6194789</td><td>106837896</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>GONDANGDIA</td><td>-6193129</td><td>106836157</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>GROGOL</td><td>-6166740</td><td>106788303</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>GROGOL</td><td>-6166334</td><td>106797651</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>GROGOL</td><td>-6166028</td><td>106789480</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>GROGOL SELATAN</td><td>-6233753</td><td>106780309</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>GROGOL SELATAN</td><td>-6230376</td><td>106783461</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>GROGOL UTARA</td><td>-6222832</td><td>106785219</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>GROGOL UTARA</td><td>-6219172</td><td>106778583</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>GROGOL UTARA</td><td>-6207843</td><td>106792186</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>GUNTUR</td><td>-6205048</td><td>106832023</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GUNUNG</td><td>-6241709</td><td>106790250</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GUNUNG</td><td>-6234801</td><td>106788433</td><td>PENGAMEN (COSTPLAY)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GUNUNG</td><td>-6234800</td><td>106788432</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6284454</td><td>106908436</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6284448</td><td>106908421</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6284432</td><td>106908068</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MAKASAR</td><td>MAKASAR</td><td>-6264783</td><td>106873158</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>MALAKA JAYA</td><td>-6227496</td><td>106933219</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>MALAKA JAYA</td><td>-6220882</td><td>106931996</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>MALAKA JAYA</td><td>-6217483</td><td>106935310</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>MALAKA SARI</td><td>-6221374</td><td>106931997</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>MALAKA SARI</td><td>-6217049</td><td>106930663</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>MALAKA SARI</td><td>-6216976</td><td>106930891</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>MAMPANG PRAPATAN</td><td>-6254988</td><td>106834568</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>MAMPANG PRAPATAN</td><td>-6244944</td><td>106828914</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>MAMPANG PRAPATAN</td><td>-6243944</td><td>106825921</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>MAMPANG PRAPATAN</td><td>-6242355</td><td>106825802</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>MAMPANG PRAPATAN</td><td>-6240269</td><td>106828706</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>MANGGA BESAR</td><td>-6147342</td><td>106819274</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>MANGGA DUA SELATAN</td><td>-61369426</td><td>1068217655</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>MANGGA DUA SELATAN</td><td>-6173491</td><td>106889216</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>MANGGA DUA SELATAN</td><td>-6146332</td><td>106832727</td><td>PENGAMEN (COSTPLAY)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>MANGGA DUA SELATAN</td><td>-6138617</td><td>106822257</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>MANGGA DUA SELATAN</td><td>-6136354</td><td>106825475</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>TEBET</td><td>MANGGARAI</td><td>-6210341</td><td>106850502</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>TEBET</td><td>MANGGARAI</td><td>-6210149</td><td>106850433</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>TEBET</td><td>MANGGARAI</td><td>-6210104</td><td>106850520</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>TEBET</td><td>MANGGARAI</td><td>-6209863</td><td>106851210</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>TEBET</td><td>MANGGARAI</td><td>-6209812</td><td>106850546</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>MAPHAR</td><td>-6159562</td><td>106820113</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>MAPHAR</td><td>-6152064</td><td>106817576</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>MAPHAR</td><td>-6149743</td><td>106817937</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>MAPHAR</td><td>-6149741</td><td>106818956</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>MARUNDA</td><td>-6124696</td><td>106958234</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>MARUNDA</td><td>-6124679</td><td>106958376</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>MARUNDA</td><td>-6108672</td><td>106970034</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>MARUNDA</td><td>-6107712</td><td>106960283</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>MARUNDA</td><td>-6107524</td><td>106968881</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>MARUNDA</td><td>-6106286</td><td>106958946</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>MELAWAI</td><td>-6251875</td><td>106800631</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>MELAWAI</td><td>-6245243</td><td>106807856</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>MELAWAI</td><td>-6244103</td><td>106805607</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>MELAWAI</td><td>-6243759</td><td>1067982978</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>MENTENG</td><td>-6203782</td><td>106844641</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>MENTENG</td><td>-6203777</td><td>106844636</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>MENTENG ATAS</td><td>-6220208</td><td>106838238</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>MENTENG ATAS</td><td>-6217850</td><td>106841135</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-6285808</td><td>106840456</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-6285805</td><td>106840457</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-6285804</td><td>106840450</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-6285193</td><td>106843762</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>PASEBAN</td><td>-61970944</td><td>1068515293</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>PASEBAN</td><td>-6191723</td><td>106853969</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>PASEBAN</td><td>-6191730</td><td>106853964</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>PASEBAN</td><td>-6191720</td><td>106853976</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>PASEBAN</td><td>-6191700</td><td>106853949</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6363404</td><td>106691724</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6158497</td><td>106747054</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6146733</td><td>106709996</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6145071</td><td>106705951</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6142664</td><td>106695963</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6142270</td><td>106702086</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6139614</td><td>106701427</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6136426</td><td>106691788</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6136404</td><td>106691809</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6136237</td><td>106722248</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6136138</td><td>106694170</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6133488</td><td>106693165</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6133375</td><td>106691434</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6133303</td><td>106692028</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6133254</td><td>106691725</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6133169</td><td>106691951</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6133061</td><td>106691519</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6132986</td><td>106691549</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6132876</td><td>106691583</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6132777</td><td>106691541</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6132526</td><td>106081053</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6129729</td><td>106697647</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6127003</td><td>106704585</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6125714</td><td>106705790</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6124157</td><td>106704891</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6122510</td><td>106702877</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6122408</td><td>106702640</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6122381</td><td>106702702</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6119996</td><td>106706321</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6.146112</td><td>106718080</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6.137247</td><td>106698662</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6.136397</td><td>106691774</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6.136157</td><td>106691723</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6.133283</td><td>106696285</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6.128954</td><td>106703890</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>-6.123611</td><td>106705089</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>MENTENG ATAS</td><td>-6214149</td><td>106840725</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>TEBET</td><td>MENTENG DALAM</td><td>-6229445</td><td>106838935</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>TEBET</td><td>MENTENG DALAM</td><td>-6229440</td><td>106838962</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>MUNJUL</td><td>-6350214</td><td>106892745</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>MUNJUL</td><td>-6344831</td><td>106889907</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PADEMANGAN</td><td>PADEMANGAN BARAT</td><td>-61373969</td><td>1068323723</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PADEMANGAN</td><td>PADEMANGAN BARAT</td><td>-6139368</td><td>106833138</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PADEMANGAN</td><td>PADEMANGAN BARAT</td><td>-6139168</td><td>106832872</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PADEMANGAN</td><td>PADEMANGAN TIMUR</td><td>-6142857</td><td>106841622</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PADEMANGAN</td><td>PADEMANGAN TIMUR</td><td>-6135890</td><td>106840147</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PADEMANGAN</td><td>PADEMANGAN TIMUR</td><td>-6135097</td><td>106843055</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>PAL MERIAM</td><td>-61969117</td><td>1068576683</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>PAL MERIAM</td><td>-61965856</td><td>1068580367</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>PAL MERIAM</td><td>-6207654</td><td>106850432</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>PAL MERIAM</td><td>-6200987</td><td>106855678</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>PAL MERAH</td><td>PALMERAH</td><td>-6.187752</td><td>106784790</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PANCORAN</td><td>PANCORAN</td><td>-6238765</td><td>106852346</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>PAPANGGO</td><td>-61256938</td><td>1068583886</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>PAPANGGO</td><td>-6130930</td><td>106871960</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>PAPANGGO</td><td>-6129732</td><td>106858900</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>PAPANGGO</td><td>-6127047</td><td>106872920</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>PAPANGGO</td><td>-6120226</td><td>106862619</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>PASAR BARU</td><td>-6160239549</td><td>1068342898</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>PASAR BARU</td><td>-61694885</td><td>1068336145</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>PASAR BARU</td><td>-6168227</td><td>106830766</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>PASAR BARU</td><td>-6168073</td><td>106830753</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>PASAR BARU</td><td>-6167890</td><td>106831248</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>PASAR BARU</td><td>-6161735</td><td>106829822</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>PASAR MANGGIS</td><td>-6213901</td><td>106840619</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>PASAR MANGGIS</td><td>-6207605</td><td>106841728</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-6285765832</td><td>1068438934</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-62856251</td><td>1068438598</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-62852683</td><td>1068432994</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-6300876</td><td>106820543</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-6285865</td><td>106840582</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-6285854</td><td>106840574</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-6285853</td><td>106840577</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-6285852</td><td>106840572</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-6285819</td><td>106840511</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-6285810</td><td>106840451</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-6285809</td><td>106840454</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-6285807</td><td>106840475</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>-6285806</td><td>106840458</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GUNUNG</td><td>-6234760</td><td>106788410</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GUNUNG</td><td>-6234750</td><td>106788415</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>GUNUNG SAHARI SELATAN</td><td>-6162445</td><td>1068403994</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>GUNUNG SAHARI SELATAN</td><td>-6160813</td><td>106845839</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>GUNUNG SAHARI SELATAN</td><td>-6159370</td><td>106839093</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>GUNUNG SAHARI SELATAN</td><td>-6158358</td><td>106839325</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>GUNUNG SAHARI SELATAN</td><td>-6157737</td><td>106840974</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>GUNUNG SAHARI SELATAN</td><td>-6155996</td><td>106844771</td><td>PSK</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>GUNUNG SAHARI UTARA</td><td>-6153009</td><td>106838630</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>GUNUNG SAHARI UTARA</td><td>-6152995</td><td>106838645</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MAKASAR</td><td>HALIM PERDANA KUSUMA</td><td>-6148765</td><td>106674346</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>HARAPAN MULYA</td><td>-6174311</td><td>106853011</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>HARAPAN MULYA</td><td>-6172723</td><td>106861100</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>JAGAKARSA</td><td>-63200943</td><td>1068108374</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>JAGAKARSA</td><td>-6336532</td><td>106818537</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>JAGAKARSA</td><td>-6331502</td><td>106831342</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>JAGAKARSA</td><td>-6326943</td><td>106823864</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>JATI</td><td>-61988667</td><td>1068902267</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>JATI</td><td>-61984967</td><td>1068902433</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>JATI</td><td>-6198355</td><td>106895395</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>JATI</td><td>-6197579</td><td>106896744</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>JATI</td><td>-6193955</td><td>1068912633</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>JATI</td><td>-6193851</td><td>106900549</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>JATI</td><td>-6193697</td><td>106893197</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>JATI</td><td>-6193173</td><td>106891235</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>JATI PADANG</td><td>-6293585</td><td>106823104</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>JATI PADANG</td><td>-6293560</td><td>106822954</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>JATI PADANG</td><td>-6286280</td><td>106829329</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>JATI PADANG</td><td>-6280393</td><td>106828704</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>JATINEGARA</td><td>-6212242</td><td>106901258</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>JATINEGARA</td><td>-6195586</td><td>106922366</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>JATINEGARA KAUM</td><td>-6212888</td><td>106900765</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>JATINEGARA KAUM</td><td>-6198535</td><td>106904416</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>JATINEGARA KAUM</td><td>-6197819</td><td>106904948</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>JATINEGARA KAUM</td><td>-6192437</td><td>106905543</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>PAL MERAH</td><td>JATIPULO</td><td>-6177119</td><td>106804264</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>PAL MERAH</td><td>JATIPULO</td><td>-6177117</td><td>106804263</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>JELAMBAR</td><td>-61620572</td><td>1067898086</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>JELAMBAR BARU</td><td>-6190251</td><td>106767951</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>JELAMBAR BARU</td><td>-6189555</td><td>106769217</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMBORA</td><td>JEMBATAN LIMA</td><td>-6145247</td><td>106806855</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEMBANGAN</td><td>JOGLO</td><td>-6220519</td><td>106735538</td><td>PENGAMEN (MANUSIA SILVER)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEMBANGAN</td><td>JOGLO</td><td>-6220483</td><td>106735508</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMBORA</td><td>KALI ANYAR</td><td>-6143603</td><td>106791265</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>KALIBARU</td><td>-6107806</td><td>106922689</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>KALIBARU</td><td>-6103382</td><td>106924196</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>KALIBARU</td><td>-6102230</td><td>106928864</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PANCORAN</td><td>KALIBATA</td><td>-6262299</td><td>106829935</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PANCORAN</td><td>KALIBATA</td><td>-6261270</td><td>106843037</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PANCORAN</td><td>KALIBATA</td><td>-6255695</td><td>106842998</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>KALIDERES</td><td>-61596735</td><td>1066922165</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>KALIDERES</td><td>-61570965</td><td>106703589</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>KALIDERES</td><td>-61550143</td><td>1067153737</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>KALIDERES</td><td>-6159491</td><td>106689325</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>KALIDERES</td><td>-6149150</td><td>106711682</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>KALIDERES</td><td>-6144749</td><td>106703315</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>KALIDERES</td><td>-6143258</td><td>106692427</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>KALIDERES</td><td>-6142271</td><td>106702104</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PASAR REBO</td><td>KALISARI</td><td>-6322109</td><td>106875678</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PASAR REBO</td><td>KALISARI</td><td>-6320987</td><td>106872345</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>KAMAL</td><td>-6168330</td><td>106758849</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>KAMAL</td><td>-6104390</td><td>106706124</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>KAMAL</td><td>-6104387</td><td>106706118</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>KAMAL</td><td>-6104368</td><td>106706121</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PENJARINGAN</td><td>KAMAL MUARA</td><td>-61124152</td><td>1067439299</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PENJARINGAN</td><td>KAMAL MUARA</td><td>-61074338</td><td>1067406782</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PENJARINGAN</td><td>KAMAL MUARA</td><td>-6153817</td><td>106728121</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PENJARINGAN</td><td>KAMAL MUARA</td><td>-6098124</td><td>106714198</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PENJARINGAN</td><td>KAMAL MUARA</td><td>-6098123</td><td>106714192</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PENJARINGAN</td><td>KAMAL MUARA</td><td>-6098122</td><td>106714183</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PENJARINGAN</td><td>KAMAL MUARA</td><td>-6098119</td><td>106714177</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>-6183569511</td><td>1068139992</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>-6183026857</td><td>1068137685</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>-6187230</td><td>106811016</td><td>PSK</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>-6183965</td><td>106815794</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>-6183964</td><td>106815825</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>-6183948</td><td>106815783</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>-6183947</td><td>106815782</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>-6183588</td><td>106815023</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>-6182407</td><td>106812123</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>-6167891</td><td>106848765</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>KAMPUNG MELAYU</td><td>-6224938</td><td>106863986</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>KAMPUNG MELAYU</td><td>-6224565</td><td>106866129</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>KAMPUNG MELAYU</td><td>-6220787</td><td>106865073</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>KAMPUNG MELAYU</td><td>-6212608</td><td>1068608869</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>JOHAR BARU</td><td>KAMPUNG RAWA</td><td>-6176176</td><td>106854549</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>JOHAR BARU</td><td>KAMPUNG RAWA</td><td>-6175332</td><td>106865488</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>JOHAR BARU</td><td>KAMPUNG RAWA</td><td>-6174895</td><td>106865211</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>KAPUK</td><td>-61414962</td><td>1067737188</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>KAPUK</td><td>-61308945</td><td>1067458984</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>KAPUK</td><td>-6185772</td><td>106690713</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>KAPUK</td><td>-6181968</td><td>106828464</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>KAPUK</td><td>-6149254</td><td>106749258</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>KAPUK</td><td>-6149251</td><td>106749260</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>KAPUK</td><td>-6134827</td><td>106751966</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>KAPUK</td><td>-6131299</td><td>106746087</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>KAPUK</td><td>-6131297</td><td>106746083</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARANG ANYAR</td><td>-6155763</td><td>106828937</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARANG ANYAR</td><td>-6155762</td><td>106828930</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARANG ANYAR</td><td>-6155753</td><td>106828932</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>KARET</td><td>-6213106</td><td>106819718</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>KARET KUNINGAN</td><td>-6225604</td><td>106831750</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>KARET KUNINGAN</td><td>-6223594</td><td>106824945</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>KARET KUNINGAN</td><td>-6222928</td><td>106822972</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>KARET SEMANGGI</td><td>-6218719</td><td>106814328</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KARET TENGSIN</td><td>-6214168</td><td>106818034</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KARET TENGSIN</td><td>-6207316</td><td>106817201</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KARET TENGSIN</td><td>-6206257</td><td>106816739</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KARET TENGSIN</td><td>-6204594</td><td>106818595</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KARET TENGSIN</td><td>-6203520</td><td>106821550</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARTINI</td><td>-6158317</td><td>106832181</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARTINI</td><td>-6156548</td><td>106831336</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARTINI</td><td>-6155191</td><td>106831398</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARTINI</td><td>-6153344</td><td>106831685</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARTINI</td><td>-6152271</td><td>106831535</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>KAYU MANIS</td><td>-6202345</td><td>106862109</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>KAYU MANIS</td><td>-6201234</td><td>106859876</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>KAYU PUTIH</td><td>-6196123</td><td>106880615</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>KAYU PUTIH</td><td>-6186060</td><td>106887432</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>KAYU PUTIH</td><td>-6186043</td><td>106887427</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>KAYU PUTIH</td><td>-6186042</td><td>106887439</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>KAYU PUTIH</td><td>-6186041</td><td>106887436</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>KAYU PUTIH</td><td>-6186013</td><td>106887367</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>KAYU PUTIH</td><td>-6186012</td><td>106887448</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>KAYU PUTIH</td><td>-6185960</td><td>106887470</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>KAYU PUTIH</td><td>-6185894</td><td>106887514</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>KEAGUNGAN</td><td>-6150855</td><td>106814755</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>KEBAGUSAN</td><td>-6299203</td><td>106831630</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>KEBAGUSAN</td><td>-6298047</td><td>106829908</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA SELATAN</td><td>-6280486</td><td>106772305</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA SELATAN</td><td>-6253051</td><td>106773585</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA SELATAN</td><td>-6.250499</td><td>106781518</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA SELATAN</td><td>-6.24791</td><td>106778172</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA UTARA</td><td>-6246375</td><td>106781560</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA UTARA</td><td>-6240365</td><td>106781526</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA UTARA</td><td>-6238733</td><td>106782247</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA UTARA</td><td>-6238390</td><td>106780621</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA UTARA</td><td>-6236264</td><td>106781674</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA UTARA</td><td>-6.250649</td><td>106781614</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>TEBET</td><td>KEBON BARU</td><td>-6232378</td><td>106859477</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>KEBON BAWANG</td><td>-6116159</td><td>106885054</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>KEBON BAWANG</td><td>-6115204</td><td>106892728</td><td>PENGAMEN (MANUSIA SILVER)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>KEBON JERUK</td><td>-6197372</td><td>106774261</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>KEBON JERUK</td><td>-6195942</td><td>106773595</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>KEBON JERUK</td><td>-6190641</td><td>106762379</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>KEBON JERUK</td><td>-6190468</td><td>106763111</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON KACANG</td><td>-6192264</td><td>106814378</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON KACANG</td><td>-6191049</td><td>106814476</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON KACANG</td><td>-6190106</td><td>106812765</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON KACANG</td><td>-6190071</td><td>106812464</td><td>PSK</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON KACANG</td><td>-6187092</td><td>106821050</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>KEBON KELAPA</td><td>-6170489</td><td>106819194</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>KEBON KELAPA</td><td>-6166915</td><td>106826413</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>-6167793</td><td>106848769</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>-6163922</td><td>106850326</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>-6163187</td><td>106853237</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>-6158206</td><td>106852719</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>-6156094</td><td>106852419</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>-6156014</td><td>106853672</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>-6155531</td><td>106852601</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>-6155219</td><td>106858438</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>-6154961</td><td>106853515</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>-6154376</td><td>106853442</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>-6153555</td><td>106853389</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>-6145798</td><td>106848970</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>6156730</td><td>106856954</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>KEBON MANGGIS</td><td>-6206965</td><td>106858669</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>KEBON MANGGIS</td><td>-6205712</td><td>106855642</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>KEBON MANGGIS</td><td>-6205603</td><td>106855671</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>KEBON MANGGIS</td><td>-6205595</td><td>106855676</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>KEBON MANGGIS</td><td>-6205587</td><td>106855674</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON MELATI</td><td>-6202573</td><td>106823416</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON MELATI</td><td>-6200985</td><td>106822664</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON MELATI</td><td>-6197810</td><td>106815432</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON MELATI</td><td>-6197641</td><td>106813989</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON MELATI</td><td>-6196067</td><td>106819375</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON KACANG</td><td>-6186892</td><td>106819794</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>KEBON KELAPA</td><td>-6170504</td><td>106819220</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MAKASAR</td><td>KEBON PALA</td><td>-62503843</td><td>1068739127</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MAKASAR</td><td>KEBON PALA</td><td>-62486834</td><td>106878806</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>KEBON SIRIH</td><td>-6187180</td><td>106828811</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>KEBON SIRIH</td><td>-6184103</td><td>106829145</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>KEBON SIRIH</td><td>-6184102</td><td>106829143</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>KEDOYA SELATAN</td><td>-6186577</td><td>106768199</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>KEDOYA SELATAN</td><td>-6185452</td><td>106768436</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>KEDOYA SELATAN</td><td>-6177968</td><td>106757487</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>KELAPA DUA</td><td>-6214392</td><td>106769491</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>KELAPA DUA</td><td>-6214384</td><td>106769488</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>KELAPA DUA</td><td>-6214380</td><td>106769493</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>KELAPA DUA WETAN</td><td>-6351791</td><td>106884345</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>KELAPA DUA WETAN</td><td>-6351440</td><td>106883869</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>KELAPA DUA WETAN</td><td>-6339371</td><td>106883667</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING BARAT</td><td>-6162924</td><td>106884667</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING BARAT</td><td>-6155296</td><td>106896713</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING BARAT</td><td>-6151673</td><td>106890434</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING BARAT</td><td>-6146789</td><td>106830987</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>-6176049</td><td>106906687</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>-6174427</td><td>106896162</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>-6173210</td><td>106889876</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>-6170442</td><td>106903277</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>-6166805</td><td>106902419</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>-6166793</td><td>106902428</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>-6166781</td><td>106902415</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>-6160176</td><td>106905606</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>-6129876</td><td>106879543</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>PAL MERAH</td><td>KEMANGGISAN</td><td>-6192229</td><td>106786657</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEMAYORAN</td><td>-6171960</td><td>106851853</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEMAYORAN</td><td>-6164439</td><td>106847290</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEMAYORAN</td><td>-6161890</td><td>106844535</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN SELATAN</td><td>-6187248</td><td>106724245</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN SELATAN</td><td>-6187006</td><td>106724634</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN SELATAN</td><td>-6185388</td><td>106734964</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN UTARA</td><td>-6208236</td><td>106700625</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN UTARA</td><td>-6185091</td><td>106731536</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN UTARA</td><td>-6184801</td><td>106732560</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN UTARA</td><td>-6184549</td><td>106734101</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN UTARA</td><td>-6180162</td><td>106742653</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KENARI</td><td>-6200124</td><td>106849543</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KENARI</td><td>-6197654</td><td>106849877</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KENARI</td><td>-6197124</td><td>106841980</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KENARI</td><td>-6197123</td><td>106841988</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KENARI</td><td>-6187654</td><td>106851235</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KENARI</td><td>-619295</td><td>1068484617</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>-6221005</td><td>106910798</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>-6215060</td><td>106900160</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>-6214506</td><td>106901699</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>-6213978</td><td>106901893</td><td>PENGAMEN (MANUSIA SILVER)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>-6213961</td><td>106907606</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>-6213878</td><td>106901891</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>-6213874</td><td>106901917</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>-6213720</td><td>106900814</td><td>PSK</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>-6213673</td><td>106899663</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>PAL MERAH</td><td>KOTA BAMBU SELATAN</td><td>-6189254</td><td>106798488</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>PAL MERAH</td><td>KOTA BAMBU UTARA</td><td>-6191397</td><td>106804920</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KRAMAT</td><td>-6185198</td><td>106847758</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KRAMAT</td><td>-6185180</td><td>106847770</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KRAMAT</td><td>-6185179</td><td>106847761</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KRAMAT</td><td>-6185175</td><td>106847777</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KRAMAT</td><td>-6185174</td><td>106847759</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>KRAMAT JATI</td><td>-6268850253</td><td>106866713</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>KRAMAT JATI</td><td>-62842443</td><td>1068713474</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>KRAMAT JATI</td><td>-62782995</td><td>1068696161</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>KRAMAT JATI</td><td>-62760669</td><td>1068680994</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>KRAMAT JATI</td><td>-62744911</td><td>1068673705</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>KRAMAT JATI</td><td>-62679341</td><td>1068662034</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>KRAMAT JATI</td><td>-62637355</td><td>1068679345</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>KRAMAT JATI</td><td>-6267117</td><td>1068659881</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>KRAMAT PELA</td><td>-62433902</td><td>1067981506</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>KRAMAT PELA</td><td>-62419861</td><td>1067908932</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>KRAMAT PELA</td><td>-62419643</td><td>1067903642</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>KRAMAT PELA</td><td>-6234519</td><td>106738792</td><td>PENGAMEN (MANUSIA SILVER)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>KRAMAT PELA</td><td>-6231351</td><td>106727064</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>KRAMAT PELA</td><td>-6228822</td><td>106720266</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>KRAMATJATI</td><td>-628529933</td><td>1068732522</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>KRAMATJATI</td><td>-62774752</td><td>106866535</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>KRAMATJATI</td><td>-6316713</td><td>106891546</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMBORA</td><td>KRENDANG</td><td>-6152246</td><td>106801827</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>KRUKUT</td><td>-6158030</td><td>106811469</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>KRUKUT</td><td>-6158011</td><td>106811515</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>KRUKUT</td><td>-6155485</td><td>106816469</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>KRUKUT</td><td>-6155035</td><td>106814475</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>KRUKUT</td><td>-6155030</td><td>106814490</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>KRUKUT</td><td>-6154979</td><td>106814517</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>KUNINGAN BARAT</td><td>-6240519</td><td>106821891</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>KUNINGAN BARAT</td><td>-6237055</td><td>106826840</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>KUNINGAN BARAT</td><td>-6236574</td><td>106820832</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>KUNINGAN BARAT</td><td>-6235231</td><td>106818789</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>KUNINGAN TIMUR</td><td>-6233407</td><td>106831109</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>KUNINGAN TIMUR</td><td>-6230849</td><td>106821135</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>KUNINGAN TIMUR</td><td>-6228520</td><td>106832977</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KWITANG</td><td>-6298254</td><td>106703154</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KWITANG</td><td>-6298252</td><td>106703152</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KWITANG</td><td>-6298248</td><td>106703159</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KWITANG</td><td>-6183453</td><td>106836724</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KWITANG</td><td>-6182008</td><td>106837902</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>KWITANG</td><td>-6179744</td><td>106842083</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KOJA</td><td>LAGOA</td><td>-6128765</td><td>106888432</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KOJA</td><td>LAGOA</td><td>-6127654</td><td>106887321</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KOJA</td><td>LAGOA</td><td>-6126543</td><td>106886210</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KOJA</td><td>LAGOA</td><td>-6114093</td><td>106913546</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>LEBAK BULUS</td><td>-62899718</td><td>1067784849</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>LEBAK BULUS</td><td>-62894512</td><td>1067728257</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>LEBAK BULUS</td><td>-6304667</td><td>106784493</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>LENTENG AGUNG</td><td>-63284089</td><td>1068340053</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>LENTENG AGUNG</td><td>-63071919</td><td>1068387904</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>LENTENG AGUNG</td><td>-6345678</td><td>106828901</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>LENTENG AGUNG</td><td>-6340765</td><td>106833210</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6303476</td><td>106913069</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6301680</td><td>106912385</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6301653</td><td>106912382</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6298120</td><td>106898093</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6297206</td><td>106892902</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6297050</td><td>106894261</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6290093</td><td>106891653</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6288317</td><td>106897646</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6287681</td><td>106909584</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6286666</td><td>106905099</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6286643</td><td>106909276</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6284711</td><td>106905680</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6284668</td><td>106908482</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6284561</td><td>106908430</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6284520</td><td>106908381</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6284519</td><td>106908426</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6284499</td><td>106908279</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6284498</td><td>106908356</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6284487</td><td>106908452</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6284468</td><td>106908277</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>-6284467</td><td>106908412</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PADEMANGAN</td><td>ANCOL</td><td>-6132088</td><td>106822171</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PADEMANGAN</td><td>ANCOL</td><td>-6131790</td><td>106822132</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PADEMANGAN</td><td>ANCOL</td><td>-6129838</td><td>106829291</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PADEMANGAN</td><td>ANCOL</td><td>-6127708</td><td>106810548</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PADEMANGAN</td><td>ANCOL</td><td>-6124968</td><td>106817032</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>BALE KAMBANG</td><td>-62800469</td><td>1068550668</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>BALEKAMBANG</td><td>-6281716</td><td>106849894</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>BALEKAMBANG</td><td>-6281708</td><td>106849886</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>BALI MESTER</td><td>-62142265</td><td>1068636874</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>BALI MESTER</td><td>-62134757</td><td>1068619463</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>BALI MESTER</td><td>-6224549</td><td>106867926</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>BALI MESTER</td><td>-6214986</td><td>106865436</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>BAMBU APUS</td><td>-6314971</td><td>106896118</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>BAMBU APUS</td><td>-6304741</td><td>106911377</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>BANGKA</td><td>-6261502</td><td>106815575</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>BANGKA</td><td>-6258176</td><td>106810222</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>BANGKA</td><td>-6257332</td><td>106816510</td><td>PENGAMEN (COSTPLAY)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PASAR REBO</td><td>BARU</td><td>-6323370</td><td>106851169</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>BATU AMPAR</td><td>-6286547</td><td>106861854</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>BATU AMPAR</td><td>-6284399</td><td>106855438</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>BENDUNGAN HILIR</td><td>-6208332</td><td>106807906</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>BENDUNGAN HILIR</td><td>-6208010</td><td>106808721</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>BENDUNGAN HILIR</td><td>-6207978</td><td>106808766</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>BENDUNGAN HILIR</td><td>-6203259</td><td>106805775</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>BENDUNGAN HILIR</td><td>-6201656</td><td>106808335</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>BIDARA CINA</td><td>-62287945</td><td>106867325</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>BIDARA CINA</td><td>-6242350</td><td>106869104</td><td>PENGAMEN (MANUSIA SILVER)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>BIDARA CINA</td><td>-6235585</td><td>106868271</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>BIDARA CINA</td><td>-6231516</td><td>106866936</td><td>PENGAMEN (MANUSIA SILVER)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>BIDARA CINA</td><td>-6231149</td><td>106867695</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>BIDARA CINA</td><td>-6225081</td><td>106865353</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>BINTARO</td><td>-6288334</td><td>106764482</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>BINTARO</td><td>-6261721</td><td>106766446</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>BUNGUR</td><td>-6168915</td><td>106846335</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>BUNGUR</td><td>-6168912</td><td>106846332</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>BUNGUR</td><td>-6168892</td><td>106846334</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>CAKUNG BARAT</td><td>-6184269</td><td>106943197</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>CAKUNG BARAT</td><td>-6182288</td><td>106938142</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>CAKUNG BARAT</td><td>-6175498</td><td>106937245</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>CAKUNG TIMUR</td><td>-6213210</td><td>106875432</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>CAKUNG TIMUR</td><td>-6210432</td><td>106870876</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>CAWANG</td><td>-62576747</td><td>1068698782</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>CAWANG</td><td>-6250523</td><td>106867440</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>CAWANG</td><td>-6249885</td><td>106867437</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>CAWANG</td><td>-625491</td><td>1068635548</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>-6329270</td><td>106888517</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>-6316714</td><td>106891550</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>-6315176</td><td>106892918</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>-6314406</td><td>106889515</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>-6314395</td><td>106889516</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>-6314386</td><td>106889461</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>-6314372</td><td>106889522</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>-6310969</td><td>106888891</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>-6305368</td><td>106889659</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>-6305337</td><td>106889602</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>-6305284</td><td>106889267</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>-6304959</td><td>106887026</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>-6304764</td><td>106886192</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>CEMPAKA BARU</td><td>-6170464</td><td>106862635</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>CEMPAKA BARU</td><td>-6167039</td><td>106863446</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH BARAT</td><td>-6186896</td><td>106866641</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH BARAT</td><td>-6185749</td><td>106862570</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH BARAT</td><td>-6180861</td><td>106867705</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH BARAT</td><td>-6171296</td><td>106865339</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH TIMUR</td><td>-61766683</td><td>1068742533</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH TIMUR</td><td>-61765667</td><td>1068738</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH TIMUR</td><td>-61765033</td><td>1068730767</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH TIMUR</td><td>-61763017</td><td>1068721983</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH TIMUR</td><td>-6173710</td><td>106870381</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH TIMUR</td><td>-6173699</td><td>106870410</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH TIMUR</td><td>-6173680</td><td>106870458</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH TIMUR</td><td>-616907</td><td>106870605</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>CENGKARENG BARAT</td><td>-61539493</td><td>106726643</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>CENGKARENG BARAT</td><td>-61532008</td><td>1067192097</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>CENGKARENG BARAT</td><td>-61528937</td><td>1067218247</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>CENGKARENG BARAT</td><td>-61492957</td><td>1067274592</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>CENGKARENG BARAT</td><td>-6152777</td><td>106720833</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>CENGKARENG BARAT</td><td>-6152763</td><td>106725382</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>CENGKARENG BARAT</td><td>-6126419</td><td>106729485</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>CENGKARENG TIMUR</td><td>-6150236</td><td>106726942</td><td>PSK</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>CIBUBUR</td><td>-6350053</td><td>106876389</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>CIBUBUR</td><td>-6350046</td><td>106876384</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>CIBUBUR</td><td>-6350019</td><td>106876415</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>CIBUBUR</td><td>-6350003</td><td>106876419</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>CIBUBUR</td><td>-6263351</td><td>106912433</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>CIDENG</td><td>-6170494</td><td>106819248</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>CIDENG</td><td>-6170474</td><td>106819278</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIGANJUR</td><td>-6336693</td><td>106817629</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIGANJUR</td><td>-6331323</td><td>106807935</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PASAR REBO</td><td>CIJANTUNG</td><td>-6315433</td><td>106869880</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>CIKINI</td><td>-6188883</td><td>106839081</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PANCORAN</td><td>CIKOKO</td><td>-6242655</td><td>106855160</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>CILANDAK BARAT</td><td>-6291907787</td><td>1067942947</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>CILANDAK BARAT</td><td>-6294492</td><td>106795276</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>CILANDAK BARAT</td><td>-6291965</td><td>106800022</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>CILANDAK BARAT</td><td>-6285200</td><td>106816500</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>CILANDAK BARAT</td><td>-6282831</td><td>1067958865</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>CILANDAK TIMUR</td><td>-6284837</td><td>106835378</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>CILANDAK TIMUR</td><td>-6284806</td><td>106835393</td><td>PENGAMEN (COSTPLAY)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CILANGKAP</td><td>-6339872</td><td>106901600</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CILANGKAP</td><td>-6338024</td><td>106898592</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CILANGKAP</td><td>-6333835</td><td>106903111</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>CILILITAN</td><td>-6262503062</td><td>1068646473</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>CILILITAN</td><td>-62631878</td><td>1068647107</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>CILILITAN</td><td>-62628642</td><td>1068645089</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>CILILITAN</td><td>-62618671</td><td>1068643328</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>CILILITAN</td><td>-6263789</td><td>1068656222</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>CILILITAN</td><td>-6262343</td><td>1068644156</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>CILILITAN</td><td>-6259811</td><td>106865097</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>CILINCING</td><td>-6103487</td><td>106939230</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>CILINCING</td><td>-6102326</td><td>106931622</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CIPAYUNG</td><td>-6346789</td><td>106961234</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CIPAYUNG</td><td>-6315432</td><td>106905678</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CIPAYUNG</td><td>-6310876</td><td>106899123</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CIPAYUNG</td><td>-6309987</td><td>106904789</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CIPAYUNG</td><td>-6308765</td><td>106903421</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CIPAYUNG</td><td>-6227654</td><td>106895432</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIPEDAK</td><td>-6347020</td><td>106814043</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIPEDAK</td><td>-6344887</td><td>106802668</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIPEDAK</td><td>-6344886</td><td>106802666</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIPEDAK</td><td>-6344880</td><td>106802670</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIPEDAK</td><td>-6344505</td><td>106803983</td><td>PENGAMEN (MANUSIA SILVER)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIPEDAK</td><td>-6341876</td><td>106821654</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>CIPETE SELATAN</td><td>-62780882</td><td>106806236</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>CIPETE SELATAN</td><td>-6274055</td><td>106798650</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>CIPETE SELATAN</td><td>-6274007</td><td>106798651</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>CIPETE UTARA</td><td>-6266543</td><td>106799877</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>CIPETE UTARA</td><td>-6265432</td><td>106797890</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>CIPETE UTARA</td><td>-6258200</td><td>106800634</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>CIPETE UTARA</td><td>-6256789</td><td>106797654</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>CIPINANG</td><td>-6210917</td><td>106898217</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>CIPINANG</td><td>-6210878</td><td>106898499</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>CIPINANG</td><td>-6210877</td><td>106898497</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>CIPINANG</td><td>-6210880</td><td>106898486</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>CIPINANG</td><td>-6210875</td><td>106898498</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>CIPINANG</td><td>-6209072</td><td>106894863</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>CIPINANG</td><td>-6209061</td><td>106894760</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>CIPINANG</td><td>-6209050</td><td>106894906</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>CIPINANG</td><td>-6208989</td><td>106894852</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>CIPINANG</td><td>-6208909</td><td>106894998</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG BESAR SELATAN</td><td>-6239095</td><td>106878600</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG BESAR SELATAN</td><td>-6221485</td><td>106881131</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG BESAR SELATAN</td><td>-6145399</td><td>106733499</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG BESAR SELATAN</td><td>-6145391</td><td>106733507</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG BESAR UTARA</td><td>-6217888</td><td>106881292</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG BESAR UTARA</td><td>-6217858</td><td>106874599</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG BESAR UTARA</td><td>-6215003</td><td>106875679</td><td>PSK</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG BESAR UTARA</td><td>-6214675</td><td>106884464</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG CEMPEDAK</td><td>-6236745</td><td>106875741</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG CEMPEDAK</td><td>-6228280</td><td>106874212</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG MUARA</td><td>-6228249</td><td>106885123</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG MUARA</td><td>-6225344</td><td>106884420</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG MUARA</td><td>-6218481</td><td>106895014</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG MUARA</td><td>-6214034</td><td>106890029</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>CIPULIR</td><td>-6238193</td><td>106771927</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>CIRACAS</td><td>-6330000</td><td>106871865</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>CIRACAS</td><td>-6329995</td><td>106870736</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>CIRACAS</td><td>-6328184</td><td>106864676</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>CIRACAS</td><td>-6319557</td><td>106872689</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>DUKUH</td><td>-6292244</td><td>106877139</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>DUKUH</td><td>-6292111</td><td>106877073</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>DUKUH</td><td>-6292085</td><td>106877077</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>DUREN SAWIT</td><td>-6233277</td><td>106912291</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>DUREN SAWIT</td><td>-6229191</td><td>106918279</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>DUREN SAWIT</td><td>-6228288</td><td>106918098</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>DUREN SAWIT</td><td>-6227638</td><td>106923118</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PANCORAN</td><td>DUREN TIGA</td><td>-6254320</td><td>106835433</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PANCORAN</td><td>DUREN TIGA</td><td>-6254322</td><td>106835431</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PANCORAN</td><td>DUREN TIGA</td><td>-6253509</td><td>106841709</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PANCORAN</td><td>DUREN TIGA</td><td>-6253211</td><td>106833457</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PANCORAN</td><td>DUREN TIGA</td><td>-6244321</td><td>106832145</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>DURI KEPA</td><td>-6189526</td><td>106769283</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>DURI KEPA</td><td>-6187845</td><td>106768352</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>DURI KEPA</td><td>-6181691</td><td>106779837</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>DURI KEPA</td><td>-6169547</td><td>106774866</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>DURI KOSAMBI</td><td>-6161804</td><td>106726597</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>TANJUNG PRIOK</td><td>-61103651</td><td>1068821023</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>TANJUNG PRIOK</td><td>-61101559</td><td>1068896336</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>TANJUNG PRIOK</td><td>-6119876</td><td>106886543</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>TANJUNG PRIOK</td><td>-6113829</td><td>106878656</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>TANJUNG PRIOK</td><td>-6111619</td><td>106884735</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>TANJUNG PRIOK</td><td>-6110028</td><td>106884314</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>TANJUNG PRIOK</td><td>-6109505</td><td>106880804</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>TEBET</td><td>TEBET BARAT</td><td>-6231646</td><td>106846349</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>TEBET</td><td>TEBET TIMUR</td><td>-6229790393</td><td>1068528111</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>TEBET</td><td>TEBET TIMUR</td><td>-6228684</td><td>106857905</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>TEGAL ALUR</td><td>-6117359</td><td>106718133</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>TEGAL ALUR</td><td>-6116890</td><td>106713116</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>TEGAL ALUR</td><td>-6107053</td><td>106704852</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>TEGAL ALUR</td><td>-6105556</td><td>106704940</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>TEGAL PARANG</td><td>-6255432</td><td>106836543</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>TEGAL PARANG</td><td>-6254321</td><td>106835432</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>TENGAH</td><td>-6290500</td><td>106870547</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>KRAMATJATI</td><td>TENGAH</td><td>-6282097</td><td>106866843</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>TOMANG</td><td>-6175528</td><td>106792787</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KOJA</td><td>TUGU SELATAN</td><td>-6131045</td><td>106908072</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KOJA</td><td>TUGU SELATAN</td><td>-6130963</td><td>106907700</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KOJA</td><td>TUGU SELATAN</td><td>-6129278</td><td>106908075</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KOJA</td><td>TUGU UTARA</td><td>-6121808</td><td>106913107</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KOJA</td><td>TUGU UTARA</td><td>-6121804</td><td>106913112</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>UJUNG MENTENG</td><td>-6187674</td><td>106964084</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>UJUNG MENTENG</td><td>-6184892</td><td>106972953</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>UJUNG MENTENG</td><td>-6183167</td><td>106960093</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>UJUNG MENTENG</td><td>-6181281</td><td>106971746</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>ULUJAMI</td><td>-6244682</td><td>106762720</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU SELATAN</td><td>-6206155</td><td>106865450</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU SELATAN</td><td>-6206136</td><td>106865482</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU SELATAN</td><td>-6203497</td><td>106869531</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU SELATAN</td><td>-6201946</td><td>106872396</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU SELATAN</td><td>-6200667</td><td>106868752</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU UTARA</td><td>-6207253</td><td>106873622</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU UTARA</td><td>-6205678</td><td>106849876</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU UTARA</td><td>-6204567</td><td>106847654</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU UTARA</td><td>-6194876</td><td>106870123</td><td>PENGAMEN (MANUSIA SILVER)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU UTARA</td><td>-6193210</td><td>106878901</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>UTAN PANJANG</td><td>-6164926</td><td>106852409</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>UTAN PANJANG</td><td>-6163611</td><td>106853365</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>UTAN PANJANG</td><td>-6162230</td><td>106853727</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>UTAN PANJANG</td><td>-6161707</td><td>106853151</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>WARAKAS</td><td>-6134567</td><td>106895678</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>WARAKAS</td><td>-6133432</td><td>106894321</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>WARAKAS</td><td>-6132109</td><td>106893210</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>WARAKAS</td><td>-6130987</td><td>106891234</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>WIJAYA KUSUMA</td><td>-6220986</td><td>106635946</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>WIJAYA KUSUMA</td><td>-6219269</td><td>106660162</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>WIJAYA KUSUMA</td><td>-6213715</td><td>106683109</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>WIJAYA KUSUMA</td><td>-6211576</td><td>106690440</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>WIJAYA KUSUMA</td><td>-6197444</td><td>106712223</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>RAWAMANGUN</td><td>-61994317</td><td>1068860667</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>RAWAMANGUN</td><td>-61978317</td><td>106886105</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>RAWAMANGUN</td><td>-61970833</td><td>1068910767</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>RAWAMANGUN</td><td>-61964383</td><td>1068859883</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>RAWAMANGUN</td><td>-61958383</td><td>1068860183</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>RAWAMANGUN</td><td>-6202065</td><td>1068843617</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>RAWAMANGUN</td><td>-6201695</td><td>106887850</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>RAWAMANGUN</td><td>-6201662</td><td>106886904</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>RAWAMANGUN</td><td>-6199845</td><td>1068859217</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>RAWAMANGUN</td><td>-620135</td><td>106890365</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>RAWASARI</td><td>-6195811</td><td>106858477</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>RAWASARI</td><td>-6189368</td><td>106859951</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>RAWASARI</td><td>-6188651</td><td>106862924</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>ROROTAN</td><td>-6154340</td><td>106971135</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>ROROTAN</td><td>-6144198</td><td>106956363</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>ROROTAN</td><td>-6139194</td><td>106968797</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SELONG</td><td>-6230511</td><td>106812239</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SELONG</td><td>-6.2342527</td><td>106801140</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SELONG</td><td>-6.233968</td><td>106798529</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SELONG</td><td>-6.2309281</td><td>106803243</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>SEMANAN</td><td>-6160072</td><td>106705293</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>SEMANAN</td><td>-6160022</td><td>106705337</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>SEMANAN</td><td>-6160007</td><td>106705377</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>SEMANAN</td><td>-6159842</td><td>106705187</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KALIDERES</td><td>SEMANAN</td><td>-6149049</td><td>106736440</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>SEMPER BARAT</td><td>-6115170</td><td>106924369</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>SEMPER BARAT</td><td>-6113385</td><td>106917238</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>SEMPER BARAT</td><td>-6108355</td><td>106918496</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>SEMPER TIMUR</td><td>-6115432</td><td>106950987</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>SEMPER TIMUR</td><td>-6113616</td><td>106927894</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SENAYAN</td><td>-6251383</td><td>106750433</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SENAYAN</td><td>-6234864</td><td>106788387</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SENAYAN</td><td>-6234860</td><td>106788388</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SENAYAN</td><td>-6234854</td><td>106788385</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>SENEN</td><td>-61762788</td><td>1068437003</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>SENEN</td><td>-6186822</td><td>106840828</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>SENEN</td><td>-6176608</td><td>106841741</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>SENEN</td><td>-6175035</td><td>106843065</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>SENEN</td><td>-6175007</td><td>106843106</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>SENEN</td><td>-6174941</td><td>106843204</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>SENEN</td><td>SENEN</td><td>-6174849</td><td>106843430</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>SERDANG</td><td>-61567824</td><td>1068652537</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>SERDANG</td><td>-6160702</td><td>106855013</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>SERDANG</td><td>-6156771</td><td>106864850</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>SERDANG</td><td>-6156540</td><td>106864896</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>SUKABUMI SELATAN</td><td>-6219408</td><td>106769953</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>SUKABUMI UTARA</td><td>-62112119</td><td>1067835119</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>SUKABUMI UTARA</td><td>-62094658</td><td>1067833805</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>SUKABUMI UTARA</td><td>-6206341</td><td>106778199</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEBON JERUK</td><td>SUKABUMI UTARA</td><td>-6.206017</td><td>106779776</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>SUKAPURA</td><td>-6159169</td><td>106931211</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>SUKAPURA</td><td>-6150476</td><td>106925245</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>CILINCING</td><td>SUKAPURA</td><td>-6140786</td><td>106922011</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>SUMUR BATU</td><td>-6164279</td><td>106868453</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>SUMUR BATU</td><td>-6161815</td><td>106866085</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>-61296899</td><td>1068934002</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>-6135372</td><td>106887276</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>-6128898</td><td>106889409</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>-6128680</td><td>106887308</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>-6128450</td><td>106893275</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>-6121077</td><td>106883173</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>-6117413</td><td>106882338</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>-6116764</td><td>106892658</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>-6113060</td><td>106883695</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>-61389778</td><td>1068640295</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>-61374105</td><td>1068713837</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>-6144954</td><td>106864794</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>-6140475</td><td>106857247</td><td>PENGAMEN (MANUSIA SILVER)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>-6134134</td><td>106855274</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>-6130772</td><td>106854633</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>-6130586</td><td>106861892</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>-6130068</td><td>106854579</td><td>PENGAMEN (MANUSIA SILVER)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>KEMAYORAN</td><td>SERDANG</td><td>-6154956</td><td>106862228</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>SETIABUDI</td><td>-6209535</td><td>106826128</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>SETIABUDI</td><td>-6207851</td><td>106822212</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>SETIABUDI</td><td>SETIABUDI</td><td>-6203483</td><td>106821602</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>SETU</td><td>-6324968</td><td>106905433</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>SETU</td><td>-6323816</td><td>106906677</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>SETU</td><td>-6322718</td><td>106906945</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>SETU</td><td>-6321470</td><td>106907171</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>SETU</td><td>-6319359</td><td>106908061</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>SETU</td><td>-6311413</td><td>106909056</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>SETU</td><td>-6309356</td><td>106914877</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>PAL MERAH</td><td>SLIPI</td><td>-6193628</td><td>106801930</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEMBANGAN</td><td>SRENGSENG</td><td>-6123900</td><td>106715949</td><td>PENGAMEN (MANUSIA SILVER)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>KEMBANGAN</td><td>SRENGSENG</td><td>-6123848</td><td>106715908</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>SRENGSENG SAWAH</td><td>-6342210</td><td>106832689</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>SRENGSENG SAWAH</td><td>-6342109</td><td>106832765</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>-6127360</td><td>106858760</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>-6161572241</td><td>1068817263</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>-61561108</td><td>1068644699</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>-61547523</td><td>1068620808</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>-6162009</td><td>106881543</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>-6161774</td><td>106881481</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>-6158081</td><td>106883665</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>-6156926</td><td>1068662653</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>-6156347</td><td>106869018</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>-6150008</td><td>106872678</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>-6147654</td><td>106869876</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>-6146700</td><td>106870756</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>-6146665</td><td>106871862</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>-6146280</td><td>106873585</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>-6144967</td><td>106875368</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>-6144921</td><td>106875507</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>SUSUKAN</td><td>-6308154</td><td>106864117</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>SUSUKAN</td><td>-6307823</td><td>106866896</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>SUSUKAN</td><td>-6305237</td><td>106864137</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>SUSUKAN</td><td>-6302765</td><td>106871761</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>TAMAN SARI</td><td>-6150611</td><td>106823266</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>TAMAN SARI</td><td>-6150510</td><td>106823235</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMBORA</td><td>TAMBORA</td><td>-6.153715</td><td>106807917</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMBORA</td><td>TAMBORA</td><td>-6.144982</td><td>106810509</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMBORA</td><td>TANAH SEREAL</td><td>-6158736</td><td>106808734</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMBORA</td><td>TANAH SEREAL</td><td>-6158714</td><td>106808758</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMBORA</td><td>TANAH SEREAL</td><td>-6158713</td><td>106808757</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>JOHAR BARU</td><td>TANAH TINGGI</td><td>-6177283</td><td>106851661</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>JOHAR BARU</td><td>TANAH TINGGI</td><td>-6172346</td><td>106858765</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>JOHAR BARU</td><td>TANAH TINGGI</td><td>-6166123</td><td>106847890</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>JOHAR BARU</td><td>TANAH TINGGI</td><td>-6165988</td><td>106848012</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>JOHAR BARU</td><td>TANAH TINGGI</td><td>-6165499</td><td>106847216</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>TANGKI</td><td>-6146792</td><td>106822540</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>TANJUNG BARAT</td><td>-63045633</td><td>1068449354</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>TANJUNG BARAT</td><td>-63010374</td><td>1068403214</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>JAGAKARSA</td><td>TANJUNG BARAT</td><td>-6309537</td><td>106850701</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>TANJUNG DUREN SELATAN</td><td>-61761233</td><td>1067926783</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>TANJUNG DUREN SELATAN</td><td>-61759133</td><td>106792405</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>TANJUNG DUREN SELATAN</td><td>-6178076</td><td>106783214</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>TANJUNG DUREN SELATAN</td><td>-6177914</td><td>106791910</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>TANJUNG DUREN SELATAN</td><td>-6175971</td><td>106792417</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>TANJUNG DUREN UTARA</td><td>-6173674</td><td>106787829</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>TANJUNG PRIOK</td><td>-6109901475</td><td>1068867571</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6263333</td><td>106467785</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6204161</td><td>106850332</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6203952</td><td>106850437</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6202720</td><td>106848793</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6201008</td><td>106851252</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6200979</td><td>106842406</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6200398</td><td>106842964</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6200123</td><td>106844709</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6199864</td><td>106845331</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6199585</td><td>106842209</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6199532</td><td>106845320</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6199427</td><td>106841353</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6199071</td><td>106841879</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6198162</td><td>106847891</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6197989</td><td>106841200</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6197841</td><td>106841107</td><td>PENGAMEN (COSTPLAY)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6196955</td><td>106840492</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>-6192346</td><td>106839877</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>PEGANGSAAN DUA</td><td>-6182130</td><td>106910070</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>PEGANGSAAN DUA</td><td>-6159416</td><td>106916518</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>PEGANGSAAN DUA</td><td>-6148242</td><td>106915870</td><td>PENGAMEN (MANUSIA SILVER)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KELAPA GADING</td><td>PEGANGSAAN DUA</td><td>-6138160</td><td>106914595</td><td>PSK</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PEJATEN BARAT</td><td>-6274276549</td><td>1068209381</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PEJATEN BARAT</td><td>-6276011</td><td>106830263</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PEJATEN BARAT</td><td>-6270346</td><td>106845221</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PEJATEN TIMUR</td><td>-6284836</td><td>106843931</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PASAR REBO</td><td>PEKAYON</td><td>-6351613</td><td>106863312</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PASAR REBO</td><td>PEKAYON</td><td>-6343322</td><td>106868946</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PASAR REBO</td><td>PEKAYON</td><td>-6343313</td><td>106868942</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMBORA</td><td>PEKOJAN</td><td>-6133365</td><td>106805764</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>PELA MAMPANG</td><td>-6254323</td><td>106821235</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>PELA MAMPANG</td><td>-6252842</td><td>106811370</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>PELA MAMPANG</td><td>-6252787</td><td>106811448</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>PELA MAMPANG</td><td>-6185629</td><td>106815242</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>PELA MAMPANG</td><td>-6185556</td><td>106815179</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PANCORAN</td><td>PENGADEGAN</td><td>-6251182</td><td>106857259</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>PENGGILINGAN</td><td>-62170783</td><td>1069390067</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>PENGGILINGAN</td><td>-62146047</td><td>1069395049</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>PENGGILINGAN</td><td>-62126193</td><td>1069407174</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>PENGGILINGAN</td><td>-6212313</td><td>106939635</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>PENGGILINGAN</td><td>-6191797</td><td>106934651</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PENJARINGAN</td><td>PENJARINGAN</td><td>-6128290</td><td>106808235</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PENJARINGAN</td><td>PENJARINGAN</td><td>-6118406</td><td>106803417</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PENJARINGAN</td><td>PENJARINGAN</td><td>-6117947</td><td>106803427</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>PESANGGRAHAN</td><td>-6257167</td><td>106757116</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>PESANGGRAHAN</td><td>-6235649</td><td>106741437</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>PETAMBURAN</td><td>-6193104</td><td>106807965</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>PETAMBURAN</td><td>-6193085</td><td>106807910</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>PETAMBURAN</td><td>-6193065</td><td>106807845</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>TANAH ABANG</td><td>PETAMBURAN</td><td>-6193032</td><td>106807842</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PETOGOGAN</td><td>-62446407</td><td>1068095627</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PETOGOGAN</td><td>-6239529</td><td>106811749</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PETOGOGAN</td><td>-6239153</td><td>106808201</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PETOGOGAN</td><td>-6239052</td><td>106811973</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO SELATAN</td><td>-6180688571</td><td>1068174086</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO SELATAN</td><td>-61796536</td><td>1068179555</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO SELATAN</td><td>-6170507</td><td>106819201</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO SELATAN</td><td>-6175590</td><td>106819259</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6170495</td><td>106819277</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6170491</td><td>106819228</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6170490</td><td>106819229</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6170488</td><td>106819257</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6170485</td><td>106819297</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6170481</td><td>106819224</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6170479</td><td>106819231</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6170471</td><td>106819225</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6170466</td><td>106819276</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6170463</td><td>106819253</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6170462</td><td>106819314</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6170461</td><td>106819280</td><td>PENGAMEN (COSTPLAY)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6170448</td><td>106819306</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6165776</td><td>106813421</td><td>PENGAMEN (MANUSIA SILVER)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6165275</td><td>106813389</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>-6161014</td><td>106819084</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>6173759</td><td>106811736</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>PETUKANGAN SELATAN</td><td>-6149578</td><td>106701711</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>PETUKANGAN SELATAN</td><td>-6149541</td><td>106701841</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>PETUKANGAN UTARA</td><td>-62366265</td><td>1067605132</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>PETUKANGAN UTARA</td><td>-6257121</td><td>106756916</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>PETUKANGAN UTARA</td><td>-6257120</td><td>106756915</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MAKASAR</td><td>PINANG RANTI</td><td>-6290007</td><td>106881031</td><td>PEDAGANG ASONGAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>PINANGSIA</td><td>-6138856</td><td>106812770</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>PINANGSIA</td><td>-6138782</td><td>106811656</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>TAMAN SARI</td><td>PINANGSIA</td><td>-6137836</td><td>106818101</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>PISANGAN BARU</td><td>-6211857</td><td>106863946</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>MATRAMAN</td><td>PISANGAN BARU</td><td>-6198765</td><td>106861234</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>PISANGAN TIMUR</td><td>-61914357</td><td>106875419</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>PISANGAN TIMUR</td><td>-6208548</td><td>106877053</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>PISANGAN TIMUR</td><td>-6203762</td><td>106882195</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PENJARINGAN</td><td>PLUIT</td><td>-61262328</td><td>1067918022</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PENJARINGAN</td><td>PLUIT</td><td>-61125441</td><td>1067731388</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PENJARINGAN</td><td>PLUIT</td><td>-6112389</td><td>106784066</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>PENJARINGAN</td><td>PLUIT</td><td>-6109475</td><td>106773307</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK BAMBU</td><td>-6237054</td><td>106898351</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK BAMBU</td><td>-6230948</td><td>106897698</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK BAMBU</td><td>-6223735</td><td>106935539</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK KELAPA</td><td>-6272341</td><td>106917654</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK KELAPA</td><td>-6188432</td><td>106846543</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK KOPI</td><td>-6224390</td><td>106947889</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK KOPI</td><td>-6217743</td><td>106939818</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK KOPI</td><td>-6217543</td><td>106937998</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>PONDOK LABU</td><td>-63123512</td><td>106795952</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>PONDOK LABU</td><td>-63092055</td><td>1067935744</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>PONDOK LABU</td><td>-63087816</td><td>106793652</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>PONDOK LABU</td><td>-6311953</td><td>1067933993</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>PONDOK LABU</td><td>-6308057</td><td>106797261</td><td>PENGAMEN (COSTPLAY)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>PONDOK LABU</td><td>-6306473</td><td>106798523</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>PONDOK LABU</td><td>-6306467</td><td>106798521</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>CILANDAK</td><td>PONDOK LABU</td><td>-6280834</td><td>106796276</td><td>ORMAS / WARGA</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>PONDOK PINANG</td><td>-6292489</td><td>106787264</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>PONDOK PINANG</td><td>-6289586</td><td>106778120</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>PONDOK PINANG</td><td>-6281297</td><td>106772078</td><td>PENGAMEN (MANUSIA SILVER)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>PONDOK PINANG</td><td>-6263526</td><td>106783729</td><td>PENGAMEN (COSTPLAY)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>PONDOK RANGGON</td><td>-6366978</td><td>106895682</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>PONDOK RANGGON</td><td>-6366966</td><td>106895692</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>PONDOK RANGGON</td><td>-6366950</td><td>106895680</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIPAYUNG</td><td>PONDOK RANGGON</td><td>-6366948</td><td>106895683</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KAB. ADM. KEP. SERIBU</td><td>KEPULAUAN SERIBU UTARA</td><td>PULAU HARAPAN</td><td>-5653808</td><td>106568857</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KAB. ADM. KEP. SERIBU</td><td>KEPULAUAN SERIBU UTARA</td><td>PULAU KELAPA</td><td>-5653977</td><td>106569943</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KAB. ADM. KEP. SERIBU</td><td>KEPULAUAN SERIBU UTARA</td><td>PULAU PANGGANG</td><td>-57374061</td><td>106600630</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KAB. ADM. KEP. SERIBU</td><td>KEPULAUAN SERIBU UTARA</td><td>PULAU PANGGANG</td><td>-5746457</td><td>106612976</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KAB. ADM. KEP. SERIBU</td><td>KEPULAUAN SERIBU UTARA</td><td>PULAU PANGGANG</td><td>-5745296</td><td>106612359</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KAB. ADM. KEP. SERIBU</td><td>KEPULAUAN SERIBU UTARA</td><td>PULAU PANGGANG</td><td>-5744621</td><td>106613593</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KAB. ADM. KEP. SERIBU</td><td>KEPULAUAN SERIBU SELATAN</td><td>PULAU PARI</td><td>-5859357</td><td>106617365</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KAB. ADM. KEP. SERIBU</td><td>KEPULAUAN SERIBU SELATAN</td><td>PULAU TIDUNG</td><td>-5798216</td><td>106495877</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KAB. ADM. KEP. SERIBU</td><td>KEPULAUAN SERIBU SELATAN</td><td>PULAU UNTUNG JAWA</td><td>-5739024</td><td>106602628</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>-6255173</td><td>106807334</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>-6254944</td><td>106800422</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>-6254894</td><td>106800431</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>-6254219</td><td>106807264</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>-6252795</td><td>106805638</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>-6252571</td><td>106801657</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>-6250770</td><td>106809954</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>-6250749</td><td>106809948</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>-6250708</td><td>106809998</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>-6250705</td><td>106809997</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>-6250703</td><td>106810000</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>-6250693</td><td>106809993</td><td>PENGEMIS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>PULO GADUNG</td><td>-6197920</td><td>106902405</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>PULO GADUNG</td><td>-6185813</td><td>106893689</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>PULO GADUNG</td><td>-6182610</td><td>106909948</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>PULO GEBANG</td><td>-62188929</td><td>106952663</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>PULO GEBANG</td><td>-62187633</td><td>1069522852</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>PULO GEBANG</td><td>-62127083</td><td>1069430933</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>PULO GEBANG</td><td>-61966905</td><td>1069560018</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>PULO GEBANG</td><td>-6218987</td><td>1069524292</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>PULO GEBANG</td><td>-6212908</td><td>106944378</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>PULO GEBANG</td><td>-6211435</td><td>106948048</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>PULO GEBANG</td><td>-6209049</td><td>106961852</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>PULO GEBANG</td><td>-6192482</td><td>106965959</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>RAGUNAN</td><td>-6294778</td><td>106822046</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>RAMBUTAN</td><td>-6302092</td><td>106872067</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>RAMBUTAN</td><td>-6301988</td><td>106872092</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>RAMBUTAN</td><td>-6301949</td><td>106872089</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CIRACAS</td><td>RAMBUTAN</td><td>-6301887</td><td>106872123</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KOJA</td><td>RAWA BADAK SELATAN</td><td>-61307919</td><td>1068946649</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KOJA</td><td>RAWA BADAK SELATAN</td><td>-61299228</td><td>1069023124</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KOJA</td><td>RAWA BADAK SELATAN</td><td>-6128256</td><td>106898962</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA UTARA</td><td>KOJA</td><td>RAWA BADAK SELATAN</td><td>-6127233</td><td>106895454</td><td>TAWURAN (WARGA / PELAJAR)</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>RAWA BARAT</td><td>-6239757</td><td>106823866</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>RAWA BARAT</td><td>-6238207</td><td>106816323</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>RAWA BARAT</td><td>-6238112</td><td>106811359</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>RAWA BARAT</td><td>-6235602</td><td>106813763</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>RAWA BUAYA</td><td>-6157997</td><td>106748051</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>RAWA BUAYA</td><td>-6157335</td><td>106747522</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>RAWA BUAYA</td><td>-6155278</td><td>106745695</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>RAWA BUAYA</td><td>-6155065</td><td>106747575</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA BARAT</td><td>CENGKARENG</td><td>RAWA BUAYA</td><td>-6154394</td><td>106733954</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>RAWA BUNGA</td><td>-6215329</td><td>106872872</td><td>PENGAMEN</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>JATINEGARA</td><td>RAWA BUNGA</td><td>-6215308</td><td>106870361</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>RAWA TERATE</td><td>-61849067</td><td>1069075</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>RAWA TERATE</td><td>-6185868</td><td>106922767</td><td>PAK OGAH</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>CAKUNG</td><td>RAWA TERATE</td><td>-6185845</td><td>106922752</td><td>PKL</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>RAWAMANGUN</td><td>-62014567</td><td>1068858567</td><td>PARKIR LIAR</td></tr>
+        <tr><td>2024</td><td>KOTA ADM. JAKARTA TIMUR</td><td>PULOGADUNG</td><td>RAWAMANGUN</td><td>-61999267</td><td>10688589</td><td>PARKIR LIAR</td></tr>
+      </tbody>
+    </table>
+  
+  </body>
+</html >
