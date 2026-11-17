@@ -1,14 +1,28 @@
 {"type":"FeatureCollection","features":[
   {"type":"Feature",
-    "properties":{"name":"Zona merah","radius":110,"risk_now":0.85,"risk_1h":0.90,"risk_night":1.00},
+    "properties":{"name":"Zona merah","radius":110,"risk_now":0.85,"risk_1h":0.90,"risk_night":1.00,
+      "area":"Jl. Duren Sawit Raya","lighting":"Terbatas",
+      "incidents":[
+        {"type":"Jambret","place":"Jl. Duren Sawit Raya","when":"2 Hari lalu • 18.25"},
+        {"type":"Begal","place":"Dekat Jl. Kapuk II","when":"11 Hari lalu • 23.05"}
+      ]},
     "geometry":{"type":"Point","coordinates":[106.9020,-6.2172]}},
   {"type":"Feature",
-    "properties":{"name":"Zona kuning 1","radius":100,"risk_now":0.50,"risk_1h":0.55,"risk_night":0.65},
+    "properties":{"name":"Zona kuning 1","radius":100,"risk_now":0.50,"risk_1h":0.55,"risk_night":0.65,
+      "area":"Jl. Bulak Barat","lighting":"Memadai",
+      "incidents":[
+        {"type":"Jambret","place":"Jl. Bulak Barat","when":"6 Hari lalu • 19.40"}
+      ]},
     "geometry":{"type":"Point","coordinates":[106.9058,-6.2215]}},
   {"type":"Feature",
-    "properties":{"name":"Zona kuning 2","radius":80,"risk_now":0.45,"risk_1h":0.50,"risk_night":0.55},
+    "properties":{"name":"Zona kuning 2","radius":80,"risk_now":0.45,"risk_1h":0.50,"risk_night":0.55,
+      "area":"Jl. Kapuk II","lighting":"Memadai",
+      "incidents":[
+        {"type":"Pencurian","place":"Jl. Kapuk II","when":"9 Hari lalu • 02.15"}
+      ]},
     "geometry":{"type":"Point","coordinates":[106.9050,-6.2185]}},
   {"type":"Feature",
-    "properties":{"name":"Zona hijau","radius":90,"risk_now":0.10,"risk_1h":0.15,"risk_night":0.25},
+    "properties":{"name":"Zona hijau","radius":90,"risk_now":0.10,"risk_1h":0.15,"risk_night":0.25,
+      "area":"Jl. Pahlawan Revolusi","lighting":"Baik","incidents":[]},
     "geometry":{"type":"Point","coordinates":[106.9012,-6.2228]}}
 ]}
