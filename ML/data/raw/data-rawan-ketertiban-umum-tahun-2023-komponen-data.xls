@@ -1,0 +1,835 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head >
+  <body>
+    
+    <table>
+      <thead>
+        <tr><th><b>periode_data</b></th><th><b>wilayah</b></th><th><b>kecamatan</b></th><th><b>kelurahan</b></th><th><b>lokasi</b></th><th><b>jenis_rawan</b></th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>JL PAGELARANG</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>JL RAWA BINONG</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>JL RAYA PONDO GEDE</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>MARUNDA</td><td>JL. INSPEKSI BKT</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>MARUNDA</td><td>JL. MARUNDA MAKMUR</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>MELAWAI</td><td>JL. MELAWAI V &  MELAWAI VI</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>MENTENG</td><td>MENTENG</td><td>JALAN TAMAN SUKABUMI RW07 RT02 KEC. MENTENG KEL. MENTENG</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>MUNJUL</td><td>JL.MALAKA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>MUNJUL</td><td>JL.RAYA MUNJUL</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>JL. RAYA PASAR MINGGU</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>JL. TANJUNG BARAT</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td> JPO JL. RAYA PASAR MINGGU, KEL. PASAR MINGGU</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>JL. TANJUNG BARAT, JL. PEJATEN RAYA, JL. RAYA PASAR MINGGU, JL. RAWA BAMBU</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>JL. TB SIMATUPANG</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>JPO TANJUNG BARAT</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>CITRA 2 EXTENSION</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. 20 DESEMBER</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. BAMBU LARANGAN</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. CITRA 3</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. GOLDEN PALEM CITRA 5</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. JAMBU AIR</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. KUMBANG RAYA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. PETA BARAT</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. SATU MARET</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. TAMAN PALEM LESTARI</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. TAMAN SURYA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. TAMAN SURYA 2</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. TAMAN SURYA BOULEVARD</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. UTAN JATI</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>KOMPLEK MERPATI</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>KOMPLEK PURI GARDENA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>UTAN PANJANG</td><td>JL. BENDUNGAN JAGO RT 01 RW 02</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PADEMANGAN</td><td>ANCOL</td><td>JALAN ANCOL BARAT 3</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>KRAMAT JATI</td><td>BALEKAMBANG</td><td>JL. RAYA CONDET</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>BALI MESTER</td><td>JL.MATRAMAN RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>BAMBU APUS</td><td>JL. BAMBU APUS RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>BANGKA</td><td>JL KEMANG RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>BANGKA</td><td>JL KEMANG RAYA, DEPAN LPPI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>KRAMAT JATI</td><td>BATU AMPAR</td><td>JL. RAYA INPRES</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>BENDUNGAN HILIR</td><td>JLN. DANAU LIMBOTO</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>BENDUNGAN HILIR</td><td>JLN. DANAU TOBA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>BENDUNGAN HILIR</td><td>JLN. PENJERNIHAN 1</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>BIDARA CINA</td><td>JL. KH ABDULLAH SYAFEI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>BINTARO</td><td>JALAN  BINTARO UTARA RW 08 KELURAHAN BINTARO</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>BUNGUR</td><td>JALAN BUNGUR BESAR V</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>BUNGUR</td><td>JALAN KALIBARU TIMUR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>CAKUNG BARAT</td><td>JL. INSPEKSI PAM CAKUNG BARAT RW. 07</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>CAKUNG TIMUR</td><td>JL. BALAI RAKYAT RT07 RW04</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>CEMPAKA BARU</td><td>JL. PAM RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH BARAT</td><td>JL CEMPAKA PUTIH BARAT 26</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH TIMUR</td><td>JL. CEMPAKA PUTIH TENGAH II</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>CENGKARENG</td><td>CENGKARENG BARAT</td><td>JL OUTERRINGROAD ( DEPAN KOMP TAMAN KENCANA/ RUKAN SEDAYU SQUARE)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>CIBUBUR</td><td>JL JAMBORE</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>CIDENG</td><td>JL. JATI BARU RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIGANJUR</td><td>JALAN MOCH KAHFI1 HALTE  BENDA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIGANJUR</td><td>JALAN SIRSAK RAYA KEL CIGANJUR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>MENTENG</td><td>CIKINI</td><td>JLN CIKINI NO 77, RT  01/ RW 02, KEL. CIKINI, KEC. MENTENG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>CILANDAK</td><td>CILANDAK BARAT</td><td>JL. RS FATMAWATI RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CILANGKAP</td><td>JALAN RAYA CILANGKAP</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>CILINCING</td><td>JLN.SUNGAI LANDAK DEPAN SEKOLAH SMP 05</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>CILINCING</td><td>PS KELAPA DUA JLN.CILINCING LAMA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIPEDAK</td><td>JL. M. KAHFI II KAWASAN UNGGULAN DEPAN KAMPUS BPPTL</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>CILANDAK</td><td>CIPETE SELATAN</td><td>JALAN CIPETE III</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>CIPETE UTARA</td><td>JL. DAMAI RAYA CIPETE UTARA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG BESAR SELATAN</td><td>JLN RAYA DI PANJAITAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG CEMPEDAK</td><td>JL. D.I. PANJAITAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG MUARA</td><td>JL. BASUKI RAHMAD JALUR SEPEDA KBT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>CIRACAS</td><td>JL RAYA CIRACAS RW 08</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>KRAMAT JATI</td><td>DUKUH</td><td>JL. RAYA TB SIMATUPANG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>DUREN SAWIT</td><td>JL.LAUT BANDA RW.017</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PANCORAN</td><td>DUREN TIGA</td><td>JL. MAMPANG PRAPATAN RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>DURI KEPA</td><td>JL. GREEN VILLE RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>CENGKARENG</td><td>DURI KOSAMBI</td><td>JL OUTER RINGROAD DURI KOSAMBI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>DURI PULO</td><td>JL. KH. HASYIM ASHARI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMBORA</td><td>DURI UTARA</td><td>JL. DURI UTARA RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>JOHAR BARU</td><td>GALUR</td><td>JL GALUR JAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>GAMBIR</td><td>JL. H. AGUS SALIM</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>GAMBIR</td><td>JL. MERDEKA SELATAN PINTU IRTI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>CILANDAK</td><td>GANDARIA SELATAN</td><td>JL RS FATMAWATI DEPAN MALL LOTTE MART</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GANDARIA UTARA</td><td>JL. RS. FATMAWATI RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PASAR REBO</td><td>GEDONG</td><td>JL KESEHATAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>GELORA</td><td>TENTARA PELAJAR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>GLODOK</td><td>JL. GAJAH MADA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>GLODOK</td><td>JL. PANCORAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>MENTENG</td><td>GONDANGDIA</td><td>JALAN RP SOEROSO</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>GROGOL</td><td>JL. KYAI TAPA JPO RS SUMBER WARAS</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>GROGOL SELATAN</td><td>JALAN RAYA KEBAYORAN LAMA KEL GROSEL</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>GROGOL UTARA</td><td>JL.RAYA KEBAYORAN LAMA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GUNUNG</td><td>JL. HANG LEKIR RAYA ( SEBRANG KAMPUS MOESTOPO )</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>GUNUNG SAHARI SELATAN</td><td>JL ANGKASA POLDAMRI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>GUNUNG SAHARI SELATAN</td><td>JL, GARUDA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>GUNUNG SAHARI SELATAN</td><td>JL. ANGKASA 1</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MAKASAR</td><td>HALIM PERDANA KUSUMA</td><td>JL HALIM BARU</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>JAGAKARSA</td><td>JL.SIRSAK RAYA, DEPAN LAP.INPRES JAGAKARSA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>JATI</td><td>JALAN GURAME</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>JATI PADANG</td><td>JL. TAMAN MARGASATWA/DEPAN SMK 57</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>JATINEGARA</td><td>PASAR FLY OVER KLENDER JALAN BEKASI TIMUR RAYA KM.17 KEL. JATINEGARA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>JATINEGARA</td><td>PASAR PULO JAHE JALAN DOKTER KRT RADJIMAN WIDYODININGRAT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>JATINEGARA KAUM</td><td>JL. BEKASI TIMUR RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>JATINEGARA KAUM</td><td>JL. RAYA BEKASI (ATAS FLYOVER KLENDER)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>JATINEGARA KAUM</td><td>JL. RAYA BEKASI (DEPAN SDN 03 JATINEGARA KAUM)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>PALMERAH</td><td>JATIPULO</td><td>JALAN TOMANG RAYA DEPAN BCA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>DUREN SAWIT</td><td>JL.RAYA RADIN INTEN RW.02 ( TL MCD )</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>GAMBIR</td><td>JL. MEDAN MERDEKA SELATAN</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>GROGOL</td><td>JL. KYAI TAPA TL GROGOL</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>JATI PADANG</td><td>TL PERTANIAN / JL. TB. SIMATUPANG</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>JATI PADANG</td><td>TRAFFIC LIGHT PERTANIAN JL. TB. SIMATUPANG</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PANCORAN</td><td>KALIBATA</td><td>TRAFFIC LIGHT KALIBATA (TL KALIBATA)</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>KARET KUNINGAN</td><td>HALTE JL.SATRIO</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MAKASAR</td><td>KEBON PALA</td><td>JL MAYJEND SUTOYO</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>TL LAMPU MERAH JALAN PERINTIS KEMERDEKAAN</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>JL. I GUSTI NGURAH RAI RT. 003 RW. 06 ( TL. TAMAN VIADUCT )</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>KUNINGAN BARAT</td><td>JL. GATOT SUBROTO</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>PASEBAN</td><td>JALAN SALEMBA RAYA RW 06 PASEBAN,SENEN</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. GAJAH MADA</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MAKASAR</td><td>PINANG RANTI</td><td>JL PONDOK GEDE (EXIT TOL TAMINI)</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SELONG</td><td>JL PATTIMURA</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SENAYAN</td><td>POLDA ATAS ( JL GATOT SUBROTO)</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>SENEN</td><td>TL SIMPANG LIMA JLN KKO USMAN HARUN</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU UTARA</td><td>TL PEMUDA</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>CIBUBUR</td><td>JLN.JAMBORE</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>CIDENG</td><td>JL. KYAI CARINGIN</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>CILANDAK</td><td>CIPETE SELATAN</td><td>JALAN FATMAWATI RAYA</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>CIPINANG</td><td>JL CIPINANG BARU TIMUR</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>CIPINANG</td><td>JL CIPINANG BARU UTARA</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>CIPINANG</td><td>LAMPU MERAH PERSAHABATAN</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>GROGOL UTARA</td><td>JL.RAYA KEBAYORAN LAMA TL.MEDIKA</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GUNUNG</td><td>TL KEJAKSAAN ( JL. KYAI MAJA )</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>JAGAKARSA</td><td>JL JAGAKARSA RAYA AL-WIQOYAH</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>JATI</td><td>JALAN PEMUDA</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>JATI PADANG</td><td>JL. WARUNG JATI BARAT , RT 001 RW 005 KEL.JATI PADANG / TL PEJATEN VILLAGE</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>JATINEGARA KAUM</td><td>JL. RAYA BEKASI (LAMPU MERAH TUGAS)</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>KEBON MANGGIS</td><td>JL. MATRAMAN RAYA TRAFIC LIGH SLAMET RIYADI KEBON MANGGIS, MATRAMAN</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>MENTENG</td><td>KEBON SIRIH</td><td>LAMPU MERAH DEPAN HOTEL CEMARA JL.KH.WAHID HASYIM</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>KELAPA DUA WETAN</td><td>LAMPU MERAH ARUMDINA JL. RAYA KELAPA DUA WETAN DAN JL. RAYA LAPANGAN TEMBAK</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>JL. I GUSTI NGURAH RAI RT. 003 RW. 06 ( TL. TAMAN VIADUCT )</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PADEMANGAN</td><td>PADEMANGAN TIMUR</td><td>JLN PADEMANGAN IV PD PASAR ELANG</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PANCORAN</td><td>PANCORAN</td><td>TRAFIC LIGHT PANCORAN</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PASAR REBO</td><td>PEKAYON</td><td>JL. RAYA BOGOR LAMPU MERAH CIBUBUR</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PANCORAN</td><td>PENGADEGAN</td><td>JL PENGADEGAN SELATAN RAYA(PINTU REL KA)</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. AM. SANGAJI</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. BALIKPAPAN</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK BAMBU</td><td>JL PAHLAWAN REVOLUSI</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>JL BRAWIJAYA RAYA</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>RAWA BUNGA</td><td>JL.BEKASI BARAT RAYA KELURAHAN RAWABUNGA (TL EKS.KODIM)</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>JOHAR BARU</td><td>TANAH TINGGI</td><td>JL. LETJEND SUPRAPTO</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>TEGAL PARANG</td><td>JL. MAMPANG PRAPATAN RAYA , TRAFIC LIGHT MAMPANG VII DAN VIII</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU SELATAN</td><td>JLN KELAPA SAWIT</td><td>PMKS (PENGAMEN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>BALI MESTER</td><td>JL.BASUKI RACHMAT KOLONG FLY OVER TERMINAL KAMPUNG MELAYU</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>BIDARA CINA</td><td>JL. OTISTA RAYA</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>BUNGUR</td><td>JALAN LETJEN SUPRAPTO</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>JALAN RAYA HANKAM</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>CIBUBUR</td><td>JL JAMBORE</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>CILANDAK TIMUR</td><td>KOLONG FLY OVER AZZAHRA CILANDAK TIMUR</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>CIPETE UTARA</td><td>JL. DARMAWANGSA X. JL. FATMAWATI RAYA</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>CIPINANG</td><td>JL CIPINANG LONTAR</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>CIPINANG</td><td>JL PERSAHABATAN RAYA</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG CEMPEDAK</td><td>JL.CIPINANG CEMPEDAK LL</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>DURI PULO</td><td>JL. KH HASYIM ASHARI</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>JOHAR BARU</td><td>GALUR</td><td>JL. LETJEND SUPRAPTO</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PASAR REBO</td><td>GEDONG</td><td>JL TB SIMATUPANG (TL RINDAM)</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>GLODOK</td><td>JL. KEMENANGAN RAYA</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>GROGOL</td><td>JL. DR SUSILO</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>GROGOL UTARA</td><td>JL.ALTERI PERMATA HIJAU TL.PERMATA HIJAU</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>JATI</td><td>JALAN TONGKOL</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>JLN. WAHID HASYIM</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>DUREN SAWIT</td><td>JL.RAYA KOLONEL SUGIONO RT.001/04 ( TL BALADEWA )</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>DURI KEPA</td><td>JL. PATRA RAYA</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMBORA</td><td>DURI SELATAN</td><td>JL. DURI SELATAN V RW 02</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMBORA</td><td>DURI SELATAN</td><td>PANGKALAN BEMO, JL. GERINDO RW 05</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>JOHAR BARU</td><td>GALUR</td><td>JL GALUR SELATAN</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PASAR REBO</td><td>GEDONG</td><td>JL RAYA TENGAH RW 012 KEL GEDONG</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>GLODOK</td><td>JL. ALTERI KALI KRUKUT</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>HARAPAN MULYA</td><td>JL LETJEN SOEPRAPTO</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PASAR REBO</td><td>KALISARI</td><td>JL KALISARI III RT 08 RW 10 KEL KALISARI KEC PASAR REBO JAKARTA TIMUR</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PENJARINGAN</td><td>KAMAL MUARA</td><td>JL. KAMAL MUARA RAYA DEPAN SMPN 120 DAN DEPAN GOR KAMAL</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>JLN. HASBI JATI BARU RAYA</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>JLN. TANAH RENDAH</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>KAMPUNG MELAYU</td><td>JL ABDULLAH SYAFEI , JL INSPEKSI KALI CILIWUNG</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>JOHAR BARU</td><td>KAMPUNG RAWA</td><td>GANG  T</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KARET TENGSIN</td><td>JL KH MAS MANSYUR</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARTINI</td><td>JL. A RAYA RW.07 (PONDOK KACANG)</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARTINI</td><td>JL. GOTONG ROYONG RW.08 (POHON ASEM)</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARTINI</td><td>JL. LAUTZE RAYA KEL. KARTINI</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>KEAGUNGAN</td><td>JL. KEAGUNGAN</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA SELATAN</td><td>JL. BINTARO RAYA</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA SELATAN</td><td>JL. SULTAN ISKANDAR MUDA KOSTRAD</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON KACANG</td><td>JALAN JATI BUNDER KEL. KEBON KACANG KEC. TANAH ABANG</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>JL. CONVERE</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>KEBON MANGGIS</td><td>JL.MATRAMAN RAYA HALTE GUNUNG ANTANG KEBON MANGGIS MATRAMAN</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON MELATI</td><td>JALAN K.H MAS MANSYUR KEBON MELATI</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>KELAPA DUA WETAN</td><td>SEPANJANG JL. RAYA PKP</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KENARI</td><td>JALAN KRAMAT RAYA</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>JL. PAHLAWAN REVOLUSI RT. 015 RW. 02 ( DEKAT YAYASAN AL - FALAH )</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KRAMAT</td><td>JL. KRAMAT SENTIONG UJUNG</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>KRUKUT</td><td>JLN. THALIB</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>LENTENG AGUNG</td><td>TAMAN MAJA JL. JOE RW.06 KEL. LENTENG AGUNG</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>MALAKA JAYA</td><td>JL. I. GUSTI NGURAH RAI</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>MANGGA DUA SELATAN</td><td>JALAN MANGGA BESAR 13</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>TEBET</td><td>MANGGARAI</td><td>JL. SAHARJO</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>MARUNDA</td><td>JL. INSPEKSI BKT</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>MENTENG ATAS</td><td>JL. MENTENG ATAS DALAM</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PADEMANGAN</td><td>PADEMANGAN TIMUR</td><td>JLN PADEMANGAN V</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>PASAR BARU</td><td>JALAN PINTU AIR</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>PASAR MANGGIS</td><td>PEREMPATAN PITOYO JL. PARIAMAN</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>PASAR MANGGIS</td><td>PEREMPATAN WARBONG JL. MENTENG KARANG</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>PEGANGSAAN DUA</td><td>JL.RAYA BEKASI</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PASAR REBO</td><td>PEKAYON</td><td>JL. RAYA BOGOR PANGKALAN PASIR</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>PELA MAMPANG</td><td>JL.BANGKA II D (DEPAN BANGKA SUITES)</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>PENGGILINGAN</td><td>JL. SUMARNO SIMPANG PENGADILAN KEL. PENGGILINGAN KEC. CAKUNG</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PENJARINGAN</td><td>PENJARINGAN</td><td>JL. MUARA BARU RAYA,JL. MUARA BARU UJUNG,JL. MUARA BARU GEDUNG POMPA RW.017,JL. EKOR KUNING GG. KEMBUNG, JL. PLUIT RAYA GG. KOPAL</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>PETAMBURAN</td><td>JL. ADMINISTRASI II KOMPLEK LAN RW. 09 KELURAHAN PETAMBURAN TANAH ABANG JAKARTA PUSAT</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>PISANGAN BARU</td><td>JALAN PISANGAN BARU TENGAH 2 ( TENGSENG)</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK BAMBU</td><td>JL PAHLAWAN REVOLUSI</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK KOPI</td><td>JL I GUSTI NGURAH RAI</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>PULO GEBANG</td><td>JLN BKT TINJA RW 01</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>RAMBUTAN</td><td>JL.SUPRIYADI</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KOJA</td><td>RAWA BADAK SELATAN</td><td>JLN K2 KEL.RBS</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>SEMPER BARAT</td><td>JALAN KESEMEK RW 13</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>SEMPER TIMUR</td><td>JL ARTERI MARUNDA</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>SENEN</td><td>JLN KALILEO</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>SERDANG</td><td>JALAN BENDUNGAN JAGO JEMBATAN ANGGREK</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEMBANGAN</td><td>SRENGSENG</td><td>JL. H. KELIK</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>JL. DANAU SUNTER BARAT (JEMBATAN ITEM)</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>SUSUKAN</td><td>JL RAYA BOGOR</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>JOHAR BARU</td><td>TANAH TINGGI</td><td>RUSUN TANAH TINGGI, JL. BALADEWA</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>KRAMAT JATI</td><td>TENGAH</td><td>JL. INNERBANG RAYA RW.03</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KOJA</td><td>TUGU SELATAN</td><td>JALAN BENDUNGAN MELAYU SELATAN</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU SELATAN</td><td>JLN AHMAD YANI.</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>UTAN PANJANG</td><td>JL. BENDUNGAN JAGO RT 01 RW 002</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>WARAKAS</td><td>JL. WARAKAS GG. 21</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>JELAMBAR BARU</td><td>JL. LATUMENTEN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMBORA</td><td>JEMBATAN LIMA</td><td>JL. KH MANSYUR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>KALIBARU</td><td>JALAN KALIBARU TIMUR II RW 03</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PANCORAN</td><td>KALIBATA</td><td>JPO WARUNG JATI JL. WARUNG BUNCIT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>KALIDERES</td><td>GREEN SEDAYU BIZPARK JLN. DAAN MOGOT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>KALIDERES</td><td>JALAN UTAN JATI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>KALIDERES</td><td>JL. PETA SELATAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>KALIDERES</td><td>JLN. DAAN MOGOT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>KAMAL</td><td>FLY OVER SAHABAT, JALAN SAHABAT RAYA RW.05 DAN RW.03</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PENJARINGAN</td><td>KAMAL MUARA</td><td>JL.PANTAI INDAH BARAT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>JL. FAHRUDIN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>KAMPUNG MELAYU</td><td>JL JATINEGARA BARAT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>JOHAR BARU</td><td>KAMPUNG RAWA</td><td>JL. GALUR JAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>CENGKARENG</td><td>KAPUK</td><td>JL. TANGGUL TIMUR RT.007/RW.010 KEL. KAPUK, CENGKARENG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>CENGKARENG</td><td>KAPUK</td><td>JL.TANGGUL BARAT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>CENGKARENG</td><td>KAPUK</td><td>TANGGUL TIMUR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARANG ANYAR</td><td>JL. KARANG ANYAR RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KARET TENGSIN</td><td>JL ABDUL JALIL</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KARET TENGSIN</td><td>JL KH MAS MANSYUR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARTINI</td><td>JL. A RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARTINI</td><td>JL. KARTINI RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>KAYU MANIS</td><td>JL. KAYU MANIS TIMUR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>KAYU PUTIH</td><td>JL A YANI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>KAYU PUTIH</td><td>JL PULOMAS RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>KEBAGUSAN</td><td>18 OFFICE PARK JL. TB. SIMATUPANG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>KEBAGUSAN</td><td>PLAZA OLEOS JL. TB. SIMATUPANG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA UTARA</td><td>JL AL-HUDA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA UTARA</td><td>JL KEBAYORAN LAMA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA UTARA</td><td>JL KERAMAT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>TEBET</td><td>KEBON BARU</td><td>JL. ABDULLAH SYAFEI KEL. KEBON BARU</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>KEBON JERUK</td><td>JL.RAYA KEBON JERUK</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>KEBON JERUK</td><td>JL.RAYA RAWABELONG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON KACANG</td><td>JALAN KH WAHID HASYIM KEL. KEBON KACANG KEC. TANAH ABANG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON KACANG</td><td>JL. FACRUDIN KEL. KEBON KACANG (POS DISHUB)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>BUNDERAN MASJID AKBAR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>JL. ANGKASA DEPAN MASJID AKBAR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>JL. APRON</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>JL. CONVERE</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>JL. DAKOTA RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>JL. H. UNG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>JL. KALIBARU BARAT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>JL. TEMBOK BOLONG SAMPING MASJID AKBAR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>KEBON MANGGIS</td><td>JL. MATRAMAN RAYA KEBON MANGGIS</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>KEBON MANGGIS</td><td>JL. SLAMET RIYADI KEL. KEBON MANGGIS</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON MELATI</td><td>JALAN K.H MAS MANSYUR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON MELATI</td><td>JALAN TANJUNG KARANG KEBON MELATI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>MENTENG</td><td>KEBON SIRIH</td><td>JL.WAHID HASYIM KOLONG STASIUN GONDANGDIA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>KEDOYA SELATAN</td><td>JL KEDOYA RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>KELAPA DUA</td><td>JL. PANJANG ALTERI KELAPA DUA RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>KELAPA DUA WETAN</td><td>JL. RAYA LAPANGAN TEMBAK</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING BARAT</td><td>JL. BOULEVARD BARAT JEMBATAN MOI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>JLN.PASAR IMPRES RW.05  DAN PERTIGAAN SDN 03,DAN JLN.HII SDN 03,SMPN 123,SMK 45,SMK JAYA KEL. KELAPA GADING TIMUR  KEC.KELAPA GADING KOTA ADM.JAKARTA UTARA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>JLN.BOULEVAR RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>JLN.KOPYOR RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>PERTIGAAN JLN PASAR IMPRES TRADISIONAL RW.06</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>PINTU MASUK RW.019 SUMA AGUNG III RW.19 / RW.02</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>PALMERAH</td><td>KEMANGGISAN</td><td>JL. S. PARMAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEMAYORAN</td><td>TL. GARUDA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEMAYORAN</td><td>KEMAYORAN BARAT RW.06 DAN RW.07 ( PASAR GARDU ASEM)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN SELATAN</td><td>JL. PURI INDAH RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN UTARA</td><td>DEPAN ALFA MIDI JL KEMBANGAN RAYA RT 009/RW 09 KELURAHAN KEMBANGAN UTARA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN UTARA</td><td>JL KEMBANGAN RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN UTARA</td><td>JL KEMBANGAN RAYA DEPAN PURI MEDIA LAND</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN UTARA</td><td>JL KEMBANGAN UTAMA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN UTARA</td><td>JL KEMBANGAN UTARA PERMATA BUANA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KENARI</td><td>JALAN DIPONEGORO</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>KAMPUNG MELAYU</td><td>KOLONG FO KAMPUNG MELAYU JL ABDULLAH SYAFEI</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA UTARA</td><td>JL BARU   KEMENAGAN</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON KACANG</td><td>JALAN KH MAS MANSYUR KEL. KEBON KACANG KEC. TANAH ABANG</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>KEBON KELAPA</td><td>JL. JUANDA</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>KEBON KELAPA</td><td>JL. SUKARJO SURYOPRANOTO</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON MELATI</td><td>JALAN DUKUH PINGGIR V KEBON MELATI</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>TL LAMPU MERAH JLN.NIAS RW.018</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>JL. I GUSTI NGURAH RAI RT. 003 RW. 06 ( TL. TAMAN VIADUCT )</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>MALAKA SARI</td><td>JL. I GUSTI NGURAH RAI JPO RUSUN PERUMNAS KLENDER KEL. MALAKA SARI</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>MAMPANG PRAPATAN</td><td>JL MAMPANG PRAPATAN RAYA</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>MELAWAI</td><td>JL. PANGLIMA POLIM III</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>MELAWAI</td><td>JL. WIJAYA I (PT IKA)</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>TEBET</td><td>MENTENG DALAM</td><td>TAMAN SEGITIGA JL. DR. SAHARJO</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. TAMAN PALEM LESTARI</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>PETAMBURAN</td><td>JL. GATOT SUBROTO JPO SLIPI PETAMBURAN KELURAHAN PETAMBURAN TANAH ABANG JAKARTA PUSAT</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PETOGOGAN</td><td>JL.WOLTER MONGINSIDI</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO SELATAN</td><td>JL. CIDENG TIMUR RAYA</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. CIDENG TIMUR</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. HASYIM ASHARI</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. PETOJO UTARA 6</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. SURYOPRANOTO</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>JL BRAWIJAYA 1C DAN JL BRAWIJAYA RAYA</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>JL DHARMAWANGSA IV</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>JALAN BUGIS</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>TAMAN GORONTALO</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>SUSUKAN</td><td>JL RAYA BOGOR</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>TEBET</td><td>TEBET BARAT</td><td>JALAN TEBET BARAT RAYA</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>WIJAYA KUSUMA</td><td>JL. PTB ANGKE</td><td>PMKS (PENGEMIS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>CENGKARENG</td><td>CENGKARENG TIMUR</td><td>APARTEMENT CITY PARK BLOK H RT.009/RW.014 CENGKARENG TIMUR</td><td>PMKS (PSK)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG BESAR UTARA</td><td>TL UNILAND JL H DARIP</td><td>PMKS (PSK)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>GUNUNG SAHARI SELATAN</td><td>JL, ANGKASA</td><td>PMKS (PSK)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>JL. JATI BARU RAYA</td><td>PMKS (PSK)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON KACANG</td><td>JALAN JEMBATAN TINGGI KEL. KEBON KACANG KEC. TANAH ABANG</td><td>PMKS (PSK)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>JL. I GUSTI NGURAH RAI RW. 06 ( TAMAN VIADUCT KOLONG FLY OVER KLENDER )</td><td>PMKS (PSK)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>PEGANGSAAN DUA</td><td>JL.PEGANGSAAN 2</td><td>PMKS (PSK)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PADEMANGAN</td><td>ANCOL</td><td>JLN TONGKOL RT 09 RW 01</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH BARAT</td><td>JL MARDANI RAYA</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>CIBUBUR</td><td>JL CENDANA</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>CIPETE UTARA</td><td>JL. H ENTING/ PRAPANCA DAN JL. PANGERAN ANTASARI</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG BESAR SELATAN</td><td>JLN CIPINANG JAYA IIE</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>CIRACAS</td><td>JL.H.BAPING</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>KRAMAT JATI</td><td>DUKUH</td><td>JL. RAYA PONDOK GEDE, SMP TRISOKO</td><td>TAWURAN (WARGA/PELAJAR)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>TAMAN SURYA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>TAMAN SURYA 2</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>JL. PEGANGSAAN TIMUR</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>JL. DIPONEGORO</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>JL. PROKLAMASI</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PEJATEN BARAT</td><td>JL. WARUNG JATI BARAT KELURAHAN PEJATEN BARAT</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PEJATEN TIMUR</td><td>AREA STASIUN KRL PASAR MINGGU JL. RAYA PASAR MINGGU</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>PELA MAMPANG</td><td>JALAN BANGKA VIII</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>PESANGGRAHAN</td><td>JL. BINTARO PUSPITA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>PETUKANGAN SELATAN</td><td>JL. CILEDUG RAYA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>PETUKANGAN SELATAN</td><td>JL. M. SAIDI RAYA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>CILANDAK</td><td>PONDOK LABU</td><td>JL. FATMAWATI RAYA, LAMPU MERAH PASAR PONDOK LABU SAMPAI DEPAN AW RESTORAN</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>JL DHARMAWANGSA VI (DEPAN MALL DHARMAWANGSA SQUARE)</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>JL PETOGOGAN 1</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>RAGUNAN</td><td>TL. RAGUNAN JL. RM. HARSONO - JL. TB. SIMATUPANG</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>RAMBUTAN</td><td>JL.RAYA BOGOR</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>RAWAMANGUN</td><td>JL. KEDONDONG</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>RAWASARI</td><td>JL. PERCETAKAN NEGARA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SELONG</td><td>JALAN SISINGAMANGARAJA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>SEMANAN</td><td>JALAN RAYA KH. ASENI SEMANAN</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>SENEN</td><td>JLN. INSPEKSI/JOGGING TRACK KALI CILIWUNG</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>SENEN</td><td>TAMAN HKSN JLN STASIUN PASAR SENEN</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>SETIABUDI</td><td>JPO TANPA ATAP JL JENDERAL SUDIRMAN</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>SETIABUDI</td><td>TAMAN SPOT BUDAYA 2 JL. JENDRAL SUDIRMAN DUKUH ATAS</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>SETU</td><td>JALAN HAJI KARIM</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>SETU</td><td>JALAN RAYA SETU</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>SETU</td><td>JL MANDOR MUNDING</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>SRENGSENG SAWAH</td><td>STATIUN UNIVERSITAS PANCASILA JL LENTENG AGUNG BARAT KEL SRENGSENG SAWAH</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>JALAN SUNGAI BAMBU RAYA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>JALAN DANAU SUNTER SELATAN SEBERANG CHARLIE</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>JL DANAU SUNTER SELATAN DEKET SPBU PERTAMINA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>JL DANAU SUNTER SELATAN PLASA DANAU SUNTER</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>JL KEDONDONG RAYA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>JL YOS SUDARSO</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMBORA</td><td>TAMBORA</td><td>JLN. KHJ.MOH. MANSUR</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMBORA</td><td>TAMBORA</td><td>JLN. TAMBORA LV  RT 04/02</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>TANGKI</td><td>JL.MANGGA BESAR 7</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>TEBET</td><td>TEBET TIMUR</td><td>JL. TEBET TIMUR RAYA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KOJA</td><td>TUGU SELATAN</td><td>JL. RAYA PLUMPANG SEMPER</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>UJUNG MENTENG</td><td>JLN. IRIGASI</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>PASEBAN</td><td>JALAN SALEMBA TENGAH RW 03 DAN RW 04 PASEBAN ,SENEN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. CITRA 3</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. GOLDEN PALEM CITRA 5</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. KEMUNING RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. PETA BARAT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. PETA UTARA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. TANJUNG PURA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. UTAN JATI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. TANJUNG PURA DEPAN CITRA 2 EXT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>JL. PEGANGSAAN TIMUR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PASAR REBO</td><td>PEKAYON</td><td>JL. RAYA BOGOR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>PELA MAMPANG</td><td>JL.PONDOK JAYA VI (DEPAN GOR)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>PENGGILINGAN</td><td>JL. RAYA PENGGILINGAN PISVAK RW 19</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PENJARINGAN</td><td>PENJARINGAN</td><td>JALAN MUARA BARU, JALAN TANAH PASIR, JALAN TANAH MERAH ,JALAN TANJUNG WANGI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>PESANGGRAHAN</td><td>JL. INSPEKSI KALI PESANGGRAHAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>PETAMBURAN</td><td>JL. GATOT SUBROTO DEPAN GEDUNG JDC KELURAHAN PETAMBURAN TANAH ABANG JAKARTA PUSAT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PETOGOGAN</td><td>JL. CIPAKU 1</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PETOGOGAN</td><td>JL.WOLTER MONGINSIDI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO SELATAN</td><td>JL. MAJAPAHIT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. AM. SANGAJI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. GAJAH MADA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. HARMONI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>PETUKANGAN UTARA</td><td>JL. KOSTRAD RAYA  KEL. PETUKANGAN UTARA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>PINANGSIA</td><td>JALAN ASEMKA RAYA, PASAR ASEMKA KEL. PINANGSIA KEC. TAMANSARI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>PINANGSIA</td><td>SAMPING MUSEUM MANDIRI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>PISANGAN BARU</td><td>JL.PISANGAN BARU TIMUR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>PISANGAN TIMUR</td><td>JL. A YANI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>PISANGAN TIMUR</td><td>JL.PISANGAN LAMA 2</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>PISANGAN TIMUR</td><td>JL.PISANGAN LAMA SELATAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PENJARINGAN</td><td>PLUIT</td><td>JLN PLUIT KARANG BARAT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK BAMBU</td><td>JL PAHLAWAN REVOLUSI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK KELAPA</td><td>RAWAN PKL BANJIR KANAL BARAT SISI UTARA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK KOPI</td><td>JL I GUSTI NGURAH RAI, DPN STASIUN KLENDER BARU</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>CILANDAK</td><td>PONDOK LABU</td><td>JL. FATMAWATI RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>PONDOK PINANG</td><td>JL. KARTINI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>PONDOK PINANG</td><td>TB. SIMATUPANG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>PONDOK RANGGON</td><td>JL. RAYA JAMBORE</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>KEPULAUAN SERIBU</td><td>KEPULAUAN SERIBU UTARA</td><td>PULAU HARAPAN</td><td>JALAN DERMAGA UTAMA PULAU HARAPAN DAN TAMAN PULAU HARAPAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>KEPULAUAN SERIBU</td><td>KEPULAUAN SERIBU UTARA</td><td>PULAU KELAPA</td><td>SEPANJANG JALAN DERMAGA UTAMA PULAU KELAPA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>KEPULAUAN SERIBU</td><td>KEPULAUAN SERIBU UTARA</td><td>PULAU PANGGANG</td><td>DERMAGA UTAMA PULAU PANGGANG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>KEPULAUAN SERIBU</td><td>KEPULAUAN SERIBU UTARA</td><td>PULAU PANGGANG</td><td>DERMAGA UTAMA PULAU PRAMUKA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>KEPULAUAN SERIBU</td><td>KEPULAUAN SERIBU UTARA</td><td>PULAU PANGGANG</td><td>PLAZA KANTOR KABUPATEN ADM.KEP.SERIBU.</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>KEPULAUAN SERIBU</td><td>KEPULAUAN SERIBU UTARA</td><td>PULAU PANGGANG</td><td>SAMPING RSUD PULAU PRAMUKA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>KEPULAUAN SERIBU</td><td>KEPULAUAN SERIBU SELATAN</td><td>PULAU PARI</td><td>JL. PENDIDIKAN RT 02 RW 04</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>KEPULAUAN SERIBU</td><td>KEPULAUAN SERIBU SELATAN</td><td>PULAU TIDUNG</td><td>PELABUHAN UTAMA JALAN PANTAI SELATAN RT 003 RW 02 KELURAHAN PULAU TIDUNG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>KEPULAUAN SERIBU</td><td>KEPULAUAN SERIBU SELATAN</td><td>PULAU UNTUNG JAWA</td><td>JLN BOUGENVILLE JALAN RAYA TAMAN ASRA RT 01/01 KELURAHAN PULAU UNTUNG JAWA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>JL DARMAWANGSA RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>JL DARMAWANGSA VI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>JL DHARMAWANGSA RAYA (TEMBUSAN JL BRAWIJAYA IC)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>JL PETOGOGAN 1,JL BRAWIJAYA XI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>PULO</td><td>JL WIJAYA II (DEPAN GRAND WIJAYA CENTER)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>PULO GADUNG</td><td>JALAN PERINTIS KEMERDEKAAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>PULO GADUNG</td><td>JL PULONANGKA TIMUR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>PULO GEBANG</td><td>JLN DR SOEMARNO RW 08</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>RAMBUTAN</td><td>JL.RAYA BOGOR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>CENGKARENG</td><td>RAWA BUAYA</td><td>JL RAYA DAAN MOGOT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>CENGKARENG</td><td>RAWA BUAYA</td><td>JLN TANGGUL CENGKARENG DRAIN RT 001/011</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>CENGKARENG</td><td>RAWA BUAYA</td><td>JLN TANGGUL CENGKARENG DRAIN/KLINGKIT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>CENGKARENG</td><td>RAWA BUAYA</td><td>TROTOAR JLN DAAN MOGOT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>RAWA BUNGA</td><td>JL. BEKASI BARAT RAYA KELURAHAN RAWABUNGA (DEPAN STASIUN JATINEGARA SAMPAI DENGAN TL EKS.KODIM)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>RAWA TERATE</td><td>JL. KRT RADJIMAN RW 06 KEL RAWA TERATE</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>RAWASARI</td><td>JL. PRAMUKA RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>RAWASARI</td><td>PERCETAKAN NEGARA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>ROROTAN</td><td>JLN INSPEKSI BKT SISI BARAT RW 08</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>ROROTAN</td><td>JLN INSPEKSI BKT SISI TIMUR RW 09</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>ROROTAN</td><td>JLN MALAKA III  DEPAN SDN ROROTAN 05,RT 03/06</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SELONG</td><td>JALAN GALUH</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SELONG</td><td>JALAN SENOPATI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>SEMANAN</td><td>JALAN INSPEKSI KALI MOOKEVART</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>SEMANAN</td><td>JALAN RAYA SEMANAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>SEMANAN</td><td>JL INSPEKSI KALI MOOKERVAT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>SEMPER BARAT</td><td>JALAN KRAMAT JAYA  SISI KANAN ARAH LAMPU MERAH KRAMAT JAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SENAYAN</td><td>CIMB NIAGA ( JL. SUDIRMAN)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SENAYAN</td><td>PINTU SCBD ( JL. SUDIRMAN)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>SENAYAN</td><td>POLDA ATAS ( JL. GATOT SUBROTO )</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>SENEN</td><td>JLN STASIUN PASAR SENEN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>SERDANG</td><td>JALAN SERDANG BARU 1</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>SERDANG</td><td>JALAN SERDANG BARU RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>SETIABUDI</td><td>JL. TAMAN SETIABUDI 1</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>PALMERAH</td><td>SLIPI</td><td>JALAN BRIGJEN KATAMSO RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>SRENGSENG SAWAH</td><td>HALTE UNIVERSITAS PANCASILA JL LENTENG AGUNG BARAT KEL. SRENGSENG SAWAH</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>SUKABUMI SELATAN</td><td>JL. Z KEL. SUKABUMI SELATAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>SUKABUMI UTARA</td><td>JALAN SULAIMAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>SUKAPURA</td><td>JALAN TIPAR CAKUNG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>SUMUR BATU</td><td>JL. SUMUR BATU RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>JALAN GANGGENG VI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>JALAN GAYA MOTOR 3</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>JL. AGUNG TENGAH</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>JL. DANAU SUNTER BARAT</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>JL. SUNTER PERMAI RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>JL. SUNTER PERMAI RAYA (JIS)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>JALAN DANAU SUNTER UTARA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GANDARIA UTARA</td><td>JL. RADIO DALAM RAYA ( TL RADIO DALAM )</td><td>PMKS (MANUSIA SILVER)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEMBANGAN</td><td>JOGLO</td><td>JL JOGLO RAYA</td><td>PMKS (MANUSIA SILVER)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>KEBON BAWANG</td><td>JL KB BAWANG VI</td><td>PMKS (MANUSIA SILVER)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>JL. I GUSTI NGURAH RAI RT. 003 RW. 06 ( TL. TAMAN VIADUCT )</td><td>PMKS (MANUSIA SILVER)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>KRAMAT PELA</td><td>JL.KRAMAT PELA RT.10/01</td><td>PMKS (MANUSIA SILVER)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>PEGANGSAAN DUA</td><td>JL.PEGANGSAAN DUA PINTU 3 ( TL HYBRIDA )</td><td>PMKS (MANUSIA SILVER)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. AM SANGAJI</td><td>PMKS (MANUSIA SILVER)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>PONDOK PINANG</td><td>LAMPU MERAH FEDEX (RPX)</td><td>PMKS (MANUSIA SILVER)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEMBANGAN</td><td>SRENGSENG</td><td>JL. MERUYA ILIR RAYA</td><td>PMKS (MANUSIA SILVER)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>JL. DANAU SUNTER BARAT (TL. JUBILEE)</td><td>PMKS (MANUSIA SILVER)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER AGUNG</td><td>TL LAMPU MERAH BLOK A / JL. DANAU SUNTER BARAT KEL. SUNTER AGUNG</td><td>PMKS (MANUSIA SILVER)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU UTARA</td><td>JL. AHMAD YANI</td><td>PMKS (MANUSIA SILVER)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PADEMANGAN</td><td>ANCOL</td><td>JALAN RE MARTADINATA DEPAN APARTEMEN ASTON</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PADEMANGAN</td><td>ANCOL</td><td>JLN RE MARTADINATA SIMPANG ALEXIS</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>KRAMAT JATI</td><td>BATU AMPAR</td><td>JL. RAYA CONDET</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>BENDUNGAN HILIR</td><td>JLN. PEJOMPONGAN RAYA (PUTARAN DEPAN HOTEL SOTIS)</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>BENDUNGAN HILIR</td><td>JLN. BENHIL RAYA PERTIGAAN MUTIARA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>BINTARO</td><td>JL RC VETERAN RAYA KOLONG TOL JOR RW 12</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>CAKUNG BARAT</td><td>JL. RAYA BEKASI KM. 24 RW. 04</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH BARAT</td><td>JL LETJEN SUPRAPTO, PUTERAN BEA CUKAI</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH TIMUR</td><td>JL.RAWASARI SELATAN/TL SERONG</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>CENGKARENG</td><td>CENGKARENG BARAT</td><td>JL RAWA KERAMAT RW 004 KELURAHAN CENGKARENG BARAT</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>CENGKARENG</td><td>CENGKARENG BARAT</td><td>PUTARAN IMIGRASI JL DAAN MOGOT</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PANCORAN</td><td>CIKOKO</td><td>JL.CIKOKO TIMUR RAYA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIPEDAK</td><td>JL. BRIGIF</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIPEDAK</td><td>JL. TIMBUL</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIPEDAK</td><td>JLN. M. KHAFI  1 PERTIAGAAN BRIGIF</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG BESAR SELATAN</td><td>JLN BASUKI RAHMAT RAYA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG BESAR UTARA</td><td>JL H DARIP (DEPAN LAPAS CIPINANG)</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG MUARA</td><td>JL. I GUSTI NGURAHRAI PUTARAN SS</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>CIRACAS</td><td>JL.RAYA BOGOR</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>KRAMAT JATI</td><td>DUKUH</td><td>TL KRAMIK, JL. RAYA PONDOK GEDE</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>DURI KEPA</td><td>JL. ARJUNA UTARA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>DURI KEPA</td><td>JL. PANJANG PUTARAN ELOK</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>JOHAR BARU</td><td>GALUR</td><td>LETJEND SUPRAPTO</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>GELORA</td><td>ASIA AFRIKA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>GUNTUR</td><td>JLN. SULTAN AGUNG RAYA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>GUNUNG SAHARI SELATAN</td><td>JL, BUNGUR BESAR DEPAN HOTEL PRIMA INDAH</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>GUNUNG SAHARI UTARA</td><td>JL. INDUSTRI RAYA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>JATI</td><td>JALAN PEMUDA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>JATI</td><td>JALAN PEMUDA PUTERAN POS</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>JELAMBAR BARU</td><td>JL. TB ANGKE</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>KALIBARU</td><td>TL TANAH MERDEKA JALAN RAYA CILINCING</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PANCORAN</td><td>KALIBATA</td><td>JL. RAYA PASAR MINGGU PERTIGAAN POMAD</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PASAR REBO</td><td>KALISARI</td><td>JL RAYA KALISARI PERTIGAAN GENTONG RT 04 RW 11</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>KAMAL</td><td>JALAN ANTANG SANJAYA ( PINTU KELURAR GERBANG TOL CBC )</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>KAMAL</td><td>JL. BODEMAN PREPEDAN RAYA RT 01 RW 07</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>KAMAL</td><td>JL. SAHABAT KEL. KAMAL KEC.KALIDERES</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PENJARINGAN</td><td>KAMAL MUARA</td><td>JL KAYU BESAR RINGROAD RW 02</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PENJARINGAN</td><td>KAMAL MUARA</td><td>PEREMPATAN  KAMAL RAYA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>JLN. WAHID HASYIM</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>CENGKARENG</td><td>KAPUK</td><td>JL.KAPUK RAYA PEREMPATAN PIK</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KARET TENGSIN</td><td>JL KH MAS MANSYUR</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>KAYU MANIS</td><td>JL.KAYU MANIS STASIUN.PONDOK JATI</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA UTARA</td><td>JL SULTAN ISKANDAR MUDA G MAKMUR</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>KEBON JERUK</td><td>PUTARAN JL.PEJUANGAN</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON KACANG</td><td>JALAN KH. WAHID HASYIM KEL. KEBON KACANG KEC. TANAH ABANG</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>JL. BENYAMIN SUEB</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KEBON MELATI</td><td>JALAN TELUK BETUNG KEBON MELATI</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>KEDOYA SELATAN</td><td>JL PANJANG ARTERI</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>KELAPA DUA</td><td>JL. PANJANG ALTERI KELAPA DUA PUTARAN KOMINFO</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING BARAT</td><td>JL. YOS SUDARSO ( PUTARAN HONDA )</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEMAYORAN</td><td>GARUDA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN SELATAN</td><td>JL. KEMBANG KEREP</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KENARI</td><td>JALAN SALEMBA RAYA PUTARAN DEPAN MC.DONALDS DAN PUTARAN DEPAN PLAZA KENARI MAS</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KRAMAT</td><td>JL. KRAMAT RAYA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>KRAMAT JATI</td><td>KRAMAT JATI</td><td>JALAN RAYA BOGOR (PUSDIKES TNI AD)</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>MALAKA JAYA</td><td>JL. JENDRAL R.S SOEKANTO RW.11</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>MALAKA SARI</td><td>JL. I GUSTI NGURAH RAI DEPAN RUSUN PERUMNAS KLENDER KEL. MALAKA SARI</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>MANGGA BESAR</td><td>JL. MANGGA BESAR RAYA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>TEBET</td><td>MANGGARAI</td><td>JL. MANGGARAI UTARA 2</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>MAPHAR</td><td>JL. MANGGA BESAR RAYA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>MAPHAR</td><td>JL. SUKARJO WIRYO PRANOTO</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>MARUNDA</td><td>JL. MARUNDA MAKMUR</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>MARUNDA</td><td>MARUNDA BARU</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PADEMANGAN</td><td>PADEMANGAN BARAT</td><td>JALAN GUNUNG SAHARI</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>PAPANGGO</td><td>JALAN R.E.MARTADINATA SIMPANG REL KERETA API</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>PASAR BARU</td><td>JALAN SAMANHUDI</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. PETA BARAT</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>JL. SATU MARET</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>PEREMPATAN RS. CIPUTRA JLN.SATU MARET</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PEJATEN BARAT</td><td>JL. RAYA PASAR MINGGU</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMBORA</td><td>PEKOJAN</td><td>JALAN GEDONG PANJANG</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PENJARINGAN</td><td>PENJARINGAN</td><td>KOLONG TOL BEROK JL. EKOR KUNING RW.05 (GEPENG), PEREMPATAN APRT MITRA BAHARI JL. GEDONG PANJANG RAYA (PAK OGAH), JEMBATAN EKOR KUNING JL. EKOR KUNING RW.04 (PAK OGAH), PERTIGAAN PAKIN JL. PAKIN RW.04 (PAK OGAH),  PUTARAN BALIK RS. PLUIT JL. PLUIT SELATAN RAYA (PAK OGAH)</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>PETAMBURAN</td><td>JL. KS. TUBUN RAYA DEPAN TPU PETAMBURAN KELURAHAN PETAMBURAN JAKARTA PUSAT</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. AM. SANGAJI</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>PETUKANGAN UTARA</td><td>JL. CILEDUG RAYA, PINGGIR TOL KEL. PETUKANGAN UTARA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>PINANGSIA</td><td>JL MANGGA DUA RAYA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK KELAPA</td><td>TITIK RAWAN PMKS JL. PONDOK KELAPA RAYA. JAM RAWAN 16'00-18'00 WIB</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>PONDOK KOPI</td><td>JL I GUSTI NGURAH RAI, PUTARAN BEWOK</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>PULO GADUNG</td><td>JALAN KAYUPUTIH RAYA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>PULO GEBANG</td><td>JLN SENTRA PRIMER RW 08</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>RAMBUTAN</td><td>JL.SUPRIYADI DEPAN TERMINAL BUS KAMPUNG RAMBUTAN</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KOJA</td><td>RAWA BADAK SELATAN</td><td>JL.PLUMPANG SEMPER PASAR ULAR</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>RAWA BARAT</td><td>JL. TENDEAN RAYA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>CENGKARENG</td><td>RAWA BUAYA</td><td>JLN DAAN MOGOT U-TURN PASARI</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>RAWA TERATE</td><td>JL. BEKASI RAYA / JL. KRT RADJIMAN</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>SEMPER BARAT</td><td>TL ATTERI MARUNDA ARAH KEBON BARU</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>SEMPER TIMUR</td><td>JL ARTERI MARUNDA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>SERDANG</td><td>JL. BENDUNGAN JAGO</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>SUKABUMI UTARA</td><td>JALAN SULAIMAN</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>POOL PLUMPANG , JALAN YOS SUDARSO</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>TAMAN SARI</td><td>JLN MANGGA BESAR RAYA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>JOHAR BARU</td><td>TANAH TINGGI</td><td>JLN. TANAH TINGGI LL</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>TANJUNG PRIOK</td><td>JL.ENGGANO RAYA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>TANJUNG PRIOK</td><td>TERMINAL TANJUNG PRIOK KOTA ADM JAKARTA UTARA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>TEGAL ALUR</td><td>JL. MANYAR</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KOJA</td><td>TUGU UTARA</td><td>SIMPANG LIMA SEMPER</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>UJUNG MENTENG</td><td>JLN. RAYA BEKASI KM 26</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU UTARA</td><td>JL. AHMAD YANI</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU UTARA</td><td>JL. PRAMUKA DEPAN BNPB</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU UTARA</td><td>JL. PRAMUKA RAYA</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>UTAN PANJANG</td><td>JL. UTAN PANJANG BARAT RT 013/010</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>WARAKAS</td><td>JL. WARAKAS RAYA, JL. WARAKAS I</td><td>PMKS (PAK OGAH)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>KRAMAT JATI</td><td>CAWANG</td><td>JL. MT. HARYONO (CAWANG KOMPOR)</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>CILANDAK</td><td>CILANDAK BARAT</td><td>JL. RS FATMAWATI RAYA DEPAN RSUP FATMAWATI</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>KRAMAT JATI</td><td>CILILITAN</td><td>LAMPU MERAH PGC JLN.MAYJEN SUTOYO</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>CIPINANG</td><td>JL CIPINANG BARU UTARA</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>CIPINANG</td><td>JL PERSAHABATAN RAYA</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG BESAR SELATAN</td><td>JLN DI PANJAITAN</td><td>PMKS (PEDAGANG ASONGAN)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>BIDARA CINA</td><td>JL. OTISTA RAYA DEPAN GOR OTISTA</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PASAR REBO</td><td>CIJANTUNG</td><td>JL. GONGSENG RT.02/10 KEL CIJANTUNG</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG BESAR UTARA</td><td>TOKO UNGU JL CIPINANG PULO MAJA I</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG MUARA</td><td>JL. BB RT.04 RW.05, RW.015 DAN RW.011 PERBATASAN DENGAN KEL. KLENDER</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>CIPULIR</td><td>JL. CILEDUG RAYA</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEMBANGAN</td><td>JOGLO</td><td>JL. GG KUBUR</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARANG ANYAR</td><td>JL. KARANG ANYAR RAYA</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>JL. DAKOTA RAYA</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>JALAN YOS SUDARSO</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>JL H MAWAR SUNTER JAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>JLN.DANAU SUNTER SELATAN 1 DEPAN MASJID RAMLI MUSTOFA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>TROTOAR DEPAN CHARLIE JLN.DANAU SUNTER SELATAN 2</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>SUSUKAN</td><td>JL SUPRIYADI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>TAMAN SARI</td><td>JALAN MANGGA BESAR RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMBORA</td><td>TANAH SEREAL</td><td>JALAN BETET RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMBORA</td><td>TANAH SEREAL</td><td>JALAN TANAH SEREAL RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMBORA</td><td>TANAH SEREAL</td><td>JALAN TANAH SEREAL RAYA RW 07</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>JOHAR BARU</td><td>TANAH TINGGI</td><td>JLN. BALADEWA PASKALIS</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>TANJUNG BARAT</td><td>JL.TANJUNG BARAT RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>TANJUNG DUREN SELATAN</td><td>JL. S PARMAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>TANJUNG DUREN SELATAN</td><td>JL. TANJUNG DUREN RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>TANJUNG DUREN UTARA</td><td>JL. TANJUNG DUREN RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>TEGAL ALUR</td><td>JL. BENDA RAYA, KEL. TEGAL ALUR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>TEGAL ALUR</td><td>JL. KAMAL BENDA RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>TEGAL ALUR</td><td>JL. KAMAL RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>TEGAL PARANG</td><td>JL. MAMPANG PRAPATAN RAYA, JPO DUREN TIGA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>KRAMAT JATI</td><td>TENGAH</td><td>JL. RAYA INPRES RT.005 RW.01</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>TOMANG</td><td>JL. S PARMAN JPO TELKOM</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KOJA</td><td>TUGU SELATAN</td><td>JL. STM WALANG JAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KOJA</td><td>TUGU UTARA</td><td>JL. KRAMAT JAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>UJUNG MENTENG</td><td>KBT (KANAL BANJIR TIMUR)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>ULUJAMI</td><td>JALAN INFEKSI RT 03 RW 02 ULUJAMI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PESANGGRAHAN</td><td>ULUJAMI</td><td>JALAN INFEKSI RT 04 RW 07 ULUJAMI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU SELATAN</td><td>JL. GALUR SARI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU SELATAN</td><td>JL.KRAMAT ASEM</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>UTAN KAYU SELATAN</td><td>JLN KEBON KELAPA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>UTAN PANJANG</td><td>JL. H. UNG RT 02 RW 003</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>WARAKAS</td><td>JL. WARAKAS RAYA RW. 02</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>WIJAYA KUSUMA</td><td>JL. KOMPLEK BNI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>WIJAYA KUSUMA</td><td>JL. KUSUMA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>WIJAYA KUSUMA</td><td>JL. PANGERAN TUBAGUS ANGKE</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>WIJAYA KUSUMA</td><td>JL. WIJAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>BANGKA</td><td>JL. KEMANG RAYA, TL MC DONALD'S</td><td>PMKS (COSTPLAY)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>CILANDAK TIMUR</td><td>TRAFFIC LIGHT TRAKINDO</td><td>PMKS (COSTPLAY)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>CILANDAK</td><td>GANDARIA SELATAN</td><td>TL MALL LOTTE MART JL RS FATMAWATI  </td><td>PMKS (COSTPLAY)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GUNUNG</td><td>TL PATUNG PEMUDA ( JL. SISINGAMANGARAJA )</td><td>PMKS (COSTPLAY)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>MANGGA DUA SELATAN</td><td>JALAN PENJAGALAN</td><td>PMKS (COSTPLAY)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>MENTENG</td><td>PEGANGSAAN</td><td>JL. PEGANGSAAN TIMUR</td><td>PMKS (COSTPLAY)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. HASYIM ASHARI (PEREMPATAN)</td><td>PMKS (COSTPLAY)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>CILANDAK</td><td>PONDOK LABU</td><td>JL. PINANG</td><td>PMKS (COSTPLAY)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>PONDOK PINANG</td><td>JL.KARTIKA UTAMA KEL.PONDOK PINANG</td><td>PMKS (COSTPLAY)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>BIDARA CINA</td><td>JL. CAWANG BARU</td><td>PMKS (MANUSIA SILVER)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>BIDARA CINA</td><td>JL. OTISTA 3</td><td>PMKS (MANUSIA SILVER)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIPEDAK</td><td>JL. BRIGIF / PERTIGAAN</td><td>PMKS (MANUSIA SILVER)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>JL. I GUSTI NGURAH RAI RW. 06 ( DEPAN MALL CIPLAZ KLENDER )</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>PALMERAH</td><td>KOTA BAMBU SELATAN</td><td>DEPAN BCA JLN. BRIGJEN KATAMSO</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>PALMERAH</td><td>KOTA BAMBU UTARA</td><td>JL. S. PARMAN (DEPAN RS. HARAPAN KITA)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KRAMAT</td><td>JL. KRAMAT RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>KRAMAT JATI</td><td>KRAMAT JATI</td><td>JALAN RAYA BOGOR PASAR MALAM KRAMAT JATI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>KRAMAT JATI</td><td>KRAMAT JATI</td><td>JL. RAYA BOGOR CILILITAN, KRAMAT JATI, JAKARTA TIMUR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>KRAMAT PELA</td><td>JL. BULUNGAN (GULTIK)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMBORA</td><td>KRENDANG</td><td>JL. KH MOH MANSYUR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>KRUKUT</td><td>JALAN GAJAH MADA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>KRUKUT</td><td>JLN. ZAINUL ARIFIN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>KUNINGAN BARAT</td><td>JL. KAPTEN TENDEAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>KUNINGAN TIMUR</td><td>JL. GATOT SUBROTO</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>KUNINGAN TIMUR</td><td>JL. RASUNA SAID</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>KUNINGAN TIMUR</td><td>JL. GILIMANUK</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KWITANG</td><td>JLN. KRAMAT KWITANG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KOJA</td><td>LAGOA</td><td>JL. MANGGAR KEL. LAGOA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KOJA</td><td>LAGOA</td><td>JL. MENTENG KEL. LAGOA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KOJA</td><td>LAGOA</td><td>JL. MINDI KEL. LAGOA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>CILANDAK</td><td>LEBAK BULUS</td><td>DEPAN STASIUN MRT LEBAK BULUS JL. R.A. KARTINI RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>LENTENG AGUNG</td><td>JPO  STATIUN LENTENG AGUNG JL. LENTENG AGUNG TIMUR KELURAHAN LENTENG AGUNG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MAKASAR</td><td>MAKASAR</td><td>JL WIJAYA KUSUMA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>MALAKA JAYA</td><td>JL. TERATAI PUTIH RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>MALAKA SARI</td><td>JL. TERATAI PUTIH RAYA RW 04 KEL. MALAKA SARI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>MAMPANG PRAPATAN</td><td>JALAN KAPTEN TENDEAN /HALTE LAPANGAN GRIYA MANDIRI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>MAMPANG PRAPATAN</td><td>JL KAPTEN TENDEAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>MAMPANG PRAPATAN</td><td>JL. MAMPANG PRAPATAN RAYA, DEPAN PASAR MAMPANG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>MANGGA DUA SELATAN</td><td>JL TIANGSENG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>TEBET</td><td>MANGGARAI</td><td>JL. MANGGARAI UTARA 1</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>MAPHAR</td><td>JL. HAYAM WURUK</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>MAPHAR</td><td>JL. MANGGA BESAR RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>MELAWAI</td><td>JL. TIRTAYASA RAYA  ( PT IKA)</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>MENTENG</td><td>MENTENG</td><td>JALAN BLORA RW 06 KEC. MENTENG KEL. MENTENG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>MENTENG ATAS</td><td>JL. MINANGKABAU DALAM</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>MENTENG ATAS</td><td>JL. MURIA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>TEBET</td><td>MENTENG DALAM</td><td>JL. CASABLANCA RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PADEMANGAN</td><td>PADEMANGAN BARAT</td><td>JL. GUNUNG SAHARI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PADEMANGAN</td><td>PADEMANGAN TIMUR</td><td>JLN PADEMANGAN RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>PAL MERIAM</td><td>JL. MATRAMAN RAYA .HALTE GANG KELOR</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>PAL MERIAM</td><td>PASAR PALMARIEM</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>PALMERAH</td><td>PALMERAH</td><td>JL. TL. BATU SARI RAYA</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>PAPANGGO</td><td>JL BISMA WADUK CINCIN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>PAPANGGO</td><td>JL. SUNTER PERMAI</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>PASAR BARU</td><td>JALAN PINTU AIR ISTIGLAL</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>JL. RAYA RAGUNAN</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>JL. TERMINAL BARU</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>JL. TB SIMATUPANG</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PASAR MINGGU</td><td>PASAR MINGGU</td><td>TL PASAR MINGGU JL. RAYA PASAR MINGGU KELURAHAN PASAR MINGGU</td><td>PKL</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>SUKAPURA</td><td>JALAN TIPAR CAKUNG</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNTER JAYA</td><td>JL YOS SUDARSO</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>SUSUKAN</td><td>JL RAYA BOGOR</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>JOHAR BARU</td><td>TANAH TINGGI</td><td>KOTA PARIS, JLN. TANAH TINGGI BARAT</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>GROGOL PETAMBURAN</td><td>TANJUNG DUREN SELATAN</td><td>JL. S PARMAN JPO CENTRAL PARK</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>TANJUNG PRIOK</td><td>JL TONGKOL</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>TANJUNG PRIOK</td><td>JLN.RE MARTADINATA ( POS.3 )</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>TANJUNG PRIOK</td><td>KP BAHARI KELURAHAN TANJUNG PRIUK</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>UJUNG MENTENG</td><td>KBT (KANAL BANJIR TIMUR)</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CILANGKAP</td><td>JALAN RAYA CILANGKAP DEPAN AGRO WISATA</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CIPAYUNG</td><td>JLN. RAYA CILANGKAP</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>CIPETE UTARA</td><td>JL. PANGERAN ANTASARI</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GUNUNG</td><td>JL. BUMI</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA UTARA</td><td>JL SULTAN ISKANDAR MUDA</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>JL. KEBON KOSONG 17,18</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KRAMAT</td><td>JL. SENTIONG GG. MASJID</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>PEGADUNGAN</td><td>CITRA 2 NIAGA BLOK C1 NO.21</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>PELA MAMPANG</td><td>JL. BANGKA RAYA</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>RAWA BARAT</td><td>JL. SENAYAN</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>RAWA BARAT</td><td>JL. SURYO</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>RAWA BARAT</td><td>JL. WOLTERMONGINSIDI</td><td>PELANGGARAN PERIJINAN</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PADEMANGAN</td><td>ANCOL</td><td>JL. RE MARTADINATA (PEREMPATAN ALEXIS)</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>KRAMAT JATI</td><td>BALEKAMBANG</td><td>JL. RAYA CONDET</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>BAMBU APUS</td><td>JL.SWADAYA RAWA BINONG</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>CAKUNG TIMUR</td><td>SISI KBT RT05 RW07</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>KRAMAT JATI</td><td>CAWANG</td><td>JL. MAYJEN SUTOYO</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>JALAN RAYA BINA MARGA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>JALAN RAYA CEGER</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>JALAN RAYA MABES HANKAM</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>JLN.RAYA CEGER PERTIGAAN KECAPI</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CEGER</td><td>JLN.REMAJA KELURAHAN CEGER</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH BARAT</td><td>SEPANJANG JL PERCETAKAN NEGARA DI JADIKAN PARKIR LIAR</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>CEMPAKA PUTIH</td><td>CEMPAKA PUTIH TIMUR</td><td>JL.CEMPAKA PUTIH RAYA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>CIBUBUR</td><td>JL JAMBORE</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>CILANDAK</td><td>CILANDAK BARAT</td><td>JL. TB SIMATUPANG DEPAN MALL CILANDAK TOWN SQUARE</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CILANGKAP</td><td>JALAN PERTIGAAN ASSAFI'IYAH RAYA CILANGKAP</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CIPAYUNG</td><td>JALAN BINA MARGA PERTIGAAN MCDONALD'S</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CIPAYUNG</td><td>JALAN CIPAYUNG RAYA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CIPAYUNG</td><td>JALAN SETU CIPAYUNG</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>CIPAYUNG</td><td>JALAN SMA 64</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>CIPEDAK</td><td>JLN. KHAFI 2</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>JATINEGARA</td><td>CIPINANG MUARA</td><td>JL. CIPINANG JAYA RAYA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIRACAS</td><td>CIRACAS</td><td>JL.RAYA CIRACAS</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PANCORAN</td><td>DUREN TIGA</td><td>JL. MAMPANG PRAPATAN</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PANCORAN</td><td>DUREN TIGA</td><td>TL KAISAR JL.PASAR MINGGU RAYA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PANCORAN</td><td>DUREN TIGA</td><td>TL. BASMAR JL.MAMPANG PRAPATAN RAYA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>PANCORAN</td><td>DUREN TIGA</td><td>TL. KAISAR JL.RAYA PASAR MINGGU</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PASAR REBO</td><td>GEDONG</td><td>JL TB SIMATUPANG</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>MENTENG</td><td>GONDANGDIA</td><td>JALAN SUTAN SYAHRIR SAMPING RS BUNDA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>GROGOL SELATAN</td><td>JALAN RAYA KEBAYORAN LAMA, JALAN KRAMAT PASAR KEBAYORAN LAMA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>GUNUNG</td><td>DEPAN PASAR MAYESTIK ( JL. KYAI MAJA)</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>GUNUNG SAHARI UTARA</td><td>JL. GUNUNG SAHARI 7A</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>JAGAKARSA</td><td>JAGAKARSA</td><td>JL. RAYA JAGAKARSA DEPAN BPS</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMBORA</td><td>KALI ANYAR</td><td>JL. KALIANYAR 10 GG 1 KEL. KALIANYAR</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>CILINCING</td><td>KALIBARU</td><td>JALAN KALIBARU BARAT 7 RT 03/05</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KALIDERES</td><td>KALIDERES</td><td>JALAN RAWA LELE KP. KOBER</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>CENGKARENG</td><td>KAPUK</td><td>JL.KAPUK RAYA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>KARET</td><td>JALAN SUDIRMAN</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>KARET KUNINGAN</td><td>JLN DENPASAR</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>KARET KUNINGAN</td><td>JLN DR SATRIO</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>SETIA BUDI</td><td>KARET SEMANGGI</td><td>JL.JENDRAL SUDIRMAN</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>KEBON BAWANG</td><td>JLN BAKTI</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MAKASAR</td><td>KEBON PALA</td><td>JL TL HALIM</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>MENTENG</td><td>KEBON SIRIH</td><td>JL.JOHAR</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>KEDOYA SELATAN</td><td>JL PANJANG ARTERI</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEBON JERUK</td><td>KELAPA DUA</td><td>JL. PANJANG ALTERI KELAPA DUA SASAK</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>JPO BERMIS JALAN PERINTIS KEMERDEKAAN</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KENARI</td><td>JALAN DIPONEGORO KELURAHAN KENARI KECAMATAN SENEN JAKARTA PUSAT</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KENARI</td><td>JALAN SALEMBA RAYA DEPAN PINTU MASUK RSCM</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>JL. PAHLAWAN REVOLUSI RT. 003 RW. 06</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KRAMAT</td><td>JL. KRAMAT PULO DALAM 2</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN BARU</td><td>KRAMAT PELA</td><td>TAMAN AYODYA JL.MAHAKAM</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>KRUKUT</td><td>JLN. KEBAHAGIAAN</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KWITANG</td><td>JLN. INSPEKSI CILIWUNG</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KWITANG</td><td>JLN. KEMBANG 2</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KWITANG</td><td>JLN. KEMBANG 3</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KWITANG</td><td>JLN. KRAMAT BUNTU</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>KWITANG</td><td>JLN. KRAMAT KWITANG TAMAN GN. AGUNG</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KOJA</td><td>LAGOA</td><td>TL KRAMAT JAYA KEL. LAGOA</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>JL AL UMAR</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>JL MANUNGGAL 17</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>JL MESJID AL UMAR</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CIPAYUNG</td><td>LUBANG BUAYA</td><td>JL MONUMEN PANCASILA SAITI</td><td>PENYALAHGUNAAN (FASUM/FASOS)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>KEBON KOSONG</td><td>RADIO P2SC</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>KEMBANGAN</td><td>KEMBANGAN SELATAN</td><td>JL. KEMBANGAN SELATAN</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>KUNINGAN BARAT</td><td>JL. PONCOL JAYA RT. 002/05</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>PAPANGGO</td><td>JL DANAU CINCIN UTARA</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>PASEBAN</td><td>JL. KRAMAT SAWAH RW 02 PASEBAN SENEN</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>PELA MAMPANG</td><td>JL. BANGKA RAYA, PERTIGAAN BANGKA IX</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. SURYOPRANOTO</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. ZAINUL ARIFIN</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>CILANDAK</td><td>PONDOK LABU</td><td>JL. FATMAWATI RAYA</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>SUMUR BATU</td><td>JL BIDURI BULAN RAYA</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>JALAN GANGGENG 12</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>SUNGAI BAMBU</td><td>JALAN JATI</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>TANJUNG PRIOK</td><td>WARAKAS</td><td>JL. WARAKAS V RW. 010</td><td>KONFLIK (ORMAS / WARGA)</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PASAR REBO</td><td>BARU</td><td>JL. PUSKESMAS RT.08/01 (PEREMPATAN PERBATASAN DENGAN KEL. CIJANTUNG)</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>CAKUNG BARAT</td><td>JL. RAYA BEKASI KM. 23</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>CEMPAKA BARU</td><td>JL. LETJEN SUPRAPTO</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>DUREN SAWIT</td><td>JL. EKONOMI RT.002 RW.02</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>JOHAR BARU</td><td>GALUR</td><td>JL. GALUR JAYA</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>KEMAYORAN</td><td>HARAPAN MULYA</td><td>JL. LETJEN SOEPRAPTO</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PENJARINGAN</td><td>KAMAL MUARA</td><td>BUNDERAN KAMAL JL.KAMAL MUARA</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KAMPUNG BALI</td><td>JATI BARU RAYA</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>JOHAR BARU</td><td>KAMPUNG RAWA</td><td>RAWA SELATAN II DAN GALUR JAYA</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>KARANG ANYAR</td><td>JALAN MANGGA BESAR RAYA</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>TANAH ABANG</td><td>KARET TENGSIN</td><td>JL. JENDRAL SUDIRMAN</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>PULO GADUNG</td><td>KAYU PUTIH</td><td>JL PULOMAS RAYA - JL PULOMAS JAYA</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA SELATAN</td><td>JL. CIPUTAT RAYA</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>KEBAYORAN LAMA</td><td>KEBAYORAN LAMA SELATAN</td><td>JL. CIPUTAT RAYA BUNGUR</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>KEBON KELAPA</td><td>JPO JL. JUANDA RAYA</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>MATRAMAN</td><td>KEBON MANGGIS</td><td>JL. MATRAMAN RAYA, HALTE BIS GUNUNG ANTANG KEBON MANGGIS</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING BARAT</td><td>JL. BOLEVARD BARAT DEPAN MOI</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING BARAT</td><td>JL. BOULEVARD BARAT</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>KELAPA GADING TIMUR</td><td>BUNDARAN LA PIAZZA</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>DUREN SAWIT</td><td>KLENDER</td><td>JL. DERMAGA RAYA RT. 006 RW. 010 ( TAMAN DEMAGA DEPAN INDOMARET )</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>KRUKUT</td><td>JLN. KERAJINAN</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA BARAT</td><td>TAMANSARI</td><td>KRUKUT</td><td>JLN. THALIB</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>MAMPANG PRAPATAN</td><td>KUNINGAN BARAT</td><td>JL. PONCOL JAYA</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA SELATAN</td><td>TEBET</td><td>MANGGARAI</td><td>JL. MANGGARAI UTARA 1</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SAWAH BESAR</td><td>PASAR BARU</td><td>JALAN JUANDA</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>PASEBAN</td><td>JALAN PASEBAN RAYA RW 03 PASEBAN SENEN</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>KELAPA GADING</td><td>PEGANGSAAN DUA</td><td>JL.PEGANGSAAN DUA</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>GAMBIR</td><td>PETOJO UTARA</td><td>JL. PEMBANGUNAN II</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA UTARA</td><td>PENJARINGAN</td><td>PLUIT</td><td>JLN PLUIT KARANG AYU.</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA TIMUR</td><td>CAKUNG</td><td>PULO GEBANG</td><td>JL RAWA KUNING RW 02</td><td>KRIMINALITAS</td></tr>
+        <tr><td>2023</td><td>JAKARTA PUSAT</td><td>SENEN</td><td>SENEN</td><td>JL. STASIUN PASAR SENEN</td><td>KRIMINALITAS</td></tr>
+      </tbody>
+    </table>
+  
+  </body>
+</html >
