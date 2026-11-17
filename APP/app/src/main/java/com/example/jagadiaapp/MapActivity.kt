@@ -3,6 +3,7 @@ package com.example.jagadiaapp
 import android.Manifest
 import android.annotation.SuppressLint
 import android.animation.ValueAnimator
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.content.res.ColorStateList
 import android.graphics.Typeface
@@ -272,9 +273,19 @@ class MapActivity : AppCompatActivity() {
 
         // Bottom nav: Peta sedang aktif. TODO: buka halaman Riwayat & Laporkan.
         findViewById<View>(R.id.navHistory).setOnClickListener { /* TODO */ }
-        findViewById<View>(R.id.navReport).setOnClickListener { /* TODO */ }
+        findViewById<View>(R.id.navReport).setOnClickListener { openReport() }
 
         setupDetailSheet()
+    }
+
+    /** Buka halaman Laporkan; kirim posisi GPS terakhir supaya peta laporan langsung di lokasi pengguna. */
+    private fun openReport() {
+        val i = Intent(this, ReportActivity::class.java)
+        lastGps?.let {
+            i.putExtra(ReportActivity.EXTRA_LAT, it.latitude)
+            i.putExtra(ReportActivity.EXTRA_LNG, it.longitude)
+        }
+        startActivity(i)
     }
 
     /** Tombol Lokasiku terisi (teal) saat kamera mengikuti pengguna, putih saat tidak. */
