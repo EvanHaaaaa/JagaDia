@@ -206,7 +206,7 @@ Kelompok 4 · PPTI 24
 | Nama     | Peran                        | GitHub          |
 |----------|------------------------------|-----------------|
 | Agatha   | Product Owner & UI/UX Design | agathadys       |
-| Evan     | Scrum Master                 | EvanHaaaaa      |
+| Evan     | Scrum Master & ML Engineer   | EvanHaaaaa      |
 | Gerald   | Machine Learning             | GeraldC3lloz    |
 | Kenny    | Backend                      | AnnonymusKenoii |
 | Mariesza | Frontend                     | MarieszaGuppy   |
