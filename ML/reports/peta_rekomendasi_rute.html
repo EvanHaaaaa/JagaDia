@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6eb186ec408db1aaa0c8f6ad1713c006 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6eb186ec408db1aaa0c8f6ad1713c006" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6eb186ec408db1aaa0c8f6ad1713c006 = L.map(
+                "map_6eb186ec408db1aaa0c8f6ad1713c006",
+                {
+                    center: [-6.185, 106.845],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6687306209d478e65e5fd6ca67fa2ec0 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_6687306209d478e65e5fd6ca67fa2ec0.addTo(map_6eb186ec408db1aaa0c8f6ad1713c006);
+        
+    
+            var marker_fdd3cd821f1d6223db4b3b2d239fa004 = L.marker(
+                [-6.1754, 106.8451],
+                {}
+            ).addTo(map_6eb186ec408db1aaa0c8f6ad1713c006);
+        
+    
+            var icon_d4924a7da45983127b173569bd720aa5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fdd3cd821f1d6223db4b3b2d239fa004.setIcon(icon_d4924a7da45983127b173569bd720aa5);
+        
+    
+        var popup_e53e408e63c72598706761dec7df3c8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_233feabc252ec8188f90bd76203abe1f = $(`<div id="html_233feabc252ec8188f90bd76203abe1f" style="width: 100.0%; height: 100.0%;"><b>Titik Awal:</b> Stasiun Pasar Senen</div>`)[0];
+                popup_e53e408e63c72598706761dec7df3c8e.setContent(html_233feabc252ec8188f90bd76203abe1f);
+            
+        
+
+        marker_fdd3cd821f1d6223db4b3b2d239fa004.bindPopup(popup_e53e408e63c72598706761dec7df3c8e)
+        ;
+
+        
+    
+    
+            var marker_ae2f0c81f62bf2cab3a597d87d95492d = L.marker(
+                [-6.195, 106.842],
+                {}
+            ).addTo(map_6eb186ec408db1aaa0c8f6ad1713c006);
+        
+    
+            var icon_b64e1602d4da9412130d6fd47e21031b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ae2f0c81f62bf2cab3a597d87d95492d.setIcon(icon_b64e1602d4da9412130d6fd47e21031b);
+        
+    
+        var popup_4d305e2ddd3e7e706a338fed0112c4f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8df49c16a976f64e191f10a0fc855be = $(`<div id="html_b8df49c16a976f64e191f10a0fc855be" style="width: 100.0%; height: 100.0%;"><b>Titik Tujuan:</b> Kawasan Menteng / Cikini</div>`)[0];
+                popup_4d305e2ddd3e7e706a338fed0112c4f2.setContent(html_b8df49c16a976f64e191f10a0fc855be);
+            
+        
+
+        marker_ae2f0c81f62bf2cab3a597d87d95492d.bindPopup(popup_4d305e2ddd3e7e706a338fed0112c4f2)
+        ;
+
+        
+    
+    
+            var circle_5fae30caad6672738d04c2bacef38deb = L.circle(
+                [-6.175199, 106.865153],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 3}
+            ).addTo(map_6eb186ec408db1aaa0c8f6ad1713c006);
+        
+    
+            circle_5fae30caad6672738d04c2bacef38deb.bindTooltip(
+                `<div>
+                     Hotspot #1: TAWURAN (WARGA / PELAJAR) (Risk: 0.9)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8c4477a3e33f4fca7dd57add06dcd84f = L.circle(
+                [-6.186008, 106.887442],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 3}
+            ).addTo(map_6eb186ec408db1aaa0c8f6ad1713c006);
+        
+    
+            circle_8c4477a3e33f4fca7dd57add06dcd84f.bindTooltip(
+                `<div>
+                     Hotspot #26: KRIMINALITAS (Risk: 0.82)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8fd3a514e12aacfab25625933d524f3c = L.circle(
+                [-6.17197, 106.860316],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 356.2, "stroke": true, "weight": 3}
+            ).addTo(map_6eb186ec408db1aaa0c8f6ad1713c006);
+        
+    
+            circle_8fd3a514e12aacfab25625933d524f3c.bindTooltip(
+                `<div>
+                     Hotspot #15: KRIMINALITAS (Risk: 0.82)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_17c5fb637c3aaf68a9dbaacb875b787f = L.circle(
+                [-6.098122, 106.714188],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 3}
+            ).addTo(map_6eb186ec408db1aaa0c8f6ad1713c006);
+        
+    
+            circle_17c5fb637c3aaf68a9dbaacb875b787f.bindTooltip(
+                `<div>
+                     Hotspot #20: PAK OGAH (Risk: 0.79)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9c55683f18bf99dd2ce5b8ff309390cb = L.circle(
+                [-6.205624, 106.855666],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 3}
+            ).addTo(map_6eb186ec408db1aaa0c8f6ad1713c006);
+        
+    
+            circle_9c55683f18bf99dd2ce5b8ff309390cb.bindTooltip(
+                `<div>
+                     Hotspot #30: KRIMINALITAS (Risk: 0.79)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_639eb35e5187413ed9ab1ed83d34c3f7 = L.polyline(
+                [[-6.1754, 106.8451], [-6.18, 106.8455], [-6.185, 106.846], [-6.191, 106.8465], [-6.1945, 106.845], [-6.195, 106.842]],
+                {"bubblingMouseEvents": true, "color": "#2b9348", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2b9348", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.95, "smoothFactor": 1.0, "stroke": true, "weight": 7}
+            ).addTo(map_6eb186ec408db1aaa0c8f6ad1713c006);
+        
+    
+        var popup_8dff5f6714ea9887561cb4cb9ecde0b9 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_47c129dd7663400ee7934f49629d5921 = $(`<div id="html_47c129dd7663400ee7934f49629d5921" style="width: 100.0%; height: 100.0%;">     <b>Peringkat #1:</b> Jalur Protokol Kramat - Salemba (Arteri Terang)<br>     <b>Jarak:</b> 2.5 km | <b>Waktu:</b> 5.6 mnt<br>     <b>Safety Score:</b> <span style='color:green;font-weight:bold;'>99.6/100</span><br>     <b>Rata-rata Risiko:</b> 0.4%<br>     <b>Total Cost:</b> 2554.7     </div>`)[0];
+                popup_8dff5f6714ea9887561cb4cb9ecde0b9.setContent(html_47c129dd7663400ee7934f49629d5921);
+            
+        
+
+        poly_line_639eb35e5187413ed9ab1ed83d34c3f7.bindPopup(popup_8dff5f6714ea9887561cb4cb9ecde0b9)
+        ;
+
+        
+    
+    
+            poly_line_639eb35e5187413ed9ab1ed83d34c3f7.bindTooltip(
+                `<div>
+                     Peringkat #1: Jalur Protokol Kramat - Salemba (Arteri Terang) (2.5 km, Safety: 99.6)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_221a587d9ad9c79e11ea4ff307fb6d3c = L.polyline(
+                [[-6.1754, 106.8451], [-6.178, 106.839], [-6.184, 106.8385], [-6.19, 106.839], [-6.195, 106.842]],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f77f00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_6eb186ec408db1aaa0c8f6ad1713c006);
+        
+    
+        var popup_a8b30057d5d6b87298c69fba775b42d0 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_790237ab596c47b0e8d3e8080f82acf4 = $(`<div id="html_790237ab596c47b0e8d3e8080f82acf4" style="width: 100.0%; height: 100.0%;">     <b>Peringkat #2:</b> Jalur Kolektor Kwitang (Kolektor)<br>     <b>Jarak:</b> 2.72 km | <b>Waktu:</b> 6.0 mnt<br>     <b>Safety Score:</b> <span style='color:green;font-weight:bold;'>65.9/100</span><br>     <b>Rata-rata Risiko:</b> 34.1%<br>     <b>Total Cost:</b> 8278.6     </div>`)[0];
+                popup_a8b30057d5d6b87298c69fba775b42d0.setContent(html_790237ab596c47b0e8d3e8080f82acf4);
+            
+        
+
+        poly_line_221a587d9ad9c79e11ea4ff307fb6d3c.bindPopup(popup_a8b30057d5d6b87298c69fba775b42d0)
+        ;
+
+        
+    
+    
+            poly_line_221a587d9ad9c79e11ea4ff307fb6d3c.bindTooltip(
+                `<div>
+                     Peringkat #2: Jalur Kolektor Kwitang (Kolektor) (2.72 km, Safety: 65.9)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_00cd116c985420d948a0b9fe50f57c9f = L.polyline(
+                [[-6.1754, 106.8451], [-6.1752, 106.852], [-6.1751, 106.8651], [-6.182, 106.863], [-6.188, 106.855], [-6.195, 106.842]],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d90429", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_6eb186ec408db1aaa0c8f6ad1713c006);
+        
+    
+        var popup_70611dd7740ae8aa0ef2d7c896c4f81b = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_235ab35ed378b758cf20b61a4daf2d94 = $(`<div id="html_235ab35ed378b758cf20b61a4daf2d94" style="width: 100.0%; height: 100.0%;">     <b>Peringkat #3:</b> Jalur Pintas Johar Baru (Gang & Lokal)<br>     <b>Jarak:</b> 5.76 km | <b>Waktu:</b> 12.8 mnt<br>     <b>Safety Score:</b> <span style='color:green;font-weight:bold;'>0.1/100</span><br>     <b>Rata-rata Risiko:</b> 99.9%<br>     <b>Total Cost:</b> 40249.9     </div>`)[0];
+                popup_70611dd7740ae8aa0ef2d7c896c4f81b.setContent(html_235ab35ed378b758cf20b61a4daf2d94);
+            
+        
+
+        poly_line_00cd116c985420d948a0b9fe50f57c9f.bindPopup(popup_70611dd7740ae8aa0ef2d7c896c4f81b)
+        ;
+
+        
+    
+    
+            poly_line_00cd116c985420d948a0b9fe50f57c9f.bindTooltip(
+                `<div>
+                     Peringkat #3: Jalur Pintas Johar Baru (Gang & Lokal) (5.76 km, Safety: 0.1)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
