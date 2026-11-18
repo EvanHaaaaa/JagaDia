@@ -3,6 +3,10 @@ package com.example.jagadiaapp
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
+import android.location.Location
+import android.location.LocationListener
+import android.location.LocationManager
+import android.util.Log
 import android.graphics.Color
 import android.os.Bundle
 import android.view.Gravity
@@ -54,6 +58,9 @@ class MapActivity : AppCompatActivity() {
 
     private var zonesJson: String = ""
     private var timeMode = TimeMode.TONIGHT
+
+    // Pendengar lokasi dari GPS provider (yang diisi Extended Controls emulator)
+    private var gpsListener: LocationListener? = null
 
     // key = nama properti di risk_zones.json
     private enum class TimeMode(val key: String, val title: String) {
@@ -293,34 +300,67 @@ class MapActivity : AppCompatActivity() {
 
     @SuppressLint("MissingPermission")
     private fun enableLocation(style: Style) {
-        map?.locationComponent?.apply {
-            activateLocationComponent(
-                LocationComponentActivationOptions.builder(
-                    this@MapActivity, style
-                ).build()
-            )
+        val lc = map?.locationComponent ?: return
+        lc.activateLocationComponent(
+            LocationComponentActivationOptions.builder(this, style)
+                .useDefaultLocationEngine(false) // lokasi disuplai manual dari GPS di bawah
+                .build()
+        )
+        lc.isLocationComponentEnabled = true
+        lc.cameraMode = CameraMode.NONE      // ganti ke CameraMode.TRACKING kalau kamera mau mengikuti titik biru
+        lc.renderMode = RenderMode.COMPASS
+        startGpsUpdates()
+    }
 
-            isLocationComponentEnabled = true
+    /** Ambil lokasi langsung dari GPS_PROVIDER lalu dorong ke titik biru. */
+    @SuppressLint("MissingPermission")
+    private fun startGpsUpdates() {
+        if (gpsListener != null) return
+        val lm = getSystemService(LocationManager::class.java) ?: return
+        if (!lm.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+            Log.w("GPS_CHECK", "GPS provider mati. Nyalakan Location di Settings emulator.")
+            return
+        }
 
-            // Matikan tracking sementara
-            cameraMode = CameraMode.NONE
-
-            renderMode = RenderMode.COMPASS
-
-            map?.locationComponent?.apply {
-                android.util.Log.d(
-                    "GPS_CHECK",
-                    "Last location: $lastKnownLocation"
-                )
+        val listener = object : LocationListener {
+            override fun onLocationChanged(location: Location) {
+                Log.d("GPS_CHECK", "update ${location.provider}: ${location.latitude}, ${location.longitude}")
+                map?.locationComponent?.forceLocationUpdate(location)
             }
+
+            // Wajib ada untuk Android lama (di bawah API 30)
+            override fun onStatusChanged(provider: String?, status: Int, extras: Bundle?) {}
+            override fun onProviderEnabled(provider: String) {}
+            override fun onProviderDisabled(provider: String) {}
+        }
+        gpsListener = listener
+        lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000L, 0f, listener)
+
+        // Posisi GPS terakhir yang tersimpan (kalau ada) langsung dipakai
+        lm.getLastKnownLocation(LocationManager.GPS_PROVIDER)?.let {
+            Log.d("GPS_CHECK", "last GPS: ${it.latitude}, ${it.longitude}")
+            map?.locationComponent?.forceLocationUpdate(it)
         }
     }
 
+    private fun stopGpsUpdates() {
+        gpsListener?.let { getSystemService(LocationManager::class.java)?.removeUpdates(it) }
+        gpsListener = null
+    }
+
     // ---------- 5. LIFECYCLE (wajib diteruskan ke MapView) ----------
-    override fun onStart() { super.onStart(); mapView.onStart() }
+    override fun onStart() {
+        super.onStart()
+        mapView.onStart()
+        if (map?.locationComponent?.isLocationComponentActivated == true) startGpsUpdates()
+    }
     override fun onResume() { super.onResume(); mapView.onResume() }
     override fun onPause() { super.onPause(); mapView.onPause() }
-    override fun onStop() { super.onStop(); mapView.onStop() }
+    override fun onStop() {
+        super.onStop()
+        mapView.onStop()
+        stopGpsUpdates()
+    }
     override fun onLowMemory() { super.onLowMemory(); mapView.onLowMemory() }
     override fun onDestroy() { super.onDestroy(); mapView.onDestroy() }
     override fun onSaveInstanceState(outState: Bundle) {
