@@ -62,6 +62,12 @@ python -m venv .venv
 pip install -r req.txt
 ```
 
+### Langkah 4: Daftarkan Kernel untuk Jupyter / VSCode (Opsional tapi Direkomendasikan)
+Agar environment ini dapat langsung dipilih saat membuka file notebook (`.ipynb`):
+```bash
+python -m ipykernel install --user --name=jagadia-env --display-name="Python (JagaDia)"
+```
+
 ---
 
 ## 4. Cara Menjalankan Pipeline & Baseline Model
@@ -106,18 +112,29 @@ python -m src.evaluate
    - [x] Template struktur modul `ML/`
    - [x] Baseline script Tabular: Random Forest & XGBoost
    - [ ] Integrasi dataset riil (Kepolisian / Open Data Jakarta)
-2. **Sprint 2 (Spatial Enhancement):**
-   - [ ] Implementasi Spatial Binning (Uber H3 Hexagon / S2 Geometry)
-   - [ ] Kernel Density Estimation (KDE) untuk hotspot mapping
-3. **Sprint 3 (Deep Learning & Advanced):**
-   - [ ] Eksperimen Spatio-Temporal Graph Neural Network (ST-GNN) memanfaatkan topologi jalan
-   - [ ] Ekspor model ke format ONNX agar inferensi di backend FastAPI sangat cepat (<20ms per titik).
+2. **Sprint 2 (Spatial Clustering & Hotspot Profiling):**
+   - [x] Preprocessing & visualisasi spasial `data_bersih.csv` (EDA_dan_Preprocessing_data.ipynb)
+   - [x] Spatial Clustering DBSCAN dengan Metrik Haversine (`src/clustering.py`)
+   - [x] Penentuan Epsilon & MinPts dengan K-Distance Graph / Elbow Method (Session 19-20 Slide 38)
+   - [x] Profiling cluster & perhitungan skor risiko kerawanan (Centroid, Radius, Severity)
+   - [x] Ekspor GeoJSON format mobile `risk_zones.json` dan visualisasi Folium HTML
+3. **Sprint 3 (Classification & Recommender):**
+   - [x] Perbandingan Klasifikasi Risiko: Logistic Regression vs SVM vs Random Forest (Session 07-08, 15-16, 17-18)
+   - [x] Stratified 5-Fold Cross Validation & Regularization (Session 09-10)
+   - [x] Evaluasi komprehensif: ROC-AUC, PR-AUC, Recall (sensitivitas), Confusion Matrix
+   - [x] Implementasi `predict_proba()` untuk skor probabilitas kontinu $[0.0 - 1.0]$
+   - [x] Serialisasi model terbaik `best_risk_classifier.joblib` untuk integrasi FastAPI (Session 23-24)
+   - [x] Recommender System Safety Penalty Scoring untuk perutean OSRM/Google Maps (Session 13-14)
+   - [x] Ekspor format GeoJSON LineString siap pakai untuk Android `MapActivity.showRoute(geoJson)`
 
 ---
 
 ## 7. Catatan Eksperimen (Experiment Tracker)
 
-| ID | Tanggal | Model | Fitur Digunakan | ROC-AUC | F1-Score | Catatan |
-|---|---|---|---|---|---|---|
-| EXP-001 | 2026-11-13 | Random Forest Baseline | Temporal + Mock Env | - | - | Initial baseline setup |
-| EXP-002 | - | XGBoost Baseline | Temporal + Mock Env | - | - | Menunggu running dengan venv lokal |
+| ID | Tanggal | Model | Fitur Digunakan | Evaluasi / Output | Catatan |
+|---|---|---|---|---|---|
+| EXP-001 | 2026-11-13 | Random Forest Baseline | Temporal + Mock Env | - | Initial pipeline setup |
+| EXP-002 | 2026-11-17 | Preprocessing Data Riil | Lat, Lon, Wilayah, Jenis Rawan | 1.008 titik valid | Pembersihan anomali koordinat Jakarta |
+| EXP-003 | 2026-11-17 | Spatial DBSCAN (Haversine) | Lat, Lon (Radian) | Cluster Hotspots, Core/Border/Noise, GeoJSON | Sesi 19-20 Clustering (eps=350m, MinPts=4) |
+| EXP-004 | 2026-11-17 | Risk Classification Comparison | Spatio-temporal + DBSCAN Hotspots + Env | 5-Fold CV: Acc, Recall, ROC-AUC, PR-AUC | Sesi 07-08, 09-10, 15-16, 17-18 (LogReg, SVM, RF) |
+| EXP-005 | 2026-11-17 | Safe Route Recommender | Content-Based Route Features + Alpha | Total Cost Ranking & GeoJSON LineString | Sesi 13-14 Recommender System (Trade-off Cepat vs Aman) |

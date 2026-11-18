@@ -1,28 +1,2485 @@
-{"type":"FeatureCollection","features":[
-  {"type":"Feature",
-    "properties":{"name":"Zona merah","radius":110,"risk_now":0.85,"risk_1h":0.90,"risk_night":1.00,
-      "area":"Jl. Duren Sawit Raya","lighting":"Terbatas",
-      "incidents":[
-        {"type":"Jambret","place":"Jl. Duren Sawit Raya","when":"2 Hari lalu • 18.25"},
-        {"type":"Begal","place":"Dekat Jl. Kapuk II","when":"11 Hari lalu • 23.05"}
-      ]},
-    "geometry":{"type":"Point","coordinates":[106.9020,-6.2172]}},
-  {"type":"Feature",
-    "properties":{"name":"Zona kuning 1","radius":100,"risk_now":0.50,"risk_1h":0.55,"risk_night":0.65,
-      "area":"Jl. Bulak Barat","lighting":"Memadai",
-      "incidents":[
-        {"type":"Jambret","place":"Jl. Bulak Barat","when":"6 Hari lalu • 19.40"}
-      ]},
-    "geometry":{"type":"Point","coordinates":[106.9058,-6.2215]}},
-  {"type":"Feature",
-    "properties":{"name":"Zona kuning 2","radius":80,"risk_now":0.45,"risk_1h":0.50,"risk_night":0.55,
-      "area":"Jl. Kapuk II","lighting":"Memadai",
-      "incidents":[
-        {"type":"Pencurian","place":"Jl. Kapuk II","when":"9 Hari lalu • 02.15"}
-      ]},
-    "geometry":{"type":"Point","coordinates":[106.9050,-6.2185]}},
-  {"type":"Feature",
-    "properties":{"name":"Zona hijau","radius":90,"risk_now":0.10,"risk_1h":0.15,"risk_night":0.25,
-      "area":"Jl. Pahlawan Revolusi","lighting":"Baik","incidents":[]},
-    "geometry":{"type":"Point","coordinates":[106.9012,-6.2228]}}
-]}
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona merah",
+        "radius": 80,
+        "risk_now": 0.9,
+        "risk_1h": 0.95,
+        "risk_night": 1.0,
+        "risk": 0.9,
+        "area": "Kel. Galur, Johar Baru",
+        "lighting": "Terbatas",
+        "incidents": [
+          {
+            "type": "Tawuran (Warga / Pelajar)",
+            "place": "Kel. Galur",
+            "when": "5 Hari lalu \u2022 19.42"
+          },
+          {
+            "type": "Kriminalitas",
+            "place": "Kel. Galur",
+            "when": "3 Hari lalu \u2022 23.11"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Galur",
+            "when": "9 Hari lalu \u2022 21.49"
+          }
+        ],
+        "cluster_id": 1,
+        "incident_count": 5,
+        "top_incident": "TAWURAN (WARGA / PELAJAR)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8652,
+          -6.1752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona merah 2",
+        "radius": 80,
+        "risk_now": 0.82,
+        "risk_1h": 0.87,
+        "risk_night": 0.94,
+        "risk": 0.82,
+        "area": "Kel. Kayu Putih, Pulogadung",
+        "lighting": "Terbatas",
+        "incidents": [
+          {
+            "type": "Kriminalitas",
+            "place": "Kel. Kayu Putih",
+            "when": "9 Hari lalu \u2022 23.35"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Kayu Putih",
+            "when": "12 Hari lalu \u2022 23.15"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Kayu Putih",
+            "when": "9 Hari lalu \u2022 22.22"
+          }
+        ],
+        "cluster_id": 26,
+        "incident_count": 8,
+        "top_incident": "KRIMINALITAS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8874,
+          -6.186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona merah 3",
+        "radius": 336,
+        "risk_now": 0.82,
+        "risk_1h": 0.87,
+        "risk_night": 0.94,
+        "risk": 0.82,
+        "area": "Kel. Cempaka Baru, Johar Baru",
+        "lighting": "Terbatas",
+        "incidents": [
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Galur",
+            "when": "7 Hari lalu \u2022 22.54"
+          },
+          {
+            "type": "Kriminalitas",
+            "place": "Kel. Harapan Mulya",
+            "when": "9 Hari lalu \u2022 22.56"
+          },
+          {
+            "type": "Kriminalitas",
+            "place": "Kel. Cempaka Baru",
+            "when": "3 Hari lalu \u2022 22.25"
+          }
+        ],
+        "cluster_id": 15,
+        "incident_count": 4,
+        "top_incident": "KRIMINALITAS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8603,
+          -6.172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona merah 4",
+        "radius": 80,
+        "risk_now": 0.79,
+        "risk_1h": 0.84,
+        "risk_night": 0.91,
+        "risk": 0.79,
+        "area": "Kel. Kamal Muara, Penjaringan",
+        "lighting": "Terbatas",
+        "incidents": [
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Kamal Muara",
+            "when": "4 Hari lalu \u2022 23.04"
+          },
+          {
+            "type": "Kriminalitas",
+            "place": "Kel. Kamal Muara",
+            "when": "13 Hari lalu \u2022 22.51"
+          },
+          {
+            "type": "Tawuran (Warga / Pelajar)",
+            "place": "Kel. Kamal Muara",
+            "when": "13 Hari lalu \u2022 22.45"
+          }
+        ],
+        "cluster_id": 20,
+        "incident_count": 4,
+        "top_incident": "PAK OGAH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7142,
+          -6.0981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona merah 5",
+        "radius": 80,
+        "risk_now": 0.79,
+        "risk_1h": 0.84,
+        "risk_night": 0.91,
+        "risk": 0.79,
+        "area": "Kel. Kebon Manggis, Matraman",
+        "lighting": "Terbatas",
+        "incidents": [
+          {
+            "type": "Kriminalitas",
+            "place": "Kel. Kebon Manggis",
+            "when": "13 Hari lalu \u2022 18.02"
+          },
+          {
+            "type": "Tawuran (Warga / Pelajar)",
+            "place": "Kel. Kebon Manggis",
+            "when": "9 Hari lalu \u2022 23.42"
+          },
+          {
+            "type": "Pengamen",
+            "place": "Kel. Kebon Manggis",
+            "when": "10 Hari lalu \u2022 21.55"
+          }
+        ],
+        "cluster_id": 30,
+        "incident_count": 4,
+        "top_incident": "KRIMINALITAS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8557,
+          -6.2056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona merah 6",
+        "radius": 283,
+        "risk_now": 0.77,
+        "risk_1h": 0.82,
+        "risk_night": 0.89,
+        "risk": 0.77,
+        "area": "Kel. Pasar Baru, Sawah Besar",
+        "lighting": "Terbatas",
+        "incidents": [
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Pasar Baru",
+            "when": "3 Hari lalu \u2022 20.41"
+          },
+          {
+            "type": "Kriminalitas",
+            "place": "Kel. Pasar Baru",
+            "when": "6 Hari lalu \u2022 18.29"
+          },
+          {
+            "type": "Tawuran (Warga / Pelajar)",
+            "place": "Kel. Pasar Baru",
+            "when": "12 Hari lalu \u2022 18.20"
+          }
+        ],
+        "cluster_id": 14,
+        "incident_count": 4,
+        "top_incident": "PARKIR LIAR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8316,
+          -6.1684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona merah 7",
+        "radius": 401,
+        "risk_now": 0.76,
+        "risk_1h": 0.81,
+        "risk_night": 0.87,
+        "risk": 0.76,
+        "area": "Kel. Kartini, Sawah Besar",
+        "lighting": "Terbatas",
+        "incidents": [
+          {
+            "type": "Kriminalitas",
+            "place": "Kel. Karang Anyar",
+            "when": "7 Hari lalu \u2022 18.01"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Karang Anyar",
+            "when": "3 Hari lalu \u2022 23.37"
+          },
+          {
+            "type": "Ormas / Warga",
+            "place": "Kel. Karang Anyar",
+            "when": "9 Hari lalu \u2022 21.03"
+          }
+        ],
+        "cluster_id": 24,
+        "incident_count": 8,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8306,
+          -6.1554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona merah 8",
+        "radius": 521,
+        "risk_now": 0.75,
+        "risk_1h": 0.8,
+        "risk_night": 0.86,
+        "risk": 0.75,
+        "area": "Kel. Karet Tengsin, Tanah Abang",
+        "lighting": "Terbatas",
+        "incidents": [
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Karet Tengsin",
+            "when": "6 Hari lalu \u2022 20.51"
+          },
+          {
+            "type": "Tawuran (Warga / Pelajar)",
+            "place": "Kel. Karet Tengsin",
+            "when": "11 Hari lalu \u2022 20.39"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Karet Tengsin",
+            "when": "12 Hari lalu \u2022 22.11"
+          }
+        ],
+        "cluster_id": 25,
+        "incident_count": 7,
+        "top_incident": "TAWURAN (WARGA / PELAJAR)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8203,
+          -6.2041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona merah 9",
+        "radius": 106,
+        "risk_now": 0.75,
+        "risk_1h": 0.8,
+        "risk_night": 0.86,
+        "risk": 0.75,
+        "area": "Kel. Rambutan, Ciracas",
+        "lighting": "Terbatas",
+        "incidents": [
+          {
+            "type": "Tawuran (Warga / Pelajar)",
+            "place": "Kel. Susukan",
+            "when": "2 Hari lalu \u2022 22.48"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Rambutan",
+            "when": "9 Hari lalu \u2022 19.21"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Rambutan",
+            "when": "11 Hari lalu \u2022 20.42"
+          }
+        ],
+        "cluster_id": 56,
+        "incident_count": 5,
+        "top_incident": "TAWURAN (WARGA / PELAJAR)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.872,
+          -6.3021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona merah 10",
+        "radius": 544,
+        "risk_now": 0.73,
+        "risk_1h": 0.78,
+        "risk_night": 0.84,
+        "risk": 0.73,
+        "area": "Kel. Penggilingan, Cakung",
+        "lighting": "Terbatas",
+        "incidents": [
+          {
+            "type": "Tawuran (Warga / Pelajar)",
+            "place": "Kel. Malaka Jaya",
+            "when": "3 Hari lalu \u2022 23.23"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Penggilingan",
+            "when": "8 Hari lalu \u2022 21.35"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Penggilingan",
+            "when": "13 Hari lalu \u2022 20.43"
+          }
+        ],
+        "cluster_id": 58,
+        "incident_count": 8,
+        "top_incident": "PARKIR LIAR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9394,
+          -6.2153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona merah 11",
+        "radius": 220,
+        "risk_now": 0.71,
+        "risk_1h": 0.76,
+        "risk_night": 0.82,
+        "risk": 0.71,
+        "area": "Kel. Tanah Sereal, Tambora",
+        "lighting": "Terbatas",
+        "incidents": [
+          {
+            "type": "Kriminalitas",
+            "place": "Kel. Krukut",
+            "when": "5 Hari lalu \u2022 21.03"
+          },
+          {
+            "type": "Kriminalitas",
+            "place": "Kel. Krukut",
+            "when": "6 Hari lalu \u2022 23.05"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Tanah Sereal",
+            "when": "11 Hari lalu \u2022 19.33"
+          }
+        ],
+        "cluster_id": 36,
+        "incident_count": 5,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8098,
+          -6.1584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona merah 12",
+        "radius": 223,
+        "risk_now": 0.7,
+        "risk_1h": 0.75,
+        "risk_night": 0.8,
+        "risk": 0.7,
+        "area": "Kel. Senen, Senen",
+        "lighting": "Terbatas",
+        "incidents": [
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Senen",
+            "when": "11 Hari lalu \u2022 19.23"
+          },
+          {
+            "type": "Pedagang Asongan",
+            "place": "Kel. Senen",
+            "when": "6 Hari lalu \u2022 18.44"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Senen",
+            "when": "2 Hari lalu \u2022 18.33"
+          }
+        ],
+        "cluster_id": 52,
+        "incident_count": 6,
+        "top_incident": "PARKIR LIAR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.843,
+          -6.1755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona merah 13",
+        "radius": 592,
+        "risk_now": 0.7,
+        "risk_1h": 0.75,
+        "risk_night": 0.8,
+        "risk": 0.7,
+        "area": "Kel. Tanjung Priok, Tanjung Priok",
+        "lighting": "Terbatas",
+        "incidents": [
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Tanjung Priok",
+            "when": "6 Hari lalu \u2022 21.03"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Tanjung Priok",
+            "when": "1 Hari lalu \u2022 18.49"
+          },
+          {
+            "type": "Kriminalitas",
+            "place": "Kel. Tanjung Priok",
+            "when": "13 Hari lalu \u2022 18.22"
+          }
+        ],
+        "cluster_id": 49,
+        "incident_count": 7,
+        "top_incident": "PARKIR LIAR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8846,
+          -6.1107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 1",
+        "radius": 378,
+        "risk_now": 0.68,
+        "risk_1h": 0.73,
+        "risk_night": 0.78,
+        "risk": 0.68,
+        "area": "Kel. Kampung Bali, Tanah Abang",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Kampung Bali",
+            "when": "11 Hari lalu \u2022 20.37"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Kampung Bali",
+            "when": "13 Hari lalu \u2022 22.17"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Kampung Bali",
+            "when": "10 Hari lalu \u2022 19.54"
+          }
+        ],
+        "cluster_id": 21,
+        "incident_count": 10,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8149,
+          -6.184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 2",
+        "radius": 80,
+        "risk_now": 0.67,
+        "risk_1h": 0.72,
+        "risk_night": 0.77,
+        "risk": 0.67,
+        "area": "Kel. Petamburan, Tanah Abang",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pengemis",
+            "place": "Kel. Petamburan",
+            "when": "7 Hari lalu \u2022 19.23"
+          },
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Petamburan",
+            "when": "8 Hari lalu \u2022 21.53"
+          },
+          {
+            "type": "Tawuran (Warga / Pelajar)",
+            "place": "Kel. Petamburan",
+            "when": "13 Hari lalu \u2022 22.08"
+          }
+        ],
+        "cluster_id": 59,
+        "incident_count": 4,
+        "top_incident": "PENGEMIS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8079,
+          -6.1931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 3",
+        "radius": 793,
+        "risk_now": 0.67,
+        "risk_1h": 0.72,
+        "risk_night": 0.77,
+        "risk": 0.67,
+        "area": "Kel. Utan Panjang, Kemayoran",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Tawuran (Warga / Pelajar)",
+            "place": "Kel. Kampung Bali",
+            "when": "6 Hari lalu \u2022 22.33"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Kebon Kosong",
+            "when": "6 Hari lalu \u2022 23.23"
+          },
+          {
+            "type": "Pelanggaran Perijinan",
+            "place": "Kel. Kebon Kosong",
+            "when": "4 Hari lalu \u2022 23.10"
+          }
+        ],
+        "cluster_id": 22,
+        "incident_count": 16,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8499,
+          -6.1653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 4",
+        "radius": 371,
+        "risk_now": 0.66,
+        "risk_1h": 0.71,
+        "risk_night": 0.76,
+        "risk": 0.66,
+        "area": "Kel. Maphar, Taman Sari",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Mangga Besar",
+            "when": "4 Hari lalu \u2022 23.42"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Maphar",
+            "when": "1 Hari lalu \u2022 19.54"
+          },
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Maphar",
+            "when": "11 Hari lalu \u2022 19.15"
+          }
+        ],
+        "cluster_id": 7,
+        "incident_count": 5,
+        "top_incident": "PAK OGAH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8177,
+          -6.1499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 5",
+        "radius": 80,
+        "risk_now": 0.66,
+        "risk_1h": 0.71,
+        "risk_night": 0.76,
+        "risk": 0.66,
+        "area": "Kel. Kramat, Senen",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Kramat",
+            "when": "11 Hari lalu \u2022 19.41"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Kramat",
+            "when": "13 Hari lalu \u2022 19.08"
+          },
+          {
+            "type": "Tawuran (Warga / Pelajar)",
+            "place": "Kel. Kramat",
+            "when": "1 Hari lalu \u2022 22.54"
+          }
+        ],
+        "cluster_id": 33,
+        "incident_count": 5,
+        "top_incident": "PAK OGAH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8478,
+          -6.1852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 6",
+        "radius": 80,
+        "risk_now": 0.65,
+        "risk_1h": 0.7,
+        "risk_night": 0.75,
+        "risk": 0.65,
+        "area": "Kel. Paseban, Senen",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pedagang Asongan",
+            "place": "Kel. Paseban",
+            "when": "12 Hari lalu \u2022 18.15"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Paseban",
+            "when": "13 Hari lalu \u2022 23.54"
+          },
+          {
+            "type": "Kriminalitas",
+            "place": "Kel. Paseban",
+            "when": "9 Hari lalu \u2022 18.22"
+          }
+        ],
+        "cluster_id": 10,
+        "incident_count": 4,
+        "top_incident": "PEDAGANG ASONGAN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.854,
+          -6.1917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 7",
+        "radius": 333,
+        "risk_now": 0.65,
+        "risk_1h": 0.7,
+        "risk_night": 0.75,
+        "risk": 0.65,
+        "area": "Kel. Bali Mester, Jatinegara",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Kampung Melayu",
+            "when": "11 Hari lalu \u2022 21.16"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Bali Mester",
+            "when": "11 Hari lalu \u2022 23.51"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Bali Mester",
+            "when": "11 Hari lalu \u2022 22.02"
+          }
+        ],
+        "cluster_id": 40,
+        "incident_count": 5,
+        "top_incident": "PARKIR LIAR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8632,
+          -6.2134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 8",
+        "radius": 80,
+        "risk_now": 0.65,
+        "risk_1h": 0.7,
+        "risk_night": 0.75,
+        "risk": 0.65,
+        "area": "Kel. Cibubur, Ciracas",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Cibubur",
+            "when": "4 Hari lalu \u2022 18.57"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Cibubur",
+            "when": "7 Hari lalu \u2022 19.32"
+          },
+          {
+            "type": "Tawuran (Warga / Pelajar)",
+            "place": "Kel. Cibubur",
+            "when": "9 Hari lalu \u2022 18.27"
+          }
+        ],
+        "cluster_id": 44,
+        "incident_count": 4,
+        "top_incident": "PENYALAHGUNAAN (FASUM/FASOS)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8764,
+          -6.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 9",
+        "radius": 211,
+        "risk_now": 0.65,
+        "risk_1h": 0.7,
+        "risk_night": 0.75,
+        "risk": 0.65,
+        "area": "Kel. Kebon Kacang, Tanah Abang",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pengemis",
+            "place": "Kel. Kebon Kacang",
+            "when": "7 Hari lalu \u2022 22.33"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Kebon Kacang",
+            "when": "2 Hari lalu \u2022 18.45"
+          },
+          {
+            "type": "Tawuran (Warga / Pelajar)",
+            "place": "Kel. Kebon Kacang",
+            "when": "12 Hari lalu \u2022 23.27"
+          }
+        ],
+        "cluster_id": 28,
+        "incident_count": 4,
+        "top_incident": "PENGEMIS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8135,
+          -6.1909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 10",
+        "radius": 198,
+        "risk_now": 0.65,
+        "risk_1h": 0.7,
+        "risk_night": 0.75,
+        "risk": 0.65,
+        "area": "Kel. Krukut, Taman Sari",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pkl",
+            "place": "Kel. Krukut",
+            "when": "8 Hari lalu \u2022 21.37"
+          },
+          {
+            "type": "Tawuran (Warga / Pelajar)",
+            "place": "Kel. Krukut",
+            "when": "9 Hari lalu \u2022 22.32"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Krukut",
+            "when": "1 Hari lalu \u2022 22.48"
+          }
+        ],
+        "cluster_id": 37,
+        "incident_count": 4,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.815,
+          -6.1551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 11",
+        "radius": 220,
+        "risk_now": 0.64,
+        "risk_1h": 0.69,
+        "risk_night": 0.74,
+        "risk": 0.64,
+        "area": "Kel. Tanjung Duren Selatan, Grogol Petamburan",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pkl",
+            "place": "Kel. Tomang",
+            "when": "2 Hari lalu \u2022 23.14"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Tanjung Duren Selatan",
+            "when": "12 Hari lalu \u2022 20.46"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Tanjung Duren Selatan",
+            "when": "6 Hari lalu \u2022 20.16"
+          }
+        ],
+        "cluster_id": 50,
+        "incident_count": 5,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7924,
+          -6.1763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 12",
+        "radius": 261,
+        "risk_now": 0.63,
+        "risk_1h": 0.68,
+        "risk_night": 0.72,
+        "risk": 0.63,
+        "area": "Kel. Kampung Melayu, Jatinegara",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Tawuran (Warga / Pelajar)",
+            "place": "Kel. Kampung Melayu",
+            "when": "8 Hari lalu \u2022 20.34"
+          },
+          {
+            "type": "Pengemis",
+            "place": "Kel. Kampung Melayu",
+            "when": "10 Hari lalu \u2022 21.17"
+          },
+          {
+            "type": "Pengemis",
+            "place": "Kel. Bali Mester",
+            "when": "6 Hari lalu \u2022 21.53"
+          }
+        ],
+        "cluster_id": 23,
+        "incident_count": 4,
+        "top_incident": "PENGEMIS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8658,
+          -6.2248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 13",
+        "radius": 728,
+        "risk_now": 0.63,
+        "risk_1h": 0.68,
+        "risk_night": 0.72,
+        "risk": 0.63,
+        "area": "Kel. Sungai Bambu, Tanjung Priok",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pkl",
+            "place": "Kel. Lagoa",
+            "when": "13 Hari lalu \u2022 20.01"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Lagoa",
+            "when": "1 Hari lalu \u2022 22.41"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Lagoa",
+            "when": "12 Hari lalu \u2022 19.20"
+          }
+        ],
+        "cluster_id": 38,
+        "incident_count": 13,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8915,
+          -6.1298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 14",
+        "radius": 356,
+        "risk_now": 0.62,
+        "risk_1h": 0.67,
+        "risk_night": 0.71,
+        "risk": 0.62,
+        "area": "Kel. Glodok, Taman Sari",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pkl",
+            "place": "Kel. Glodok",
+            "when": "2 Hari lalu \u2022 18.59"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Glodok",
+            "when": "3 Hari lalu \u2022 20.55"
+          },
+          {
+            "type": "Pengemis",
+            "place": "Kel. Glodok",
+            "when": "8 Hari lalu \u2022 23.04"
+          }
+        ],
+        "cluster_id": 2,
+        "incident_count": 5,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8134,
+          -6.1444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 15",
+        "radius": 144,
+        "risk_now": 0.61,
+        "risk_1h": 0.66,
+        "risk_night": 0.7,
+        "risk": 0.61,
+        "area": "Kel. Cipedak, Jagakarsa",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Cipedak",
+            "when": "9 Hari lalu \u2022 22.43"
+          },
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Cipedak",
+            "when": "2 Hari lalu \u2022 18.21"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Cipedak",
+            "when": "8 Hari lalu \u2022 22.41"
+          }
+        ],
+        "cluster_id": 46,
+        "incident_count": 4,
+        "top_incident": "PAK OGAH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.803,
+          -6.3448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 16",
+        "radius": 336,
+        "risk_now": 0.61,
+        "risk_1h": 0.66,
+        "risk_night": 0.7,
+        "risk": 0.61,
+        "area": "Kel. Duri Kepa, Kebon Jeruk",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Jelambar Baru",
+            "when": "8 Hari lalu \u2022 19.51"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Jelambar Baru",
+            "when": "10 Hari lalu \u2022 22.10"
+          },
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Kedoya Selatan",
+            "when": "4 Hari lalu \u2022 22.01"
+          }
+        ],
+        "cluster_id": 18,
+        "incident_count": 6,
+        "top_incident": "PAK OGAH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7686,
+          -6.1882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 17",
+        "radius": 488,
+        "risk_now": 0.61,
+        "risk_1h": 0.66,
+        "risk_night": 0.7,
+        "risk": 0.61,
+        "area": "Kel. Serdang, Kemayoran",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Serdang",
+            "when": "13 Hari lalu \u2022 23.22"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Serdang",
+            "when": "3 Hari lalu \u2022 19.16"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Serdang",
+            "when": "13 Hari lalu \u2022 22.22"
+          }
+        ],
+        "cluster_id": 53,
+        "incident_count": 8,
+        "top_incident": "PARKIR LIAR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8649,
+          -6.1561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 18",
+        "radius": 304,
+        "risk_now": 0.61,
+        "risk_1h": 0.66,
+        "risk_night": 0.7,
+        "risk": 0.61,
+        "area": "Kel. Cengkareng Barat, Cengkareng",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Kamal Muara",
+            "when": "1 Hari lalu \u2022 23.29"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Cengkareng Barat",
+            "when": "3 Hari lalu \u2022 21.03"
+          },
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Cengkareng Barat",
+            "when": "11 Hari lalu \u2022 21.46"
+          }
+        ],
+        "cluster_id": 43,
+        "incident_count": 4,
+        "top_incident": "PAK OGAH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7268,
+          -6.1527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 19",
+        "radius": 1040,
+        "risk_now": 0.6,
+        "risk_1h": 0.65,
+        "risk_night": 0.69,
+        "risk": 0.6,
+        "area": "Kel. Pegangsaan, Menteng",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pkl",
+            "place": "Kel. Manggarai",
+            "when": "6 Hari lalu \u2022 23.21"
+          },
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Manggarai",
+            "when": "12 Hari lalu \u2022 22.13"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Manggarai",
+            "when": "13 Hari lalu \u2022 19.35"
+          }
+        ],
+        "cluster_id": 6,
+        "incident_count": 31,
+        "top_incident": "PENYALAHGUNAAN (FASUM/FASOS)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8465,
+          -6.2021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 20",
+        "radius": 325,
+        "risk_now": 0.6,
+        "risk_1h": 0.65,
+        "risk_night": 0.69,
+        "risk": 0.6,
+        "area": "Kel. Klender, Duren Sawit",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pkl",
+            "place": "Kel. Jatinegara",
+            "when": "5 Hari lalu \u2022 23.57"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Jatinegara Kaum",
+            "when": "12 Hari lalu \u2022 20.17"
+          },
+          {
+            "type": "Tawuran (Warga / Pelajar)",
+            "place": "Kel. Klender",
+            "when": "3 Hari lalu \u2022 20.10"
+          }
+        ],
+        "cluster_id": 17,
+        "incident_count": 14,
+        "top_incident": "PENGAMEN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9002,
+          -6.2127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 21",
+        "radius": 289,
+        "risk_now": 0.59,
+        "risk_1h": 0.64,
+        "risk_night": 0.68,
+        "risk": 0.59,
+        "area": "Kel. Ceger, Cipayung",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Kramatjati",
+            "when": "4 Hari lalu \u2022 23.20"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Ceger",
+            "when": "10 Hari lalu \u2022 20.25"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Ceger",
+            "when": "3 Hari lalu \u2022 21.40"
+          }
+        ],
+        "cluster_id": 35,
+        "incident_count": 7,
+        "top_incident": "PENYALAHGUNAAN (FASUM/FASOS)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8906,
+          -6.3152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 22",
+        "radius": 80,
+        "risk_now": 0.59,
+        "risk_1h": 0.64,
+        "risk_night": 0.68,
+        "risk": 0.59,
+        "area": "Kel. Petojo Utara, Gambir",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pengemis",
+            "place": "Kel. Duri Pulo",
+            "when": "9 Hari lalu \u2022 19.53"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Duri Pulo",
+            "when": "3 Hari lalu \u2022 21.20"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Gambir",
+            "when": "8 Hari lalu \u2022 22.32"
+          }
+        ],
+        "cluster_id": 0,
+        "incident_count": 23,
+        "top_incident": "PENGEMIS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8193,
+          -6.1705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 23",
+        "radius": 330,
+        "risk_now": 0.59,
+        "risk_1h": 0.64,
+        "risk_night": 0.68,
+        "risk": 0.59,
+        "area": "Kel. Kebon Kosong, Kemayoran",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Ormas / Warga",
+            "place": "Kel. Kebon Kosong",
+            "when": "1 Hari lalu \u2022 19.33"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Kebon Kosong",
+            "when": "12 Hari lalu \u2022 22.13"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Kebon Kosong",
+            "when": "3 Hari lalu \u2022 19.19"
+          }
+        ],
+        "cluster_id": 29,
+        "incident_count": 7,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8531,
+          -6.1555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 24",
+        "radius": 515,
+        "risk_now": 0.59,
+        "risk_1h": 0.64,
+        "risk_night": 0.68,
+        "risk": 0.59,
+        "area": "Kel. Pegadungan, Kalideres",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Pegadungan",
+            "when": "11 Hari lalu \u2022 18.57"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Pegadungan",
+            "when": "13 Hari lalu \u2022 20.52"
+          },
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Pegadungan",
+            "when": "7 Hari lalu \u2022 19.56"
+          }
+        ],
+        "cluster_id": 13,
+        "incident_count": 8,
+        "top_incident": "PAK OGAH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7041,
+          -6.1246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 25",
+        "radius": 869,
+        "risk_now": 0.58,
+        "risk_1h": 0.63,
+        "risk_night": 0.67,
+        "risk": 0.58,
+        "area": "Kel. Rawamangun, Pulogadung",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Jati",
+            "when": "7 Hari lalu \u2022 22.24"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Jati",
+            "when": "13 Hari lalu \u2022 20.18"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Jati",
+            "when": "13 Hari lalu \u2022 23.26"
+          }
+        ],
+        "cluster_id": 16,
+        "incident_count": 18,
+        "top_incident": "PARKIR LIAR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8878,
+          -6.1987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 26",
+        "radius": 260,
+        "risk_now": 0.58,
+        "risk_1h": 0.63,
+        "risk_night": 0.67,
+        "risk": 0.58,
+        "area": "Kel. Lubang Buaya, Cipayung",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Lubang Buaya",
+            "when": "11 Hari lalu \u2022 22.59"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Lubang Buaya",
+            "when": "5 Hari lalu \u2022 19.45"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Lubang Buaya",
+            "when": "4 Hari lalu \u2022 19.53"
+          }
+        ],
+        "cluster_id": 39,
+        "incident_count": 4,
+        "top_incident": "PENYALAHGUNAAN (FASUM/FASOS)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9123,
+          -6.3029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 27",
+        "radius": 314,
+        "risk_now": 0.58,
+        "risk_1h": 0.63,
+        "risk_night": 0.67,
+        "risk": 0.58,
+        "area": "Kel. Cempaka Putih Timur, Cempaka Putih",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Cempaka Putih Timur",
+            "when": "5 Hari lalu \u2022 19.09"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Cempaka Putih Timur",
+            "when": "1 Hari lalu \u2022 23.55"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Cempaka Putih Timur",
+            "when": "5 Hari lalu \u2022 19.55"
+          }
+        ],
+        "cluster_id": 42,
+        "incident_count": 7,
+        "top_incident": "PARKIR LIAR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8721,
+          -6.1753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 28",
+        "radius": 400,
+        "risk_now": 0.58,
+        "risk_1h": 0.63,
+        "risk_night": 0.67,
+        "risk": 0.58,
+        "area": "Kel. Setu, Cipayung",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Setu",
+            "when": "4 Hari lalu \u2022 20.48"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Setu",
+            "when": "3 Hari lalu \u2022 18.13"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Setu",
+            "when": "6 Hari lalu \u2022 22.19"
+          }
+        ],
+        "cluster_id": 54,
+        "incident_count": 5,
+        "top_incident": "PENYALAHGUNAAN (FASUM/FASOS)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9069,
+          -6.3225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 29",
+        "radius": 414,
+        "risk_now": 0.58,
+        "risk_1h": 0.63,
+        "risk_night": 0.67,
+        "risk": 0.58,
+        "area": "Kel. Lubang Buaya, Cipayung",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Lubang Buaya",
+            "when": "7 Hari lalu \u2022 18.36"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Lubang Buaya",
+            "when": "8 Hari lalu \u2022 19.04"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Lubang Buaya",
+            "when": "10 Hari lalu \u2022 20.15"
+          }
+        ],
+        "cluster_id": 4,
+        "incident_count": 16,
+        "top_incident": "PENYALAHGUNAAN (FASUM/FASOS)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9081,
+          -6.285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 30",
+        "radius": 409,
+        "risk_now": 0.57,
+        "risk_1h": 0.62,
+        "risk_night": 0.66,
+        "risk": 0.57,
+        "area": "Kel. Cipinang Besar Utara, Jatinegara",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Cakung Timur",
+            "when": "12 Hari lalu \u2022 22.57"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Cipinang Besar Utara",
+            "when": "9 Hari lalu \u2022 20.38"
+          },
+          {
+            "type": "Psk",
+            "place": "Kel. Cipinang Besar Utara",
+            "when": "11 Hari lalu \u2022 22.36"
+          }
+        ],
+        "cluster_id": 48,
+        "incident_count": 5,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8738,
+          -6.2153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 31",
+        "radius": 258,
+        "risk_now": 0.57,
+        "risk_1h": 0.62,
+        "risk_night": 0.66,
+        "risk": 0.57,
+        "area": "Kel. Kamal, Kalideres",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Kamal",
+            "when": "13 Hari lalu \u2022 21.43"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Kamal",
+            "when": "13 Hari lalu \u2022 18.08"
+          },
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Kamal",
+            "when": "2 Hari lalu \u2022 22.39"
+          }
+        ],
+        "cluster_id": 19,
+        "incident_count": 5,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7056,
+          -6.1052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 32",
+        "radius": 272,
+        "risk_now": 0.57,
+        "risk_1h": 0.62,
+        "risk_night": 0.66,
+        "risk": 0.57,
+        "area": "Kel. Ceger, Cipayung",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pengemis",
+            "place": "Kel. Ceger",
+            "when": "12 Hari lalu \u2022 20.23"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Ceger",
+            "when": "1 Hari lalu \u2022 20.48"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Ceger",
+            "when": "11 Hari lalu \u2022 20.19"
+          }
+        ],
+        "cluster_id": 41,
+        "incident_count": 5,
+        "top_incident": "PENYALAHGUNAAN (FASUM/FASOS)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8883,
+          -6.3051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 33",
+        "radius": 366,
+        "risk_now": 0.57,
+        "risk_1h": 0.62,
+        "risk_night": 0.66,
+        "risk": 0.57,
+        "area": "Kel. Cililitan, Kramatjati",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Kramat Jati",
+            "when": "12 Hari lalu \u2022 20.22"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Cililitan",
+            "when": "1 Hari lalu \u2022 21.46"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Cililitan",
+            "when": "13 Hari lalu \u2022 22.15"
+          }
+        ],
+        "cluster_id": 45,
+        "incident_count": 8,
+        "top_incident": "PARKIR LIAR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8652,
+          -6.2625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 34",
+        "radius": 346,
+        "risk_now": 0.56,
+        "risk_1h": 0.61,
+        "risk_night": 0.64,
+        "risk": 0.56,
+        "area": "Kel. Kebon Sirih, Menteng",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pkl",
+            "place": "Kel. Kapuk",
+            "when": "10 Hari lalu \u2022 23.25"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Kebon Sirih",
+            "when": "4 Hari lalu \u2022 22.11"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Kebon Sirih",
+            "when": "9 Hari lalu \u2022 19.50"
+          }
+        ],
+        "cluster_id": 31,
+        "incident_count": 4,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8289,
+          -6.1843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 35",
+        "radius": 299,
+        "risk_now": 0.56,
+        "risk_1h": 0.61,
+        "risk_night": 0.64,
+        "risk": 0.56,
+        "area": "Kel. Kramat Jati, Kramatjati",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Kramat Jati",
+            "when": "11 Hari lalu \u2022 19.44"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Kramat Jati",
+            "when": "12 Hari lalu \u2022 20.05"
+          },
+          {
+            "type": "Parkir Liar",
+            "place": "Kel. Kramat Jati",
+            "when": "5 Hari lalu \u2022 20.39"
+          }
+        ],
+        "cluster_id": 34,
+        "incident_count": 4,
+        "top_incident": "PARKIR LIAR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8679,
+          -6.2766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 36",
+        "radius": 319,
+        "risk_now": 0.56,
+        "risk_1h": 0.61,
+        "risk_night": 0.64,
+        "risk": 0.56,
+        "area": "Kel. Pasar Minggu, Pasar Minggu",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Pasar Minggu",
+            "when": "2 Hari lalu \u2022 23.26"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Pasar Minggu",
+            "when": "12 Hari lalu \u2022 20.20"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Pasar Minggu",
+            "when": "2 Hari lalu \u2022 22.30"
+          }
+        ],
+        "cluster_id": 9,
+        "incident_count": 17,
+        "top_incident": "PENYALAHGUNAAN (FASUM/FASOS)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8415,
+          -6.2857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 37",
+        "radius": 261,
+        "risk_now": 0.56,
+        "risk_1h": 0.61,
+        "risk_night": 0.64,
+        "risk": 0.56,
+        "area": "Kel. Duren Tiga, Mampang Prapatan",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pkl",
+            "place": "Kel. Mampang Prapatan",
+            "when": "6 Hari lalu \u2022 21.18"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Duren Tiga",
+            "when": "1 Hari lalu \u2022 23.42"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Duren Tiga",
+            "when": "11 Hari lalu \u2022 20.27"
+          }
+        ],
+        "cluster_id": 5,
+        "incident_count": 6,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8351,
+          -6.2544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 38",
+        "radius": 80,
+        "risk_now": 0.56,
+        "risk_1h": 0.61,
+        "risk_night": 0.64,
+        "risk": 0.56,
+        "area": "Kel. Gunung, Kebayoran Baru",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pengamen (Costplay)",
+            "place": "Kel. Gunung",
+            "when": "8 Hari lalu \u2022 18.23"
+          },
+          {
+            "type": "Pengamen",
+            "place": "Kel. Gunung",
+            "when": "4 Hari lalu \u2022 22.31"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Gunung",
+            "when": "1 Hari lalu \u2022 20.20"
+          }
+        ],
+        "cluster_id": 3,
+        "incident_count": 7,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7884,
+          -6.2348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 39",
+        "radius": 80,
+        "risk_now": 0.54,
+        "risk_1h": 0.59,
+        "risk_night": 0.62,
+        "risk": 0.54,
+        "area": "Kel. Cipinang, Pulogadung",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pengemis",
+            "place": "Kel. Cipinang",
+            "when": "6 Hari lalu \u2022 22.35"
+          },
+          {
+            "type": "Pedagang Asongan",
+            "place": "Kel. Cipinang",
+            "when": "9 Hari lalu \u2022 18.53"
+          },
+          {
+            "type": "Pedagang Asongan",
+            "place": "Kel. Cipinang",
+            "when": "8 Hari lalu \u2022 23.47"
+          }
+        ],
+        "cluster_id": 47,
+        "incident_count": 5,
+        "top_incident": "PEDAGANG ASONGAN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8949,
+          -6.209
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 40",
+        "radius": 486,
+        "risk_now": 0.54,
+        "risk_1h": 0.59,
+        "risk_night": 0.62,
+        "risk": 0.54,
+        "area": "Kel. Pegadungan, Kalideres",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pak Ogah",
+            "place": "Kel. Pegadungan",
+            "when": "4 Hari lalu \u2022 19.28"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Pegadungan",
+            "when": "12 Hari lalu \u2022 18.58"
+          },
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Pegadungan",
+            "when": "5 Hari lalu \u2022 21.21"
+          }
+        ],
+        "cluster_id": 12,
+        "incident_count": 15,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6923,
+          -6.1342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 41",
+        "radius": 394,
+        "risk_now": 0.54,
+        "risk_1h": 0.59,
+        "risk_night": 0.62,
+        "risk": 0.54,
+        "area": "Kel. Sunter Jaya, Tanjung Priok",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pkl",
+            "place": "Kel. Sunter Jaya",
+            "when": "4 Hari lalu \u2022 22.43"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Sunter Jaya",
+            "when": "5 Hari lalu \u2022 21.19"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Sunter Jaya",
+            "when": "9 Hari lalu \u2022 22.49"
+          }
+        ],
+        "cluster_id": 55,
+        "incident_count": 6,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8728,
+          -6.1462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 42",
+        "radius": 219,
+        "risk_now": 0.54,
+        "risk_1h": 0.59,
+        "risk_night": 0.62,
+        "risk": 0.54,
+        "area": "Kel. Pulo, Kebayoran Baru",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pengemis",
+            "place": "Kel. Melawai",
+            "when": "13 Hari lalu \u2022 22.55"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Pulo",
+            "when": "9 Hari lalu \u2022 20.51"
+          },
+          {
+            "type": "Pengemis",
+            "place": "Kel. Pulo",
+            "when": "13 Hari lalu \u2022 23.29"
+          }
+        ],
+        "cluster_id": 8,
+        "incident_count": 4,
+        "top_incident": "PENGEMIS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8008,
+          -6.2536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 43",
+        "radius": 241,
+        "risk_now": 0.54,
+        "risk_1h": 0.59,
+        "risk_night": 0.62,
+        "risk": 0.54,
+        "area": "Kel. Pulo, Kebayoran Baru",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Penyalahgunaan (Fasum/Fasos)",
+            "place": "Kel. Pela Mampang",
+            "when": "5 Hari lalu \u2022 23.48"
+          },
+          {
+            "type": "Pelanggaran Perijinan",
+            "place": "Kel. Pela Mampang",
+            "when": "7 Hari lalu \u2022 18.49"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Pulo",
+            "when": "12 Hari lalu \u2022 22.50"
+          }
+        ],
+        "cluster_id": 57,
+        "incident_count": 8,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8103,
+          -6.2512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 44",
+        "radius": 224,
+        "risk_now": 0.51,
+        "risk_1h": 0.56,
+        "risk_night": 0.59,
+        "risk": 0.51,
+        "area": "Kel. Kembangan Utara, Kembangan",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pkl",
+            "place": "Kel. Kembangan Selatan",
+            "when": "4 Hari lalu \u2022 19.25"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Kembangan Utara",
+            "when": "3 Hari lalu \u2022 19.22"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Kembangan Utara",
+            "when": "10 Hari lalu \u2022 23.59"
+          }
+        ],
+        "cluster_id": 32,
+        "incident_count": 4,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7333,
+          -6.185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 45",
+        "radius": 460,
+        "risk_now": 0.51,
+        "risk_1h": 0.56,
+        "risk_night": 0.59,
+        "risk": 0.51,
+        "area": "Kel. Kebayoran Lama Utara, Kebayoran Lama",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pkl",
+            "place": "Kel. Grogol Selatan",
+            "when": "12 Hari lalu \u2022 22.38"
+          },
+          {
+            "type": "Pengemis",
+            "place": "Kel. Kebayoran Lama Utara",
+            "when": "7 Hari lalu \u2022 22.07"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Kebayoran Lama Utara",
+            "when": "11 Hari lalu \u2022 19.57"
+          }
+        ],
+        "cluster_id": 27,
+        "incident_count": 5,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7813,
+          -6.2375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 46",
+        "radius": 80,
+        "risk_now": 0.51,
+        "risk_1h": 0.56,
+        "risk_night": 0.59,
+        "risk": 0.51,
+        "area": "Kel. Semanan, Kalideres",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pkl",
+            "place": "Kel. Semanan",
+            "when": "4 Hari lalu \u2022 23.56"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Semanan",
+            "when": "1 Hari lalu \u2022 19.55"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Semanan",
+            "when": "2 Hari lalu \u2022 18.01"
+          }
+        ],
+        "cluster_id": 51,
+        "incident_count": 4,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7053,
+          -6.16
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 47",
+        "radius": 445,
+        "risk_now": 0.51,
+        "risk_1h": 0.56,
+        "risk_night": 0.59,
+        "risk": 0.51,
+        "area": "Kel. Pegadungan, Kalideres",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pkl",
+            "place": "Kel. Pegadungan",
+            "when": "1 Hari lalu \u2022 19.32"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Pegadungan",
+            "when": "1 Hari lalu \u2022 21.01"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Pegadungan",
+            "when": "4 Hari lalu \u2022 23.12"
+          }
+        ],
+        "cluster_id": 11,
+        "incident_count": 5,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.703,
+          -6.1428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 48",
+        "radius": 80,
+        "risk_now": 0.51,
+        "risk_1h": 0.56,
+        "risk_night": 0.59,
+        "risk": 0.51,
+        "area": "Kel. Pondok Ranggon, Cipayung",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pkl",
+            "place": "Kel. Pondok Ranggon",
+            "when": "13 Hari lalu \u2022 18.32"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Pondok Ranggon",
+            "when": "6 Hari lalu \u2022 19.40"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Pondok Ranggon",
+            "when": "9 Hari lalu \u2022 23.08"
+          }
+        ],
+        "cluster_id": 60,
+        "incident_count": 4,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8957,
+          -6.367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona kuning 49",
+        "radius": 268,
+        "risk_now": 0.51,
+        "risk_1h": 0.56,
+        "risk_night": 0.59,
+        "risk": 0.51,
+        "area": "Kel. Rawa Buaya, Cengkareng",
+        "lighting": "Memadai",
+        "incidents": [
+          {
+            "type": "Pkl",
+            "place": "Kel. Pegadungan",
+            "when": "12 Hari lalu \u2022 22.40"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Rawa Buaya",
+            "when": "2 Hari lalu \u2022 19.56"
+          },
+          {
+            "type": "Pkl",
+            "place": "Kel. Rawa Buaya",
+            "when": "4 Hari lalu \u2022 20.38"
+          }
+        ],
+        "cluster_id": 61,
+        "incident_count": 5,
+        "top_incident": "PKL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7472,
+          -6.1568
+        ]
+      }
+    }
+  ]
+}

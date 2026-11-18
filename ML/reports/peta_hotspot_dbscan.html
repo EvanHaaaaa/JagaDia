@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fbfe6e3ea117a72cfa28e0e81965918b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fbfe6e3ea117a72cfa28e0e81965918b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fbfe6e3ea117a72cfa28e0e81965918b = L.map(
+                "map_fbfe6e3ea117a72cfa28e0e81965918b",
+                {
+                    center: [-6.2088, 106.8456],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ad51d6702b26ee222f2f1fcb4af9b2bd = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_ad51d6702b26ee222f2f1fcb4af9b2bd.addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+            var circle_624d0d9da762c2e7fe16876543cf9fc9 = L.circle(
+                [-6.175199, 106.865153],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_590c4b3933169ff562ad9aed62392c74 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fd201d68def1e0858c4dfd0882dbd926 = $(`<div id="html_fd201d68def1e0858c4dfd0882dbd926" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #1</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> GALUR<br>         <b>Kejahatan Dominan:</b> TAWURAN (WARGA / PELAJAR)<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.90</span><br>         <b>Radius Bahaya:</b> 150 m     </div>     </div>`)[0];
+                popup_590c4b3933169ff562ad9aed62392c74.setContent(html_fd201d68def1e0858c4dfd0882dbd926);
+            
+        
+
+        circle_624d0d9da762c2e7fe16876543cf9fc9.bindPopup(popup_590c4b3933169ff562ad9aed62392c74)
+        ;
+
+        
+    
+    
+            circle_624d0d9da762c2e7fe16876543cf9fc9.bindTooltip(
+                `<div>
+                     Cluster #1: TAWURAN (WARGA / PELAJAR) (Risk: 0.9)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e20e523affe3c9ea83d914cb4db36fe8 = L.circle(
+                [-6.186008, 106.887442],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_e0b8a1622e5ff2180cfab69e2a3cac94 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4eb92ef34f6e48798f3a169e33fbc120 = $(`<div id="html_4eb92ef34f6e48798f3a169e33fbc120" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #26</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> KAYU PUTIH<br>         <b>Kejahatan Dominan:</b> KRIMINALITAS<br>         <b>Jumlah Laporan:</b> 8 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.82</span><br>         <b>Radius Bahaya:</b> 150 m     </div>     </div>`)[0];
+                popup_e0b8a1622e5ff2180cfab69e2a3cac94.setContent(html_4eb92ef34f6e48798f3a169e33fbc120);
+            
+        
+
+        circle_e20e523affe3c9ea83d914cb4db36fe8.bindPopup(popup_e0b8a1622e5ff2180cfab69e2a3cac94)
+        ;
+
+        
+    
+    
+            circle_e20e523affe3c9ea83d914cb4db36fe8.bindTooltip(
+                `<div>
+                     Cluster #26: KRIMINALITAS (Risk: 0.82)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2953ecade2f62ce34f150849c9920e0c = L.circle(
+                [-6.17197, 106.860316],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 356.2, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_76089cd99c3049dba60610d24602817b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a34659fa95ebef00212786c2e56187d8 = $(`<div id="html_a34659fa95ebef00212786c2e56187d8" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #15</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> CEMPAKA BARU<br>         <b>Kejahatan Dominan:</b> KRIMINALITAS<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.82</span><br>         <b>Radius Bahaya:</b> 356 m     </div>     </div>`)[0];
+                popup_76089cd99c3049dba60610d24602817b.setContent(html_a34659fa95ebef00212786c2e56187d8);
+            
+        
+
+        circle_2953ecade2f62ce34f150849c9920e0c.bindPopup(popup_76089cd99c3049dba60610d24602817b)
+        ;
+
+        
+    
+    
+            circle_2953ecade2f62ce34f150849c9920e0c.bindTooltip(
+                `<div>
+                     Cluster #15: KRIMINALITAS (Risk: 0.82)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cf6c302d26d8a7b18975815dd8f09d42 = L.circle(
+                [-6.098122, 106.714188],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_630320e9ff2082efe7abd5dd2b80332e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3314f9ad6e63efd13cf627327706207e = $(`<div id="html_3314f9ad6e63efd13cf627327706207e" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #20</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA UTARA<br>         <b>Kelurahan:</b> KAMAL MUARA<br>         <b>Kejahatan Dominan:</b> PAK OGAH<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.79</span><br>         <b>Radius Bahaya:</b> 150 m     </div>     </div>`)[0];
+                popup_630320e9ff2082efe7abd5dd2b80332e.setContent(html_3314f9ad6e63efd13cf627327706207e);
+            
+        
+
+        circle_cf6c302d26d8a7b18975815dd8f09d42.bindPopup(popup_630320e9ff2082efe7abd5dd2b80332e)
+        ;
+
+        
+    
+    
+            circle_cf6c302d26d8a7b18975815dd8f09d42.bindTooltip(
+                `<div>
+                     Cluster #20: PAK OGAH (Risk: 0.79)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9a1274a68c471f150f8d4b2efbaa3057 = L.circle(
+                [-6.205624, 106.855666],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_e0656ba3a9ce95f8f657fa8d52c0849c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_da720efb443c6d2e2e305af5a45a8162 = $(`<div id="html_da720efb443c6d2e2e305af5a45a8162" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #30</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> KEBON MANGGIS<br>         <b>Kejahatan Dominan:</b> KRIMINALITAS<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.79</span><br>         <b>Radius Bahaya:</b> 150 m     </div>     </div>`)[0];
+                popup_e0656ba3a9ce95f8f657fa8d52c0849c.setContent(html_da720efb443c6d2e2e305af5a45a8162);
+            
+        
+
+        circle_9a1274a68c471f150f8d4b2efbaa3057.bindPopup(popup_e0656ba3a9ce95f8f657fa8d52c0849c)
+        ;
+
+        
+    
+    
+            circle_9a1274a68c471f150f8d4b2efbaa3057.bindTooltip(
+                `<div>
+                     Cluster #30: KRIMINALITAS (Risk: 0.79)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_879476cb63ee9e5a9f56a4c4ea0bef83 = L.circle(
+                [-6.16842, 106.831595],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 302.9, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_ce0dbd05f8ef36f2afd0ab9da6fa4e0e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ad50ce15714a89e4af07242a34a52d42 = $(`<div id="html_ad50ce15714a89e4af07242a34a52d42" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #14</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> PASAR BARU<br>         <b>Kejahatan Dominan:</b> PARKIR LIAR<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.77</span><br>         <b>Radius Bahaya:</b> 303 m     </div>     </div>`)[0];
+                popup_ce0dbd05f8ef36f2afd0ab9da6fa4e0e.setContent(html_ad50ce15714a89e4af07242a34a52d42);
+            
+        
+
+        circle_879476cb63ee9e5a9f56a4c4ea0bef83.bindPopup(popup_ce0dbd05f8ef36f2afd0ab9da6fa4e0e)
+        ;
+
+        
+    
+    
+            circle_879476cb63ee9e5a9f56a4c4ea0bef83.bindTooltip(
+                `<div>
+                     Cluster #14: PARKIR LIAR (Risk: 0.77)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6e8f4e7fabb5414897e59c2475bc318f = L.circle(
+                [-6.155369, 106.830617],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 420.7, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_c1de2151b020ce8a84b568bf74f682f9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6b53a10000842e2cb87e26bd425c2a01 = $(`<div id="html_6b53a10000842e2cb87e26bd425c2a01" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #24</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> KARTINI<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 8 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.76</span><br>         <b>Radius Bahaya:</b> 421 m     </div>     </div>`)[0];
+                popup_c1de2151b020ce8a84b568bf74f682f9.setContent(html_6b53a10000842e2cb87e26bd425c2a01);
+            
+        
+
+        circle_6e8f4e7fabb5414897e59c2475bc318f.bindPopup(popup_c1de2151b020ce8a84b568bf74f682f9)
+        ;
+
+        
+    
+    
+            circle_6e8f4e7fabb5414897e59c2475bc318f.bindTooltip(
+                `<div>
+                     Cluster #24: PKL (Risk: 0.76)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0f5b29000aaec73e48b1c4c4049db9d2 = L.circle(
+                [-6.204104, 106.820252],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 541.3, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_d6d734710f5e8da62a7f4c2fc750d660 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c47890acf586c07643b38eaa3bce228d = $(`<div id="html_c47890acf586c07643b38eaa3bce228d" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #25</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> KARET TENGSIN<br>         <b>Kejahatan Dominan:</b> TAWURAN (WARGA / PELAJAR)<br>         <b>Jumlah Laporan:</b> 7 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.75</span><br>         <b>Radius Bahaya:</b> 541 m     </div>     </div>`)[0];
+                popup_d6d734710f5e8da62a7f4c2fc750d660.setContent(html_c47890acf586c07643b38eaa3bce228d);
+            
+        
+
+        circle_0f5b29000aaec73e48b1c4c4049db9d2.bindPopup(popup_d6d734710f5e8da62a7f4c2fc750d660)
+        ;
+
+        
+    
+    
+            circle_0f5b29000aaec73e48b1c4c4049db9d2.bindTooltip(
+                `<div>
+                     Cluster #25: TAWURAN (WARGA / PELAJAR) (Risk: 0.75)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4da1b139ea28bbcb086ce9cc3a040086 = L.circle(
+                [-6.302136, 106.872026],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_5283ddceaa7db69e564fc24c6e36d16e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_33ec87796e457f2283eb8922b955b7be = $(`<div id="html_33ec87796e457f2283eb8922b955b7be" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #56</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> RAMBUTAN<br>         <b>Kejahatan Dominan:</b> TAWURAN (WARGA / PELAJAR)<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.75</span><br>         <b>Radius Bahaya:</b> 150 m     </div>     </div>`)[0];
+                popup_5283ddceaa7db69e564fc24c6e36d16e.setContent(html_33ec87796e457f2283eb8922b955b7be);
+            
+        
+
+        circle_4da1b139ea28bbcb086ce9cc3a040086.bindPopup(popup_5283ddceaa7db69e564fc24c6e36d16e)
+        ;
+
+        
+    
+    
+            circle_4da1b139ea28bbcb086ce9cc3a040086.bindTooltip(
+                `<div>
+                     Cluster #56: TAWURAN (WARGA / PELAJAR) (Risk: 0.75)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a5f7fcc282f0382c185e6050f0f2a185 = L.circle(
+                [-6.215262, 106.939385],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 563.8, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_160ab86e26444bdb789784865c880f51 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4090a484930ba7383e1b3a3ee9af1ed6 = $(`<div id="html_4090a484930ba7383e1b3a3ee9af1ed6" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #58</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> PENGGILINGAN<br>         <b>Kejahatan Dominan:</b> PARKIR LIAR<br>         <b>Jumlah Laporan:</b> 8 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.73</span><br>         <b>Radius Bahaya:</b> 564 m     </div>     </div>`)[0];
+                popup_160ab86e26444bdb789784865c880f51.setContent(html_4090a484930ba7383e1b3a3ee9af1ed6);
+            
+        
+
+        circle_a5f7fcc282f0382c185e6050f0f2a185.bindPopup(popup_160ab86e26444bdb789784865c880f51)
+        ;
+
+        
+    
+    
+            circle_a5f7fcc282f0382c185e6050f0f2a185.bindTooltip(
+                `<div>
+                     Cluster #58: PARKIR LIAR (Risk: 0.73)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_086193d4161c7375714620f39311d396 = L.circle(
+                [-6.158441, 106.809847],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 240.5, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_ec04cfbae8330e699e7e0abad12de145 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_cb4030b8de8c245343150eebbff92fdd = $(`<div id="html_cb4030b8de8c245343150eebbff92fdd" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #36</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA BARAT<br>         <b>Kelurahan:</b> TANAH SEREAL<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.71</span><br>         <b>Radius Bahaya:</b> 240 m     </div>     </div>`)[0];
+                popup_ec04cfbae8330e699e7e0abad12de145.setContent(html_cb4030b8de8c245343150eebbff92fdd);
+            
+        
+
+        circle_086193d4161c7375714620f39311d396.bindPopup(popup_ec04cfbae8330e699e7e0abad12de145)
+        ;
+
+        
+    
+    
+            circle_086193d4161c7375714620f39311d396.bindTooltip(
+                `<div>
+                     Cluster #36: PKL (Risk: 0.71)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0783751d6e072d7d0125ac641cc24f06 = L.circle(
+                [-6.175453, 106.843041],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 242.7, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_6108397b8a417b43465dcd53f403ca75 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_739d809b40c2414c8d049a85b5ba8a88 = $(`<div id="html_739d809b40c2414c8d049a85b5ba8a88" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #52</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> SENEN<br>         <b>Kejahatan Dominan:</b> PARKIR LIAR<br>         <b>Jumlah Laporan:</b> 6 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.70</span><br>         <b>Radius Bahaya:</b> 243 m     </div>     </div>`)[0];
+                popup_6108397b8a417b43465dcd53f403ca75.setContent(html_739d809b40c2414c8d049a85b5ba8a88);
+            
+        
+
+        circle_0783751d6e072d7d0125ac641cc24f06.bindPopup(popup_6108397b8a417b43465dcd53f403ca75)
+        ;
+
+        
+    
+    
+            circle_0783751d6e072d7d0125ac641cc24f06.bindTooltip(
+                `<div>
+                     Cluster #52: PARKIR LIAR (Risk: 0.7)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c399ac7752f42b3ae4a0e9c2d4de15f4 = L.circle(
+                [-6.110662, 106.884577],
+                {"bubblingMouseEvents": true, "color": "#d90429", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d90429", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 611.9, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_d26c931e572e6d65fe42a7a23e9b894a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d505f074b1d549d36e4b90974beea06a = $(`<div id="html_d505f074b1d549d36e4b90974beea06a" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #49</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA UTARA<br>         <b>Kelurahan:</b> TANJUNG PRIOK<br>         <b>Kejahatan Dominan:</b> PARKIR LIAR<br>         <b>Jumlah Laporan:</b> 7 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.70</span><br>         <b>Radius Bahaya:</b> 612 m     </div>     </div>`)[0];
+                popup_d26c931e572e6d65fe42a7a23e9b894a.setContent(html_d505f074b1d549d36e4b90974beea06a);
+            
+        
+
+        circle_c399ac7752f42b3ae4a0e9c2d4de15f4.bindPopup(popup_d26c931e572e6d65fe42a7a23e9b894a)
+        ;
+
+        
+    
+    
+            circle_c399ac7752f42b3ae4a0e9c2d4de15f4.bindTooltip(
+                `<div>
+                     Cluster #49: PARKIR LIAR (Risk: 0.7)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5c768878a91d50550cabce29bac9bc76 = L.circle(
+                [-6.18396, 106.814852],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 397.6, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_52722b73e35d7e02d37131b83f9f1891 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f806e460e245f451d4f691d4a431108d = $(`<div id="html_f806e460e245f451d4f691d4a431108d" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #21</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> KAMPUNG BALI<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 10 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.68</span><br>         <b>Radius Bahaya:</b> 398 m     </div>     </div>`)[0];
+                popup_52722b73e35d7e02d37131b83f9f1891.setContent(html_f806e460e245f451d4f691d4a431108d);
+            
+        
+
+        circle_5c768878a91d50550cabce29bac9bc76.bindPopup(popup_52722b73e35d7e02d37131b83f9f1891)
+        ;
+
+        
+    
+    
+            circle_5c768878a91d50550cabce29bac9bc76.bindTooltip(
+                `<div>
+                     Cluster #21: PKL (Risk: 0.68)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0eba78deec30e26e1cefcefab45f6371 = L.circle(
+                [-6.193071, 106.80789],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_6caffb0e2204b7cf204a12039b2144ac = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_36925d429ed9b68f187de22289b6f6c5 = $(`<div id="html_36925d429ed9b68f187de22289b6f6c5" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #59</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> PETAMBURAN<br>         <b>Kejahatan Dominan:</b> PENGEMIS<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.67</span><br>         <b>Radius Bahaya:</b> 150 m     </div>     </div>`)[0];
+                popup_6caffb0e2204b7cf204a12039b2144ac.setContent(html_36925d429ed9b68f187de22289b6f6c5);
+            
+        
+
+        circle_0eba78deec30e26e1cefcefab45f6371.bindPopup(popup_6caffb0e2204b7cf204a12039b2144ac)
+        ;
+
+        
+    
+    
+            circle_0eba78deec30e26e1cefcefab45f6371.bindTooltip(
+                `<div>
+                     Cluster #59: PENGEMIS (Risk: 0.67)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7f1f8a5a80432aabbf00acc3c18e0492 = L.circle(
+                [-6.165296, 106.849886],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 813.1, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_8e51421241d8ac0576c4dcff2d66853b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_16a8d908fd6bac2867d568fc6e816cea = $(`<div id="html_16a8d908fd6bac2867d568fc6e816cea" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #22</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> UTAN PANJANG<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 16 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.67</span><br>         <b>Radius Bahaya:</b> 813 m     </div>     </div>`)[0];
+                popup_8e51421241d8ac0576c4dcff2d66853b.setContent(html_16a8d908fd6bac2867d568fc6e816cea);
+            
+        
+
+        circle_7f1f8a5a80432aabbf00acc3c18e0492.bindPopup(popup_8e51421241d8ac0576c4dcff2d66853b)
+        ;
+
+        
+    
+    
+            circle_7f1f8a5a80432aabbf00acc3c18e0492.bindTooltip(
+                `<div>
+                     Cluster #22: PKL (Risk: 0.67)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b30202dc06f53b06312f23bc030f01f8 = L.circle(
+                [-6.149949, 106.8177],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 390.8, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_c34aceb1e7c58e51f02af4f85b951562 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b316c9380b708c7d864c04d28230f5c4 = $(`<div id="html_b316c9380b708c7d864c04d28230f5c4" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #7</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA BARAT<br>         <b>Kelurahan:</b> MAPHAR<br>         <b>Kejahatan Dominan:</b> PAK OGAH<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.66</span><br>         <b>Radius Bahaya:</b> 391 m     </div>     </div>`)[0];
+                popup_c34aceb1e7c58e51f02af4f85b951562.setContent(html_b316c9380b708c7d864c04d28230f5c4);
+            
+        
+
+        circle_b30202dc06f53b06312f23bc030f01f8.bindPopup(popup_c34aceb1e7c58e51f02af4f85b951562)
+        ;
+
+        
+    
+    
+            circle_b30202dc06f53b06312f23bc030f01f8.bindTooltip(
+                `<div>
+                     Cluster #7: PAK OGAH (Risk: 0.66)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_de75ac2532e981fc9de26ac812dba638 = L.circle(
+                [-6.185181, 106.847765],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_3f6ec8c49804806b8d0377eac753d192 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_539127b844ed16b83f843928ab8ab606 = $(`<div id="html_539127b844ed16b83f843928ab8ab606" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #33</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> KRAMAT<br>         <b>Kejahatan Dominan:</b> PAK OGAH<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.66</span><br>         <b>Radius Bahaya:</b> 150 m     </div>     </div>`)[0];
+                popup_3f6ec8c49804806b8d0377eac753d192.setContent(html_539127b844ed16b83f843928ab8ab606);
+            
+        
+
+        circle_de75ac2532e981fc9de26ac812dba638.bindPopup(popup_3f6ec8c49804806b8d0377eac753d192)
+        ;
+
+        
+    
+    
+            circle_de75ac2532e981fc9de26ac812dba638.bindTooltip(
+                `<div>
+                     Cluster #33: PAK OGAH (Risk: 0.66)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_86eaca8ae75c7db1261c4d8336e40a4b = L.circle(
+                [-6.191718, 106.853964],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_e973ea5f93307296afae4b42a400a733 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6272f0ef5249b5cea42bbcf4f3df2b1a = $(`<div id="html_6272f0ef5249b5cea42bbcf4f3df2b1a" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #10</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> PASEBAN<br>         <b>Kejahatan Dominan:</b> PEDAGANG ASONGAN<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.65</span><br>         <b>Radius Bahaya:</b> 150 m     </div>     </div>`)[0];
+                popup_e973ea5f93307296afae4b42a400a733.setContent(html_6272f0ef5249b5cea42bbcf4f3df2b1a);
+            
+        
+
+        circle_86eaca8ae75c7db1261c4d8336e40a4b.bindPopup(popup_e973ea5f93307296afae4b42a400a733)
+        ;
+
+        
+    
+    
+            circle_86eaca8ae75c7db1261c4d8336e40a4b.bindTooltip(
+                `<div>
+                     Cluster #10: PEDAGANG ASONGAN (Risk: 0.65)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a9e37966980a91ad97bdc34b5f0d7115 = L.circle(
+                [-6.213431, 106.863181],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 353.4, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_f8195ba2c665cd9322a34d1940b1c068 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7de109da5a5d731a8db3e7b38fa69912 = $(`<div id="html_7de109da5a5d731a8db3e7b38fa69912" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #40</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> BALI MESTER<br>         <b>Kejahatan Dominan:</b> PARKIR LIAR<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.65</span><br>         <b>Radius Bahaya:</b> 353 m     </div>     </div>`)[0];
+                popup_f8195ba2c665cd9322a34d1940b1c068.setContent(html_7de109da5a5d731a8db3e7b38fa69912);
+            
+        
+
+        circle_a9e37966980a91ad97bdc34b5f0d7115.bindPopup(popup_f8195ba2c665cd9322a34d1940b1c068)
+        ;
+
+        
+    
+    
+            circle_a9e37966980a91ad97bdc34b5f0d7115.bindTooltip(
+                `<div>
+                     Cluster #40: PARKIR LIAR (Risk: 0.65)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7df1ff64472d8386416d73ec7c66913a = L.circle(
+                [-6.35003, 106.876402],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_8fd1c867981a7be4525cac81f98b269d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_19b4f2aaa3ba5aa8b2b8e7f38dea0bc6 = $(`<div id="html_19b4f2aaa3ba5aa8b2b8e7f38dea0bc6" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #44</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> CIBUBUR<br>         <b>Kejahatan Dominan:</b> PENYALAHGUNAAN (FASUM/FASOS)<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.65</span><br>         <b>Radius Bahaya:</b> 150 m     </div>     </div>`)[0];
+                popup_8fd1c867981a7be4525cac81f98b269d.setContent(html_19b4f2aaa3ba5aa8b2b8e7f38dea0bc6);
+            
+        
+
+        circle_7df1ff64472d8386416d73ec7c66913a.bindPopup(popup_8fd1c867981a7be4525cac81f98b269d)
+        ;
+
+        
+    
+    
+            circle_7df1ff64472d8386416d73ec7c66913a.bindTooltip(
+                `<div>
+                     Cluster #44: PENYALAHGUNAAN (FASUM/FASOS) (Risk: 0.65)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e9e09640c61a4ec4f47a3fa19d3c3b21 = L.circle(
+                [-6.190872, 106.813521],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 231.4, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_47284e1cd9c90043a6a9d9198a91c1e9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f5c3f381aa9b32e441ad81d346f0829a = $(`<div id="html_f5c3f381aa9b32e441ad81d346f0829a" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #28</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> KEBON KACANG<br>         <b>Kejahatan Dominan:</b> PENGEMIS<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.65</span><br>         <b>Radius Bahaya:</b> 231 m     </div>     </div>`)[0];
+                popup_47284e1cd9c90043a6a9d9198a91c1e9.setContent(html_f5c3f381aa9b32e441ad81d346f0829a);
+            
+        
+
+        circle_e9e09640c61a4ec4f47a3fa19d3c3b21.bindPopup(popup_47284e1cd9c90043a6a9d9198a91c1e9)
+        ;
+
+        
+    
+    
+            circle_e9e09640c61a4ec4f47a3fa19d3c3b21.bindTooltip(
+                `<div>
+                     Cluster #28: PENGEMIS (Risk: 0.65)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a15b2c1aaf806fa74b6f71d111ec04f4 = L.circle(
+                [-6.155132, 106.814988],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 218.4, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_1eef0283f05222b1b8c60d2f8adcb63a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2b11a4e8d3634817da9aefc9d17ddf86 = $(`<div id="html_2b11a4e8d3634817da9aefc9d17ddf86" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #37</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA BARAT<br>         <b>Kelurahan:</b> KRUKUT<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.65</span><br>         <b>Radius Bahaya:</b> 218 m     </div>     </div>`)[0];
+                popup_1eef0283f05222b1b8c60d2f8adcb63a.setContent(html_2b11a4e8d3634817da9aefc9d17ddf86);
+            
+        
+
+        circle_a15b2c1aaf806fa74b6f71d111ec04f4.bindPopup(popup_1eef0283f05222b1b8c60d2f8adcb63a)
+        ;
+
+        
+    
+    
+            circle_a15b2c1aaf806fa74b6f71d111ec04f4.bindTooltip(
+                `<div>
+                     Cluster #37: PKL (Risk: 0.65)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4de52cffe760b0d0f3ceaea521da460d = L.circle(
+                [-6.17629, 106.792439],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 239.8, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_e735ae4f54bc85f6a5c7f6d269c87391 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a9c428c4a223b8c8496849a1e5fc8451 = $(`<div id="html_a9c428c4a223b8c8496849a1e5fc8451" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #50</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA BARAT<br>         <b>Kelurahan:</b> TANJUNG DUREN SELATAN<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.64</span><br>         <b>Radius Bahaya:</b> 240 m     </div>     </div>`)[0];
+                popup_e735ae4f54bc85f6a5c7f6d269c87391.setContent(html_a9c428c4a223b8c8496849a1e5fc8451);
+            
+        
+
+        circle_4de52cffe760b0d0f3ceaea521da460d.bindPopup(popup_e735ae4f54bc85f6a5c7f6d269c87391)
+        ;
+
+        
+    
+    
+            circle_4de52cffe760b0d0f3ceaea521da460d.bindTooltip(
+                `<div>
+                     Cluster #50: PKL (Risk: 0.64)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_112b9da51081663c6d46a473115976f8 = L.circle(
+                [-6.224783, 106.865848],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 281.1, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_e55173a735c513b5769a14d1301f5bbc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_958bd798ee1d168a67fc60bbc3048165 = $(`<div id="html_958bd798ee1d168a67fc60bbc3048165" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #23</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> KAMPUNG MELAYU<br>         <b>Kejahatan Dominan:</b> PENGEMIS<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.63</span><br>         <b>Radius Bahaya:</b> 281 m     </div>     </div>`)[0];
+                popup_e55173a735c513b5769a14d1301f5bbc.setContent(html_958bd798ee1d168a67fc60bbc3048165);
+            
+        
+
+        circle_112b9da51081663c6d46a473115976f8.bindPopup(popup_e55173a735c513b5769a14d1301f5bbc)
+        ;
+
+        
+    
+    
+            circle_112b9da51081663c6d46a473115976f8.bindTooltip(
+                `<div>
+                     Cluster #23: PENGEMIS (Risk: 0.63)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b5184c4f769b494c9db0f34135c5838d = L.circle(
+                [-6.129831, 106.891532],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 748.2, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_493fe61efb6681d5dd87156e5fbc92a0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b1c3ffff358822a7a6f4a821d2ae7310 = $(`<div id="html_b1c3ffff358822a7a6f4a821d2ae7310" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #38</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA UTARA<br>         <b>Kelurahan:</b> SUNGAI BAMBU<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 13 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.63</span><br>         <b>Radius Bahaya:</b> 748 m     </div>     </div>`)[0];
+                popup_493fe61efb6681d5dd87156e5fbc92a0.setContent(html_b1c3ffff358822a7a6f4a821d2ae7310);
+            
+        
+
+        circle_b5184c4f769b494c9db0f34135c5838d.bindPopup(popup_493fe61efb6681d5dd87156e5fbc92a0)
+        ;
+
+        
+    
+    
+            circle_b5184c4f769b494c9db0f34135c5838d.bindTooltip(
+                `<div>
+                     Cluster #38: PKL (Risk: 0.63)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_157666e06a76c3d99c0844e909962f46 = L.circle(
+                [-6.144361, 106.813387],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 375.6, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_0e51ec4125f1177695f95adbd299c31a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_23df4ac848bb505d35e5c128e039b2e8 = $(`<div id="html_23df4ac848bb505d35e5c128e039b2e8" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #2</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA BARAT<br>         <b>Kelurahan:</b> GLODOK<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.62</span><br>         <b>Radius Bahaya:</b> 376 m     </div>     </div>`)[0];
+                popup_0e51ec4125f1177695f95adbd299c31a.setContent(html_23df4ac848bb505d35e5c128e039b2e8);
+            
+        
+
+        circle_157666e06a76c3d99c0844e909962f46.bindPopup(popup_0e51ec4125f1177695f95adbd299c31a)
+        ;
+
+        
+    
+    
+            circle_157666e06a76c3d99c0844e909962f46.bindTooltip(
+                `<div>
+                     Cluster #2: PKL (Risk: 0.62)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_115811748293234a0e7ea47d24a319a7 = L.circle(
+                [-6.344789, 106.802997],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 163.5, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_4e0eca5fd5d4d3c103af652c7dce7798 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8a029f9cf37010c2524d3ceb069d5593 = $(`<div id="html_8a029f9cf37010c2524d3ceb069d5593" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #46</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA SELATAN<br>         <b>Kelurahan:</b> CIPEDAK<br>         <b>Kejahatan Dominan:</b> PAK OGAH<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.61</span><br>         <b>Radius Bahaya:</b> 164 m     </div>     </div>`)[0];
+                popup_4e0eca5fd5d4d3c103af652c7dce7798.setContent(html_8a029f9cf37010c2524d3ceb069d5593);
+            
+        
+
+        circle_115811748293234a0e7ea47d24a319a7.bindPopup(popup_4e0eca5fd5d4d3c103af652c7dce7798)
+        ;
+
+        
+    
+    
+            circle_115811748293234a0e7ea47d24a319a7.bindTooltip(
+                `<div>
+                     Cluster #46: PAK OGAH (Risk: 0.61)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e64e6f3833b33c339179875aece01c2c = L.circle(
+                [-6.188201, 106.768573],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 356.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_d3f4439c285352e4a7091bbe29e7a85b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4aa50ed7a31f77eee3dd82a08b21ab66 = $(`<div id="html_4aa50ed7a31f77eee3dd82a08b21ab66" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #18</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA BARAT<br>         <b>Kelurahan:</b> DURI KEPA<br>         <b>Kejahatan Dominan:</b> PAK OGAH<br>         <b>Jumlah Laporan:</b> 6 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.61</span><br>         <b>Radius Bahaya:</b> 356 m     </div>     </div>`)[0];
+                popup_d3f4439c285352e4a7091bbe29e7a85b.setContent(html_4aa50ed7a31f77eee3dd82a08b21ab66);
+            
+        
+
+        circle_e64e6f3833b33c339179875aece01c2c.bindPopup(popup_d3f4439c285352e4a7091bbe29e7a85b)
+        ;
+
+        
+    
+    
+            circle_e64e6f3833b33c339179875aece01c2c.bindTooltip(
+                `<div>
+                     Cluster #18: PAK OGAH (Risk: 0.61)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1d2459addd3dced69e9a6520223c9c47 = L.circle(
+                [-6.156148, 106.864883],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 507.7, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_7106f0f1b1ce538f195148ece7180395 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b0f35093287b5d11bcbe541a9c427658 = $(`<div id="html_b0f35093287b5d11bcbe541a9c427658" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #53</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> SERDANG<br>         <b>Kejahatan Dominan:</b> PARKIR LIAR<br>         <b>Jumlah Laporan:</b> 8 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.61</span><br>         <b>Radius Bahaya:</b> 508 m     </div>     </div>`)[0];
+                popup_7106f0f1b1ce538f195148ece7180395.setContent(html_b0f35093287b5d11bcbe541a9c427658);
+            
+        
+
+        circle_1d2459addd3dced69e9a6520223c9c47.bindPopup(popup_7106f0f1b1ce538f195148ece7180395)
+        ;
+
+        
+    
+    
+            circle_1d2459addd3dced69e9a6520223c9c47.bindTooltip(
+                `<div>
+                     Cluster #53: PARKIR LIAR (Risk: 0.61)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cb8e1d670bb7d9fd3bf5ebf2e0d670dc = L.circle(
+                [-6.152691, 106.726772],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 323.7, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_cf195a5a9901a041e6adc176349769fc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_31a96f0e23e43efa8181ca8f6e4f73ec = $(`<div id="html_31a96f0e23e43efa8181ca8f6e4f73ec" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #43</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA BARAT<br>         <b>Kelurahan:</b> CENGKARENG BARAT<br>         <b>Kejahatan Dominan:</b> PAK OGAH<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.61</span><br>         <b>Radius Bahaya:</b> 324 m     </div>     </div>`)[0];
+                popup_cf195a5a9901a041e6adc176349769fc.setContent(html_31a96f0e23e43efa8181ca8f6e4f73ec);
+            
+        
+
+        circle_cb8e1d670bb7d9fd3bf5ebf2e0d670dc.bindPopup(popup_cf195a5a9901a041e6adc176349769fc)
+        ;
+
+        
+    
+    
+            circle_cb8e1d670bb7d9fd3bf5ebf2e0d670dc.bindTooltip(
+                `<div>
+                     Cluster #43: PAK OGAH (Risk: 0.61)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c3623d5e96bbef3e6fa65a8bd882baec = L.circle(
+                [-6.202149, 106.84655],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1060.3, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_e5deba278753a1b182edbf529b2a4e79 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9942e600648ade8401dc22c79df275c2 = $(`<div id="html_9942e600648ade8401dc22c79df275c2" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #6</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> PEGANGSAAN<br>         <b>Kejahatan Dominan:</b> PENYALAHGUNAAN (FASUM/FASOS)<br>         <b>Jumlah Laporan:</b> 31 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.60</span><br>         <b>Radius Bahaya:</b> 1060 m     </div>     </div>`)[0];
+                popup_e5deba278753a1b182edbf529b2a4e79.setContent(html_9942e600648ade8401dc22c79df275c2);
+            
+        
+
+        circle_c3623d5e96bbef3e6fa65a8bd882baec.bindPopup(popup_e5deba278753a1b182edbf529b2a4e79)
+        ;
+
+        
+    
+    
+            circle_c3623d5e96bbef3e6fa65a8bd882baec.bindTooltip(
+                `<div>
+                     Cluster #6: PENYALAHGUNAAN (FASUM/FASOS) (Risk: 0.6)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_07e1ad11a7e407166409d88b5bf92de6 = L.circle(
+                [-6.212732, 106.900161],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 344.8, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_d7d5c55077be2759542b0cc31da1929b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_642728fa2cc8706f4e9b15d60963dcda = $(`<div id="html_642728fa2cc8706f4e9b15d60963dcda" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #17</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> KLENDER<br>         <b>Kejahatan Dominan:</b> PENGAMEN<br>         <b>Jumlah Laporan:</b> 14 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.60</span><br>         <b>Radius Bahaya:</b> 345 m     </div>     </div>`)[0];
+                popup_d7d5c55077be2759542b0cc31da1929b.setContent(html_642728fa2cc8706f4e9b15d60963dcda);
+            
+        
+
+        circle_07e1ad11a7e407166409d88b5bf92de6.bindPopup(popup_d7d5c55077be2759542b0cc31da1929b)
+        ;
+
+        
+    
+    
+            circle_07e1ad11a7e407166409d88b5bf92de6.bindTooltip(
+                `<div>
+                     Cluster #17: PENGAMEN (Risk: 0.6)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5af94178deef15d05185247a9f665ebb = L.circle(
+                [-6.315166, 106.890575],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 308.9, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_3486b1e0e1ed48928cc7a0552eb71aaf = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f0d97c7a1e6ae34899d87f4ba554ef40 = $(`<div id="html_f0d97c7a1e6ae34899d87f4ba554ef40" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #35</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> CEGER<br>         <b>Kejahatan Dominan:</b> PENYALAHGUNAAN (FASUM/FASOS)<br>         <b>Jumlah Laporan:</b> 7 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.59</span><br>         <b>Radius Bahaya:</b> 309 m     </div>     </div>`)[0];
+                popup_3486b1e0e1ed48928cc7a0552eb71aaf.setContent(html_f0d97c7a1e6ae34899d87f4ba554ef40);
+            
+        
+
+        circle_5af94178deef15d05185247a9f665ebb.bindPopup(popup_3486b1e0e1ed48928cc7a0552eb71aaf)
+        ;
+
+        
+    
+    
+            circle_5af94178deef15d05185247a9f665ebb.bindTooltip(
+                `<div>
+                     Cluster #35: PENYALAHGUNAAN (FASUM/FASOS) (Risk: 0.59)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0a75d966076bc9b5bf2d34cde9cbb95e = L.circle(
+                [-6.170486, 106.819251],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_fa183b38328f8ffcbf8961815bcdd06d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ebc2d4da3e376987e58b4094da03cbf2 = $(`<div id="html_ebc2d4da3e376987e58b4094da03cbf2" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #0</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> PETOJO UTARA<br>         <b>Kejahatan Dominan:</b> PENGEMIS<br>         <b>Jumlah Laporan:</b> 23 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.59</span><br>         <b>Radius Bahaya:</b> 150 m     </div>     </div>`)[0];
+                popup_fa183b38328f8ffcbf8961815bcdd06d.setContent(html_ebc2d4da3e376987e58b4094da03cbf2);
+            
+        
+
+        circle_0a75d966076bc9b5bf2d34cde9cbb95e.bindPopup(popup_fa183b38328f8ffcbf8961815bcdd06d)
+        ;
+
+        
+    
+    
+            circle_0a75d966076bc9b5bf2d34cde9cbb95e.bindTooltip(
+                `<div>
+                     Cluster #0: PENGEMIS (Risk: 0.59)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9d6a44a6791b7af6d050cc129ae1704a = L.circle(
+                [-6.155534, 106.853108],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 350.2, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_2e7f12f7516f27e4b730c7a01ba34401 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_942ea5ddcb2aef2231e2a13b2e6f8f3e = $(`<div id="html_942ea5ddcb2aef2231e2a13b2e6f8f3e" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #29</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> KEBON KOSONG<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 7 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.59</span><br>         <b>Radius Bahaya:</b> 350 m     </div>     </div>`)[0];
+                popup_2e7f12f7516f27e4b730c7a01ba34401.setContent(html_942ea5ddcb2aef2231e2a13b2e6f8f3e);
+            
+        
+
+        circle_9d6a44a6791b7af6d050cc129ae1704a.bindPopup(popup_2e7f12f7516f27e4b730c7a01ba34401)
+        ;
+
+        
+    
+    
+            circle_9d6a44a6791b7af6d050cc129ae1704a.bindTooltip(
+                `<div>
+                     Cluster #29: PKL (Risk: 0.59)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c968e53fee7865b394d22007eb1abc8a = L.circle(
+                [-6.124592, 106.704058],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 535.4, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_d4c5df116ec12cc164a35d214a67e4ad = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_803537adb0c507518e5fd96da0b9c10f = $(`<div id="html_803537adb0c507518e5fd96da0b9c10f" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #13</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA BARAT<br>         <b>Kelurahan:</b> PEGADUNGAN<br>         <b>Kejahatan Dominan:</b> PAK OGAH<br>         <b>Jumlah Laporan:</b> 8 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.59</span><br>         <b>Radius Bahaya:</b> 535 m     </div>     </div>`)[0];
+                popup_d4c5df116ec12cc164a35d214a67e4ad.setContent(html_803537adb0c507518e5fd96da0b9c10f);
+            
+        
+
+        circle_c968e53fee7865b394d22007eb1abc8a.bindPopup(popup_d4c5df116ec12cc164a35d214a67e4ad)
+        ;
+
+        
+    
+    
+            circle_c968e53fee7865b394d22007eb1abc8a.bindTooltip(
+                `<div>
+                     Cluster #13: PAK OGAH (Risk: 0.59)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f163490860005923c658f31062661cbf = L.circle(
+                [-6.198699, 106.88782],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 888.9, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_faf0c9c18ae85536d4c9ef97096aee17 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3c93b54e7d3b0f911990ed39ebb07222 = $(`<div id="html_3c93b54e7d3b0f911990ed39ebb07222" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #16</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> RAWAMANGUN<br>         <b>Kejahatan Dominan:</b> PARKIR LIAR<br>         <b>Jumlah Laporan:</b> 18 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.58</span><br>         <b>Radius Bahaya:</b> 889 m     </div>     </div>`)[0];
+                popup_faf0c9c18ae85536d4c9ef97096aee17.setContent(html_3c93b54e7d3b0f911990ed39ebb07222);
+            
+        
+
+        circle_f163490860005923c658f31062661cbf.bindPopup(popup_faf0c9c18ae85536d4c9ef97096aee17)
+        ;
+
+        
+    
+    
+            circle_f163490860005923c658f31062661cbf.bindTooltip(
+                `<div>
+                     Cluster #16: PARKIR LIAR (Risk: 0.58)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_498aa25589170669669dc5467283e771 = L.circle(
+                [-6.302888, 106.912303],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 280.1, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_62c1998726bf68dcc8e878010a14e83f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ab754e90dfea040986ad50e738666bbb = $(`<div id="html_ab754e90dfea040986ad50e738666bbb" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #39</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> LUBANG BUAYA<br>         <b>Kejahatan Dominan:</b> PENYALAHGUNAAN (FASUM/FASOS)<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.58</span><br>         <b>Radius Bahaya:</b> 280 m     </div>     </div>`)[0];
+                popup_62c1998726bf68dcc8e878010a14e83f.setContent(html_ab754e90dfea040986ad50e738666bbb);
+            
+        
+
+        circle_498aa25589170669669dc5467283e771.bindPopup(popup_62c1998726bf68dcc8e878010a14e83f)
+        ;
+
+        
+    
+    
+            circle_498aa25589170669669dc5467283e771.bindTooltip(
+                `<div>
+                     Cluster #39: PENYALAHGUNAAN (FASUM/FASOS) (Risk: 0.58)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_09b3ea5af44357c9a83e4d1222e9c34e = L.circle(
+                [-6.175304, 106.872082],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 333.9, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_5e29f6efda67377e2d57277917dbd1fa = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_76d5c391bf4878f3e99a96099959f4af = $(`<div id="html_76d5c391bf4878f3e99a96099959f4af" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #42</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> CEMPAKA PUTIH TIMUR<br>         <b>Kejahatan Dominan:</b> PARKIR LIAR<br>         <b>Jumlah Laporan:</b> 7 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.58</span><br>         <b>Radius Bahaya:</b> 334 m     </div>     </div>`)[0];
+                popup_5e29f6efda67377e2d57277917dbd1fa.setContent(html_76d5c391bf4878f3e99a96099959f4af);
+            
+        
+
+        circle_09b3ea5af44357c9a83e4d1222e9c34e.bindPopup(popup_5e29f6efda67377e2d57277917dbd1fa)
+        ;
+
+        
+    
+    
+            circle_09b3ea5af44357c9a83e4d1222e9c34e.bindTooltip(
+                `<div>
+                     Cluster #42: PARKIR LIAR (Risk: 0.58)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0881ab935e425b6c9f26593c21b35474 = L.circle(
+                [-6.322466, 106.906857],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 420.2, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_eb6f94369f8eb0728db19f85a0fc8929 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a278918329ace138d770d8aceb0d94ec = $(`<div id="html_a278918329ace138d770d8aceb0d94ec" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #54</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> SETU<br>         <b>Kejahatan Dominan:</b> PENYALAHGUNAAN (FASUM/FASOS)<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.58</span><br>         <b>Radius Bahaya:</b> 420 m     </div>     </div>`)[0];
+                popup_eb6f94369f8eb0728db19f85a0fc8929.setContent(html_a278918329ace138d770d8aceb0d94ec);
+            
+        
+
+        circle_0881ab935e425b6c9f26593c21b35474.bindPopup(popup_eb6f94369f8eb0728db19f85a0fc8929)
+        ;
+
+        
+    
+    
+            circle_0881ab935e425b6c9f26593c21b35474.bindTooltip(
+                `<div>
+                     Cluster #54: PENYALAHGUNAAN (FASUM/FASOS) (Risk: 0.58)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2b98fea2055fcace43e81e00762a29d2 = L.circle(
+                [-6.284983, 106.908129],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 433.6, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_a4c360153300a07c8b187a4d94e3b6c9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3de7ffe5d466e2b07366f4f820033ba1 = $(`<div id="html_3de7ffe5d466e2b07366f4f820033ba1" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #4</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> LUBANG BUAYA<br>         <b>Kejahatan Dominan:</b> PENYALAHGUNAAN (FASUM/FASOS)<br>         <b>Jumlah Laporan:</b> 16 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.58</span><br>         <b>Radius Bahaya:</b> 434 m     </div>     </div>`)[0];
+                popup_a4c360153300a07c8b187a4d94e3b6c9.setContent(html_3de7ffe5d466e2b07366f4f820033ba1);
+            
+        
+
+        circle_2b98fea2055fcace43e81e00762a29d2.bindPopup(popup_a4c360153300a07c8b187a4d94e3b6c9)
+        ;
+
+        
+    
+    
+            circle_2b98fea2055fcace43e81e00762a29d2.bindTooltip(
+                `<div>
+                     Cluster #4: PENYALAHGUNAAN (FASUM/FASOS) (Risk: 0.58)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_befca003294376e85708870f6d78e24c = L.circle(
+                [-6.215342, 106.873789],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 428.9, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_be7fe3266d5af5a9e1630bef8e42d288 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d79e3e7e69487b43a95318fedebeee7c = $(`<div id="html_d79e3e7e69487b43a95318fedebeee7c" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #48</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> CIPINANG BESAR UTARA<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.57</span><br>         <b>Radius Bahaya:</b> 429 m     </div>     </div>`)[0];
+                popup_be7fe3266d5af5a9e1630bef8e42d288.setContent(html_d79e3e7e69487b43a95318fedebeee7c);
+            
+        
+
+        circle_befca003294376e85708870f6d78e24c.bindPopup(popup_be7fe3266d5af5a9e1630bef8e42d288)
+        ;
+
+        
+    
+    
+            circle_befca003294376e85708870f6d78e24c.bindTooltip(
+                `<div>
+                     Cluster #48: PKL (Risk: 0.57)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4b7ef202768adf5c3dbc2b8bcb12722a = L.circle(
+                [-6.105151, 106.705631],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 278.4, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_a16c47213f54cecab8c46947aaaaf667 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_219147e78a3712f599f0c8207da9ec16 = $(`<div id="html_219147e78a3712f599f0c8207da9ec16" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #19</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA BARAT<br>         <b>Kelurahan:</b> KAMAL<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.57</span><br>         <b>Radius Bahaya:</b> 278 m     </div>     </div>`)[0];
+                popup_a16c47213f54cecab8c46947aaaaf667.setContent(html_219147e78a3712f599f0c8207da9ec16);
+            
+        
+
+        circle_4b7ef202768adf5c3dbc2b8bcb12722a.bindPopup(popup_a16c47213f54cecab8c46947aaaaf667)
+        ;
+
+        
+    
+    
+            circle_4b7ef202768adf5c3dbc2b8bcb12722a.bindTooltip(
+                `<div>
+                     Cluster #19: PKL (Risk: 0.57)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_51a56bb0ab968e7501a239417812d21b = L.circle(
+                [-6.305142, 106.888349],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 292.1, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_be70978157a1c498d4ccd71df74347cd = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_aeeebcadf76ed32d866aaf90e983d6f7 = $(`<div id="html_aeeebcadf76ed32d866aaf90e983d6f7" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #41</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> CEGER<br>         <b>Kejahatan Dominan:</b> PENYALAHGUNAAN (FASUM/FASOS)<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.57</span><br>         <b>Radius Bahaya:</b> 292 m     </div>     </div>`)[0];
+                popup_be70978157a1c498d4ccd71df74347cd.setContent(html_aeeebcadf76ed32d866aaf90e983d6f7);
+            
+        
+
+        circle_51a56bb0ab968e7501a239417812d21b.bindPopup(popup_be70978157a1c498d4ccd71df74347cd)
+        ;
+
+        
+    
+    
+            circle_51a56bb0ab968e7501a239417812d21b.bindTooltip(
+                `<div>
+                     Cluster #41: PENYALAHGUNAAN (FASUM/FASOS) (Risk: 0.57)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_25630d9e3f09189b8cefea3ebc7a1850 = L.circle(
+                [-6.262513, 106.865159],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 385.6, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_ddccdd58550e8c2409fcb5eb8a2e47d4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ac86bee93ea1db3a35e8c4ad73350567 = $(`<div id="html_ac86bee93ea1db3a35e8c4ad73350567" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #45</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> CILILITAN<br>         <b>Kejahatan Dominan:</b> PARKIR LIAR<br>         <b>Jumlah Laporan:</b> 8 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.57</span><br>         <b>Radius Bahaya:</b> 386 m     </div>     </div>`)[0];
+                popup_ddccdd58550e8c2409fcb5eb8a2e47d4.setContent(html_ac86bee93ea1db3a35e8c4ad73350567);
+            
+        
+
+        circle_25630d9e3f09189b8cefea3ebc7a1850.bindPopup(popup_ddccdd58550e8c2409fcb5eb8a2e47d4)
+        ;
+
+        
+    
+    
+            circle_25630d9e3f09189b8cefea3ebc7a1850.bindTooltip(
+                `<div>
+                     Cluster #45: PARKIR LIAR (Risk: 0.57)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1babde591879e77d6af886bd94251475 = L.circle(
+                [-6.184338, 106.828891],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 366.1, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_bb6e01e289531dd6464561621a7d8443 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7183e08214cdb104d2e78d5d70f07ebd = $(`<div id="html_7183e08214cdb104d2e78d5d70f07ebd" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #31</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA PUSAT<br>         <b>Kelurahan:</b> KEBON SIRIH<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.56</span><br>         <b>Radius Bahaya:</b> 366 m     </div>     </div>`)[0];
+                popup_bb6e01e289531dd6464561621a7d8443.setContent(html_7183e08214cdb104d2e78d5d70f07ebd);
+            
+        
+
+        circle_1babde591879e77d6af886bd94251475.bindPopup(popup_bb6e01e289531dd6464561621a7d8443)
+        ;
+
+        
+    
+    
+            circle_1babde591879e77d6af886bd94251475.bindTooltip(
+                `<div>
+                     Cluster #31: PKL (Risk: 0.56)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a628e1c60d4c98718d4a202f9243b401 = L.circle(
+                [-6.276583, 106.867905],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 318.7, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_c6c438ad8ce7cfc3279104960a662d0a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_83f775c726cf1fc525754af1d973af54 = $(`<div id="html_83f775c726cf1fc525754af1d973af54" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #34</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> KRAMAT JATI<br>         <b>Kejahatan Dominan:</b> PARKIR LIAR<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.56</span><br>         <b>Radius Bahaya:</b> 319 m     </div>     </div>`)[0];
+                popup_c6c438ad8ce7cfc3279104960a662d0a.setContent(html_83f775c726cf1fc525754af1d973af54);
+            
+        
+
+        circle_a628e1c60d4c98718d4a202f9243b401.bindPopup(popup_c6c438ad8ce7cfc3279104960a662d0a)
+        ;
+
+        
+    
+    
+            circle_a628e1c60d4c98718d4a202f9243b401.bindTooltip(
+                `<div>
+                     Cluster #34: PARKIR LIAR (Risk: 0.56)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d9e1338f3f9caa9f1dd0a2fe415b1adb = L.circle(
+                [-6.285681, 106.841457],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 339.2, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_ec883fd1e645aecdd97ea8f8c69b68f2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c95c8220a9fc150fef72ab7e509c0996 = $(`<div id="html_c95c8220a9fc150fef72ab7e509c0996" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #9</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA SELATAN<br>         <b>Kelurahan:</b> PASAR MINGGU<br>         <b>Kejahatan Dominan:</b> PENYALAHGUNAAN (FASUM/FASOS)<br>         <b>Jumlah Laporan:</b> 17 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.56</span><br>         <b>Radius Bahaya:</b> 339 m     </div>     </div>`)[0];
+                popup_ec883fd1e645aecdd97ea8f8c69b68f2.setContent(html_c95c8220a9fc150fef72ab7e509c0996);
+            
+        
+
+        circle_d9e1338f3f9caa9f1dd0a2fe415b1adb.bindPopup(popup_ec883fd1e645aecdd97ea8f8c69b68f2)
+        ;
+
+        
+    
+    
+            circle_d9e1338f3f9caa9f1dd0a2fe415b1adb.bindTooltip(
+                `<div>
+                     Cluster #9: PENYALAHGUNAAN (FASUM/FASOS) (Risk: 0.56)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_708d3444f6c4d2bcf32a3a6d682f5672 = L.circle(
+                [-6.254432, 106.835144],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 280.7, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_67b534e0e703b45ca4f3dceae762476d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b2e8e4e4b2031b08dbfadb048bc7118d = $(`<div id="html_b2e8e4e4b2031b08dbfadb048bc7118d" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #5</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA SELATAN<br>         <b>Kelurahan:</b> DUREN TIGA<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 6 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.56</span><br>         <b>Radius Bahaya:</b> 281 m     </div>     </div>`)[0];
+                popup_67b534e0e703b45ca4f3dceae762476d.setContent(html_b2e8e4e4b2031b08dbfadb048bc7118d);
+            
+        
+
+        circle_708d3444f6c4d2bcf32a3a6d682f5672.bindPopup(popup_67b534e0e703b45ca4f3dceae762476d)
+        ;
+
+        
+    
+    
+            circle_708d3444f6c4d2bcf32a3a6d682f5672.bindTooltip(
+                `<div>
+                     Cluster #5: PKL (Risk: 0.56)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_591387d132f870cca5d7edd97dc34fec = L.circle(
+                [-6.234813, 106.788407],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_1c66c22128da8b2298931d01fcfcd8af = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4d43e7c9c930698d18fc2c08a3138774 = $(`<div id="html_4d43e7c9c930698d18fc2c08a3138774" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #3</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA SELATAN<br>         <b>Kelurahan:</b> GUNUNG<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 7 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.56</span><br>         <b>Radius Bahaya:</b> 150 m     </div>     </div>`)[0];
+                popup_1c66c22128da8b2298931d01fcfcd8af.setContent(html_4d43e7c9c930698d18fc2c08a3138774);
+            
+        
+
+        circle_591387d132f870cca5d7edd97dc34fec.bindPopup(popup_1c66c22128da8b2298931d01fcfcd8af)
+        ;
+
+        
+    
+    
+            circle_591387d132f870cca5d7edd97dc34fec.bindTooltip(
+                `<div>
+                     Cluster #3: PKL (Risk: 0.56)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_90a0833e9c709b1f8c3df81690c0d8fb = L.circle(
+                [-6.209016, 106.894876],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_3d4e0f14c8785c1f794008cd1ebe4564 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1747cee61f11b0014ba4ed1135cf94af = $(`<div id="html_1747cee61f11b0014ba4ed1135cf94af" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #47</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> CIPINANG<br>         <b>Kejahatan Dominan:</b> PEDAGANG ASONGAN<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.54</span><br>         <b>Radius Bahaya:</b> 150 m     </div>     </div>`)[0];
+                popup_3d4e0f14c8785c1f794008cd1ebe4564.setContent(html_1747cee61f11b0014ba4ed1135cf94af);
+            
+        
+
+        circle_90a0833e9c709b1f8c3df81690c0d8fb.bindPopup(popup_3d4e0f14c8785c1f794008cd1ebe4564)
+        ;
+
+        
+    
+    
+            circle_90a0833e9c709b1f8c3df81690c0d8fb.bindTooltip(
+                `<div>
+                     Cluster #47: PEDAGANG ASONGAN (Risk: 0.54)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_336337ceda00e4d9c64cf93803a7e089 = L.circle(
+                [-6.134206, 106.69227],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 505.7, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_2937ee5cc401ebaf368f23e5e6fd0d5a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1f3e44b7b4cf97be9759c5e62aa68cdf = $(`<div id="html_1f3e44b7b4cf97be9759c5e62aa68cdf" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #12</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA BARAT<br>         <b>Kelurahan:</b> PEGADUNGAN<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 15 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.54</span><br>         <b>Radius Bahaya:</b> 506 m     </div>     </div>`)[0];
+                popup_2937ee5cc401ebaf368f23e5e6fd0d5a.setContent(html_1f3e44b7b4cf97be9759c5e62aa68cdf);
+            
+        
+
+        circle_336337ceda00e4d9c64cf93803a7e089.bindPopup(popup_2937ee5cc401ebaf368f23e5e6fd0d5a)
+        ;
+
+        
+    
+    
+            circle_336337ceda00e4d9c64cf93803a7e089.bindTooltip(
+                `<div>
+                     Cluster #12: PKL (Risk: 0.54)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f2b0088d9587ae45616ee22aab213d82 = L.circle(
+                [-6.146198, 106.872826],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 414.1, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_ea1d6ff2757d7f36417ecc43418bd84a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_87379f80bea235deac57bdffa310dcd4 = $(`<div id="html_87379f80bea235deac57bdffa310dcd4" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #55</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA UTARA<br>         <b>Kelurahan:</b> SUNTER JAYA<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 6 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.54</span><br>         <b>Radius Bahaya:</b> 414 m     </div>     </div>`)[0];
+                popup_ea1d6ff2757d7f36417ecc43418bd84a.setContent(html_87379f80bea235deac57bdffa310dcd4);
+            
+        
+
+        circle_f2b0088d9587ae45616ee22aab213d82.bindPopup(popup_ea1d6ff2757d7f36417ecc43418bd84a)
+        ;
+
+        
+    
+    
+            circle_f2b0088d9587ae45616ee22aab213d82.bindTooltip(
+                `<div>
+                     Cluster #55: PKL (Risk: 0.54)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b20d25db54be157f41085b3f55f41d7a = L.circle(
+                [-6.253571, 106.800785],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 239.4, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_e07079a4aa94d1dff9cdc970b46b6cf8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8c1c03d0d9c179f821bd284df18713ad = $(`<div id="html_8c1c03d0d9c179f821bd284df18713ad" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #8</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA SELATAN<br>         <b>Kelurahan:</b> PULO<br>         <b>Kejahatan Dominan:</b> PENGEMIS<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.54</span><br>         <b>Radius Bahaya:</b> 239 m     </div>     </div>`)[0];
+                popup_e07079a4aa94d1dff9cdc970b46b6cf8.setContent(html_8c1c03d0d9c179f821bd284df18713ad);
+            
+        
+
+        circle_b20d25db54be157f41085b3f55f41d7a.bindPopup(popup_e07079a4aa94d1dff9cdc970b46b6cf8)
+        ;
+
+        
+    
+    
+            circle_b20d25db54be157f41085b3f55f41d7a.bindTooltip(
+                `<div>
+                     Cluster #8: PENGEMIS (Risk: 0.54)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e9cc8f27f5763852257cfadd0dfb583e = L.circle(
+                [-6.251245, 106.810338],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 261.1, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_7f36995d932e8d5b0e05d9b370c3880b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_655ef8bcb8e60c81ac1558daa3a9a88b = $(`<div id="html_655ef8bcb8e60c81ac1558daa3a9a88b" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #57</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA SELATAN<br>         <b>Kelurahan:</b> PULO<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 8 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.54</span><br>         <b>Radius Bahaya:</b> 261 m     </div>     </div>`)[0];
+                popup_7f36995d932e8d5b0e05d9b370c3880b.setContent(html_655ef8bcb8e60c81ac1558daa3a9a88b);
+            
+        
+
+        circle_e9cc8f27f5763852257cfadd0dfb583e.bindPopup(popup_7f36995d932e8d5b0e05d9b370c3880b)
+        ;
+
+        
+    
+    
+            circle_e9cc8f27f5763852257cfadd0dfb583e.bindTooltip(
+                `<div>
+                     Cluster #57: PKL (Risk: 0.54)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6da192626f2c0562a6f80a9044cba96c = L.circle(
+                [-6.184957, 106.73329],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 244.5, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_4adccf82ef7ae2969f9a09e856aebcd6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c15e0f4ca1cc482f0adc471b9abaec78 = $(`<div id="html_c15e0f4ca1cc482f0adc471b9abaec78" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #32</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA BARAT<br>         <b>Kelurahan:</b> KEMBANGAN UTARA<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.51</span><br>         <b>Radius Bahaya:</b> 244 m     </div>     </div>`)[0];
+                popup_4adccf82ef7ae2969f9a09e856aebcd6.setContent(html_c15e0f4ca1cc482f0adc471b9abaec78);
+            
+        
+
+        circle_6da192626f2c0562a6f80a9044cba96c.bindPopup(popup_4adccf82ef7ae2969f9a09e856aebcd6)
+        ;
+
+        
+    
+    
+            circle_6da192626f2c0562a6f80a9044cba96c.bindTooltip(
+                `<div>
+                     Cluster #32: PKL (Risk: 0.51)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_526cba1fcf93948ae28178acb0f749a5 = L.circle(
+                [-6.237501, 106.781275],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 480.2, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_afde70b200f2cb4f8d001339fc95f14b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_21d66bf44050545ec776a67aa303b5cd = $(`<div id="html_21d66bf44050545ec776a67aa303b5cd" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #27</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA SELATAN<br>         <b>Kelurahan:</b> KEBAYORAN LAMA UTARA<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.51</span><br>         <b>Radius Bahaya:</b> 480 m     </div>     </div>`)[0];
+                popup_afde70b200f2cb4f8d001339fc95f14b.setContent(html_21d66bf44050545ec776a67aa303b5cd);
+            
+        
+
+        circle_526cba1fcf93948ae28178acb0f749a5.bindPopup(popup_afde70b200f2cb4f8d001339fc95f14b)
+        ;
+
+        
+    
+    
+            circle_526cba1fcf93948ae28178acb0f749a5.bindTooltip(
+                `<div>
+                     Cluster #27: PKL (Risk: 0.51)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_18a9d02c6646fed81aa3d7dcf0072315 = L.circle(
+                [-6.159986, 106.705298],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_fcfa02ef054f0a03d5e5a9dd5a130be1 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_309ac3fac13f461cdc8a769fc6fc2fe4 = $(`<div id="html_309ac3fac13f461cdc8a769fc6fc2fe4" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #51</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA BARAT<br>         <b>Kelurahan:</b> SEMANAN<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.51</span><br>         <b>Radius Bahaya:</b> 150 m     </div>     </div>`)[0];
+                popup_fcfa02ef054f0a03d5e5a9dd5a130be1.setContent(html_309ac3fac13f461cdc8a769fc6fc2fe4);
+            
+        
+
+        circle_18a9d02c6646fed81aa3d7dcf0072315.bindPopup(popup_fcfa02ef054f0a03d5e5a9dd5a130be1)
+        ;
+
+        
+    
+    
+            circle_18a9d02c6646fed81aa3d7dcf0072315.bindTooltip(
+                `<div>
+                     Cluster #51: PKL (Risk: 0.51)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b15251c28823c8ccab5dcbbfb1a8150d = L.circle(
+                [-6.142795, 106.702977],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 465.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_4eb0bab867bc016956612ca583f61489 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d4df1fac2a3904b24b7230ffb225fbf8 = $(`<div id="html_d4df1fac2a3904b24b7230ffb225fbf8" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #11</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA BARAT<br>         <b>Kelurahan:</b> PEGADUNGAN<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.51</span><br>         <b>Radius Bahaya:</b> 465 m     </div>     </div>`)[0];
+                popup_4eb0bab867bc016956612ca583f61489.setContent(html_d4df1fac2a3904b24b7230ffb225fbf8);
+            
+        
+
+        circle_b15251c28823c8ccab5dcbbfb1a8150d.bindPopup(popup_4eb0bab867bc016956612ca583f61489)
+        ;
+
+        
+    
+    
+            circle_b15251c28823c8ccab5dcbbfb1a8150d.bindTooltip(
+                `<div>
+                     Cluster #11: PKL (Risk: 0.51)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ce1b104f7c2f01211340f6de11fcfd91 = L.circle(
+                [-6.36696, 106.895684],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150.0, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_fa97df1f71c12fff60dc464b40c5dd65 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_696076f4b7163cc9dafbbb930b837e81 = $(`<div id="html_696076f4b7163cc9dafbbb930b837e81" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #60</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA TIMUR<br>         <b>Kelurahan:</b> PONDOK RANGGON<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 4 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.51</span><br>         <b>Radius Bahaya:</b> 150 m     </div>     </div>`)[0];
+                popup_fa97df1f71c12fff60dc464b40c5dd65.setContent(html_696076f4b7163cc9dafbbb930b837e81);
+            
+        
+
+        circle_ce1b104f7c2f01211340f6de11fcfd91.bindPopup(popup_fa97df1f71c12fff60dc464b40c5dd65)
+        ;
+
+        
+    
+    
+            circle_ce1b104f7c2f01211340f6de11fcfd91.bindTooltip(
+                `<div>
+                     Cluster #60: PKL (Risk: 0.51)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0a63ebe4897d45681d35f0b05bb02991 = L.circle(
+                [-6.156834, 106.747179],
+                {"bubblingMouseEvents": true, "color": "#f77f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f77f00", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 288.5, "stroke": true, "weight": 2}
+            ).addTo(map_fbfe6e3ea117a72cfa28e0e81965918b);
+        
+    
+        var popup_8edb12c97d9f1bf582c2fc6b566f83c2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_92f539f992c4e6365d573c380c6b354d = $(`<div id="html_92f539f992c4e6365d573c380c6b354d" style="width: 100.0%; height: 100.0%;">     <div style='font-family: sans-serif; width: 200px;'>         <h4 style='margin:0 0 5px 0; color: #d90429;'>Zona Rawan #61</h4>         <b>Wilayah:</b> KOTA ADM. JAKARTA BARAT<br>         <b>Kelurahan:</b> RAWA BUAYA<br>         <b>Kejahatan Dominan:</b> PKL<br>         <b>Jumlah Laporan:</b> 5 kejadian<br>         <b>Risk Score:</b> <span style='color:red; font-weight:bold;'>0.51</span><br>         <b>Radius Bahaya:</b> 288 m     </div>     </div>`)[0];
+                popup_8edb12c97d9f1bf582c2fc6b566f83c2.setContent(html_92f539f992c4e6365d573c380c6b354d);
+            
+        
+
+        circle_0a63ebe4897d45681d35f0b05bb02991.bindPopup(popup_8edb12c97d9f1bf582c2fc6b566f83c2)
+        ;
+
+        
+    
+    
+            circle_0a63ebe4897d45681d35f0b05bb02991.bindTooltip(
+                `<div>
+                     Cluster #61: PKL (Risk: 0.51)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

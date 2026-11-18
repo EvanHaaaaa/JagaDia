@@ -60,11 +60,27 @@ def generate_mock_crime_dataset(n_samples: int = 1500, output_path: Path = None)
     return df
 
 def load_data(file_path: Path) -> pd.DataFrame:
-    """Load dataset from CSV or Parquet."""
+    """Load dataset from CSV, Parquet, or Excel/HTML table."""
     if not file_path.exists():
         raise FileNotFoundError(f"Dataset not found at {file_path}")
     if file_path.suffix == ".parquet":
         return pd.read_parquet(file_path)
+
+    # Check if file is an HTML table (standard export format from Jakarta Open Data)
+    try:
+        with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+            sample = f.read(512).lower()
+        if "<html" in sample or "<table" in sample:
+            return pd.read_html(file_path)[0]
+    except Exception:
+        pass
+
+    if file_path.suffix in [".xls", ".xlsx"]:
+        try:
+            return pd.read_excel(file_path)
+        except Exception:
+            return pd.read_html(file_path)[0]
+
     return pd.read_csv(file_path)
 
 if __name__ == "__main__":
