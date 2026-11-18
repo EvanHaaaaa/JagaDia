@@ -32,12 +32,12 @@ Gradle wrapper (9.6.0) dan JDK untuk Gradle akan diunduh otomatis saat sync pert
 
 ### Masalah umum
 
-| Gejala | Penyebab / solusi |
-|---|---|
-| Gradle sync gagal soal `local.properties` | `build.gradle.kts` membaca file ini. Pastikan ada di `APP/` (Android Studio biasanya membuatnya otomatis saat project dibuka). |
-| Routing gagal / error 401 atau 403 (setelah routing tersambung) | `ORS_API_KEY` kosong atau salah. Cek isi `local.properties`, lalu sync ulang. |
-| Peta kosong atau abu-abu | Cek koneksi internet. Style peta diambil dari OpenFreeMap. |
-| Onboarding tidak muncul lagi | Onboarding hanya tampil sekali. Hapus data aplikasi (App info > Storage > Clear data) untuk melihatnya lagi. |
+| Gejala                                                          | Penyebab / solusi                                                                                                              |
+|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Gradle sync gagal soal `local.properties`                       | `build.gradle.kts` membaca file ini. Pastikan ada di `APP/` (Android Studio biasanya membuatnya otomatis saat project dibuka). |
+| Routing gagal / error 401 atau 403 (setelah routing tersambung) | `ORS_API_KEY` kosong atau salah. Cek isi `local.properties`, lalu sync ulang.                                                  |
+| Peta kosong atau abu-abu                                        | Cek koneksi internet. Style peta diambil dari OpenFreeMap.                                                                     |
+| Onboarding tidak muncul lagi                                    | Onboarding hanya tampil sekali. Hapus data aplikasi (App info > Storage > Clear data) untuk melihatnya lagi.                   |
 
 ---
 
@@ -79,22 +79,22 @@ Status onboarding disimpan di SharedPreferences `jagadia`, kunci `onboarding_don
 
 ## Peta dan Routing
 
-| Hal | Detail |
-|---|---|
-| Library | MapLibre Native Android SDK 13.7.1 (`org.maplibre.gl:android-sdk`) |
-| Style peta | `https://tiles.openfreemap.org/styles/liberty` |
-| Kamera awal | Lat `-6.219990`, Lng `106.903173`, zoom 13 |
-| Layer zona risiko | Source `risk-src`, layer `risk-fill` (FillLayer, opacity 0,35) |
-| Layer rute | Source `route-src`, layer `route-line` (LineLayer biru, lebar 6) |
-| Routing | OpenRouteService, key lewat `BuildConfig.ORS_API_KEY` |
+| Hal               | Detail                                                                                        |
+|-------------------|-----------------------------------------------------------------------------------------------|
+| Library           | MapLibre Native Android SDK 13.7.1 (`org.maplibre.gl:android-sdk`)                            |
+| Style peta        | `https://tiles.openfreemap.org/styles/positron`                                               |
+| Kamera awal       | Lat `-6.219990`, Lng `106.903173`, zoom 16                                                    |
+| Layer zona risiko | Source `risk-src`, layer `risk-zone` (CircleLayer blur 1.0, opacity 0,55, radius dalam meter) |
+| Layer rute        | Source `route-src`, layer `route-line` (LineLayer biru, lebar 6)                              |
+| Routing           | OpenRouteService, key lewat `BuildConfig.ORS_API_KEY`                                         |
 
-**Format data zona risiko** (`assets/risk_zones.json`): GeoJSON `FeatureCollection` berisi `Polygon`. Properti `risk` bernilai 0.0 sampai 1.0 dan menentukan warna (0 hijau, 0,5 kuning, 1 merah).
+**Format data zona risiko** (`assets/risk_zones.json`): GeoJSON `FeatureCollection` berisi `Point`. Properti: `radius` (meter, default 100) dan skor 0.0 sampai 1.0 per waktu: `risk_now`, `risk_1h`, `risk_night` (0 hijau, 0,5 kuning, 1 merah). Chip Sekarang / +1 jam / Malam ini di bottom sheet memilih properti mana yang dipakai.
 
 ```json
 {
-  "type": "Feature",
-  "properties": { "risk": 0.9 },
-  "geometry": { "type": "Polygon", "coordinates": [[[106.898, -6.224], [106.908, -6.224], [106.908, -6.214], [106.898, -6.214], [106.898, -6.224]]] }
+   "type": "Feature",
+   "properties": { "radius": 110, "risk_now": 0.85, "risk_1h": 0.9, "risk_night": 1.0 },
+   "geometry": { "type": "Point", "coordinates": [106.9020, -6.2172] }
 }
 ```
 
