@@ -7,4 +7,14 @@
     <color name="teal_primary">#20C997</color>
     <color name="teal_primary_variant">#17A076</color>
     <color name="teal_on_primary">#FFFFFF</color>
+    <!-- Map page -->
+    <color name="jd_teal_dark">#0F4C5C</color>
+    <color name="jd_ink">#1B2B33</color>
+    <color name="jd_muted">#6B7C85</color>
+    <color name="jd_nav_off">#8A9AA1</color>
+    <color name="jd_sheet">#F6F9FA</color>
+    <color name="jd_divider">#E3EAED</color>
+    <color name="jd_aman">#2E9E6B</color>
+    <color name="jd_waspada">#F5A623</color>
+    <color name="jd_rawan">#E04B4B</color>
 </resources>

@@ -5,9 +5,17 @@ import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import android.graphics.Color
 import android.os.Bundle
+import android.view.Gravity
+import android.view.View
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updatePadding
 import org.maplibre.android.MapLibre
 import org.maplibre.android.camera.CameraPosition
 import org.maplibre.android.camera.CameraUpdateFactory
@@ -20,20 +28,39 @@ import org.maplibre.android.maps.MapLibreMap
 import org.maplibre.android.maps.MapView
 import org.maplibre.android.maps.Style
 import org.maplibre.android.style.expressions.Expression
-import org.maplibre.android.style.layers.FillLayer
+import org.maplibre.android.style.layers.CircleLayer
 import org.maplibre.android.style.layers.LineLayer
 import org.maplibre.android.style.layers.Property
 import org.maplibre.android.style.layers.PropertyFactory
+import org.maplibre.android.style.layers.SymbolLayer
 import org.maplibre.android.style.sources.GeoJsonSource
 import org.maplibre.geojson.FeatureCollection
 import org.maplibre.geojson.LineString
 
-// Semua yang ada di bawah ini berada DI DALAM kurung kurawal class MapActivity.
 class MapActivity : AppCompatActivity() {
 
-    // ---------- 1. PROPERTI (di bagian paling atas class) ----------
+    // ---------- 1. PROPERTI ----------
     private lateinit var mapView: MapView
     private var map: MapLibreMap? = null
+
+    private lateinit var topBar: View
+    private lateinit var sheet: View
+    private lateinit var alertCard: View
+    private lateinit var tvRiskTitle: TextView
+    private lateinit var tvRiskBadge: TextView
+    private lateinit var chipNow: View
+    private lateinit var chip1h: View
+    private lateinit var chipTonight: View
+
+    private var zonesJson: String = ""
+    private var timeMode = TimeMode.TONIGHT
+
+    // key = nama properti di risk_zones.json
+    private enum class TimeMode(val key: String, val title: String) {
+        NOW("risk_now", "Risiko saat ini di sekitarmu"),
+        PLUS_1H("risk_1h", "Risiko 1 jam ke depan"),
+        TONIGHT("risk_night", "Risiko meningkat malam ini")
+    }
 
     private val locationPermissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
@@ -49,26 +76,33 @@ class MapActivity : AppCompatActivity() {
         MapLibre.getInstance(this) // wajib sebelum setContentView
         setContentView(R.layout.activity_map)
 
+        bindViews()
+        setupEdgeToEdge()
+        setupUi()
+
         mapView = findViewById(R.id.mapView)
         mapView.onCreate(savedInstanceState)
 
         mapView.getMapAsync { m ->
             map = m
+            setupMapChrome(m)
 
-            m.setStyle("https://tiles.openfreemap.org/styles/liberty") { style ->
+            // Style terang supaya blob zona kelihatan jelas (sesuai desain)
+            m.setStyle("https://tiles.openfreemap.org/styles/positron") { style ->
                 m.cameraPosition = CameraPosition.Builder()
                     .target(LatLng(-6.219990, 106.903173)) // Pusat wilayah target
-                    .zoom(13.0)
+                    .zoom(16.0)
                     .build()
 
                 addRiskLayer(style)   // zona dulu
                 addRouteLayer(style)  // rute sesudahnya, supaya tampil di atas zona
 
-                // Data dummy zona (opsional): file assets/risk_zones.json
+                // Data dummy zona: assets/risk_zones.json
                 runCatching {
-                    val json = assets.open("risk_zones.json").bufferedReader().use { it.readText() }
-                    style.getSourceAs<GeoJsonSource>("risk-src")?.setGeoJson(json)
+                    zonesJson = assets.open("risk_zones.json").bufferedReader().use { it.readText() }
+                    style.getSourceAs<GeoJsonSource>("risk-src")?.setGeoJson(zonesJson)
                 }
+                setTimeMode(timeMode)
 
                 // Izin lokasi
                 val hasFine = ContextCompat.checkSelfPermission(
@@ -88,26 +122,147 @@ class MapActivity : AppCompatActivity() {
         }
     }
 
-    // ---------- 3. FUNGSI-FUNGSI BUATANMU (urutan bebas, asal di dalam class) ----------
+    // ---------- 3. UI ----------
+    private fun bindViews() {
+        topBar = findViewById(R.id.topBar)
+        sheet = findViewById(R.id.sheet)
+        alertCard = findViewById(R.id.alertCard)
+        tvRiskTitle = findViewById(R.id.tvRiskTitle)
+        tvRiskBadge = findViewById(R.id.tvRiskBadge)
+        chipNow = findViewById(R.id.chipNow)
+        chip1h = findViewById(R.id.chip1h)
+        chipTonight = findViewById(R.id.chipTonight)
+    }
+
+    /** Peta tampil sampai ke bawah status bar & nav bar, UI digeser sesuai inset. */
+    private fun setupEdgeToEdge() {
+        val root = findViewById<View>(R.id.root)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        WindowCompat.getInsetsController(window, root).isAppearanceLightStatusBars = true
+
+        val topBase = topBar.paddingTop
+        val navBar = findViewById<View>(R.id.bottomNav)
+        ViewCompat.setOnApplyWindowInsetsListener(root) { _, insets ->
+            val bars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            topBar.updatePadding(top = topBase + bars.top)
+            navBar.updatePadding(bottom = bars.bottom)
+            insets
+        }
+    }
+
+    private fun setupUi() {
+        findViewById<View>(R.id.btnAlertClose).setOnClickListener { alertCard.visibility = View.GONE }
+
+        chipNow.setOnClickListener { setTimeMode(TimeMode.NOW) }
+        chip1h.setOnClickListener { setTimeMode(TimeMode.PLUS_1H) }
+        chipTonight.setOnClickListener { setTimeMode(TimeMode.TONIGHT) }
+
+        findViewById<EditText>(R.id.etSearch).setOnEditorActionListener { v, _, _ ->
+            onSearchSubmitted(v.text.toString())
+            false
+        }
+
+        findViewById<View>(R.id.navMap).isSelected = true
+
+        // Bottom nav: Peta sedang aktif. TODO: buka halaman Riwayat & Laporkan.
+        findViewById<View>(R.id.navHistory).setOnClickListener { /* TODO */ }
+        findViewById<View>(R.id.navReport).setOnClickListener { /* TODO */ }
+    }
+
+    /** Logo & atribusi MapLibre dipindah ke bawah search bar supaya tidak ketutup bottom sheet. */
+    private fun setupMapChrome(m: MapLibreMap) {
+        m.uiSettings.isCompassEnabled = false
+        m.uiSettings.logoGravity = Gravity.TOP or Gravity.START
+        m.uiSettings.attributionGravity = Gravity.TOP or Gravity.START
+
+        topBar.addOnLayoutChangeListener { _, _, _, _, bottom, _, _, _, _ ->
+            val top = bottom + dp(6)
+            m.uiSettings.setLogoMargins(dp(16), top, 0, 0)
+            m.uiSettings.setAttributionMargins(dp(16 + 84), top, 0, 0) // geser kalau tabrakan dengan logo
+        }
+    }
+
+    private fun setTimeMode(mode: TimeMode) {
+        timeMode = mode
+        chipNow.isSelected = mode == TimeMode.NOW
+        chip1h.isSelected = mode == TimeMode.PLUS_1H
+        chipTonight.isSelected = mode == TimeMode.TONIGHT
+
+        // Ganti properti yang dipakai untuk warna blob
+        map?.style?.getLayerAs<CircleLayer>("risk-zone")
+            ?.setProperties(PropertyFactory.circleColor(riskColorExpression(mode.key)))
+
+        tvRiskTitle.text = mode.title
+        showLevel(maxRisk(mode.key))
+    }
+
+    private fun showLevel(risk: Double) {
+        val (label, bg, fg) = when {
+            risk >= 0.7 -> Triple("Rawan", "#FBE0E0", "#D64545")
+            risk >= 0.4 -> Triple("Waspada", "#FDEFD3", "#B7791F")
+            else -> Triple("Aman", "#D7F0E3", "#1F7A4D")
+        }
+        tvRiskBadge.text = label
+        tvRiskBadge.setTextColor(Color.parseColor(fg))
+        tvRiskBadge.background.mutate().setTint(Color.parseColor(bg))
+    }
+
+    /** Risiko tertinggi di data (dummy). TODO: ganti dengan hasil prediksi untuk lokasi pengguna. */
+    private fun maxRisk(key: String): Double = runCatching {
+        FeatureCollection.fromJson(zonesJson).features()
+            ?.mapNotNull { it.getNumberProperty(key)?.toDouble() }
+            ?.maxOrNull()
+    }.getOrNull() ?: 0.0
+
+    private fun dp(v: Int) = (v * resources.displayMetrics.density).toInt()
+
+    // ---------- 4. FUNGSI PETA ----------
+    private fun onSearchSubmitted(query: String) {
+        // TODO: geocoding `query`, lalu panggil onDestinationPicked(latLng)
+    }
+
     private fun onDestinationPicked(latLng: LatLng) {
         // TODO: minta rute ke latLng, lalu panggil showRoute(geoJson)
     }
 
+    private fun riskColorExpression(key: String): Expression =
+        Expression.interpolate(
+            Expression.linear(), Expression.get(key),
+            Expression.stop(0.0, Expression.color(Color.parseColor("#2E9E6B"))),
+            Expression.stop(0.5, Expression.color(Color.parseColor("#F5A623"))),
+            Expression.stop(1.0, Expression.color(Color.parseColor("#E04B4B")))
+        )
+
+    /**
+     * Zona = blob lembut (CircleLayer + blur), bukan poligon kotak.
+     * Ukuran ditentukan properti `radius` (meter) per titik di risk_zones.json,
+     * dan ikut membesar/mengecil mengikuti zoom supaya tetap mewakili jarak nyata.
+     * Mau zona lebih kecil/besar: ubah `radius` di JSON, atau ubah circleBlur/circleOpacity di bawah.
+     */
     private fun addRiskLayer(style: Style) {
         style.addSource(GeoJsonSource("risk-src"))
-        style.addLayer(
-            FillLayer("risk-fill", "risk-src").withProperties(
-                PropertyFactory.fillOpacity(0.35f),
-                PropertyFactory.fillColor(
-                    Expression.interpolate(
-                        Expression.linear(), Expression.get("risk"),
-                        Expression.stop(0.0, Expression.color(Color.parseColor("#2ECC71"))),
-                        Expression.stop(0.5, Expression.color(Color.parseColor("#F1C40F"))),
-                        Expression.stop(1.0, Expression.color(Color.parseColor("#E74C3C")))
-                    )
-                )
-            )
+
+        // meter -> piksel. Tile MapLibre 512px, lintang Jakarta (~-6.2):
+        //   zoom 10 = ~76 m/px, zoom 20 = ~0.074 m/px
+        val radiusMeters = Expression.toNumber(
+            Expression.coalesce(Expression.get("radius"), Expression.literal(100))
         )
+        val radiusPx = Expression.interpolate(
+            Expression.exponential(2), Expression.zoom(),
+            Expression.stop(10, Expression.product(radiusMeters, Expression.literal(1.0 / 76.0))),
+            Expression.stop(20, Expression.product(radiusMeters, Expression.literal(13.48)))
+        )
+
+        val layer = CircleLayer("risk-zone", "risk-src").withProperties(
+            PropertyFactory.circleColor(riskColorExpression(timeMode.key)),
+            PropertyFactory.circleRadius(radiusPx),
+            PropertyFactory.circleBlur(1.0f),       // 1.0 = pinggiran paling halus
+            PropertyFactory.circleOpacity(0.55f)
+        )
+
+        // Taruh di bawah label jalan supaya nama jalan tetap terbaca
+        val firstSymbol = style.layers.firstOrNull { it is SymbolLayer }?.id
+        if (firstSymbol != null) style.addLayerBelow(layer, firstSymbol) else style.addLayer(layer)
     }
 
     private fun addRouteLayer(style: Style) {
@@ -140,15 +295,28 @@ class MapActivity : AppCompatActivity() {
     private fun enableLocation(style: Style) {
         map?.locationComponent?.apply {
             activateLocationComponent(
-                LocationComponentActivationOptions.builder(this@MapActivity, style).build()
+                LocationComponentActivationOptions.builder(
+                    this@MapActivity, style
+                ).build()
             )
+
             isLocationComponentEnabled = true
-            cameraMode = CameraMode.TRACKING
+
+            // Matikan tracking sementara
+            cameraMode = CameraMode.NONE
+
             renderMode = RenderMode.COMPASS
+
+            map?.locationComponent?.apply {
+                android.util.Log.d(
+                    "GPS_CHECK",
+                    "Last location: $lastKnownLocation"
+                )
+            }
         }
     }
 
-    // ---------- 4. LIFECYCLE (wajib diteruskan ke MapView) ----------
+    // ---------- 5. LIFECYCLE (wajib diteruskan ke MapView) ----------
     override fun onStart() { super.onStart(); mapView.onStart() }
     override fun onResume() { super.onResume(); mapView.onResume() }
     override fun onPause() { super.onPause(); mapView.onPause() }
@@ -159,4 +327,4 @@ class MapActivity : AppCompatActivity() {
         super.onSaveInstanceState(outState)
         mapView.onSaveInstanceState(outState)
     }
-} // <-- kurung kurawal penutup class. Tidak boleh ada fungsi di bawah ini.
+}
