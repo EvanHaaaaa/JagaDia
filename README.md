@@ -199,6 +199,51 @@ Jika muncul konflik, buka file yang bertanda `<<<<<<<`, pilih isi yang benar, ha
 
 ---
 
+## Endpoint Pencarian Lokasi Wilayah Jakarta
+
+Mencari lokasi tujuan berdasarkan kata kunci nama tempat atau alamat untuk wilayah **Jakarta**, lalu mengembalikan daftar lokasi berisi **nama**, **alamat**, dan **koordinat**. Jika tidak ada hasil yang cocok, endpoint mengembalikan daftar kosong (`[]`) dengan pesan `"Lokasi tidak ditemukan"`.
+
+- **Endpoint:** `GET /api/v1/locations/search`
+- **Query Parameter:**
+  - `q` (`string`, wajib) — kata kunci nama tempat atau alamat di wilayah Jakarta.
+
+### Contoh Request
+
+```http
+GET /api/v1/locations/search?q=Klender HTTP/1.1
+Host: api.jagadia.local
+Accept: application/json
+```
+
+### Contoh Response (Hasil Ditemukan)
+
+```json
+{
+  "query": "Klender",
+  "message": "OK",
+  "results": [
+    {
+      "name": "Stasiun Klender / Area Klender",
+      "address": "Jl. Bekasi Timur Raya, Kel. Klender, Kec. Duren Sawit, Jakarta Timur, DKI Jakarta",
+      "coordinate": {
+        "latitude": -6.2127,
+        "longitude": 106.9002
+      }
+    }
+  ]
+}
+```
+
+### Contoh Response (Tidak Ada Hasil)
+
+```json
+{
+  "query": "Bandung",
+  "message": "Lokasi tidak ditemukan",
+  "results": []
+}
+```
+
 ## Tim
 
 Kelompok 4 · PPTI 24
