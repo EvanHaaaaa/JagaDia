@@ -1,3 +1,4 @@
+
 # JagaDia
 
 > Rute tercepat belum tentu teraman.
@@ -10,19 +11,30 @@ Proyek Kelompok 4 · PPTI 24.
 
 ## Daftar Isi
 
-1. [Dokumentasi per Bagian](#dokumentasi-per-bagian)
-2. [Status Fitur](#status-fitur)
-3. [Keputusan Teknologi](#keputusan-teknologi)
-4. [Struktur Folder](#struktur-folder)
-5. [Panduan Git: Branch dan Commit](#panduan-git-branch-dan-commit)
-6. [Tim](#tim)
+- [JagaDia](#jagadia)
+  - [Daftar Isi](#daftar-isi)
+  - [Dokumentasi per Bagian](#dokumentasi-per-bagian)
+  - [Status Fitur](#status-fitur)
+  - [Keputusan Teknologi](#keputusan-teknologi)
+  - [Struktur Folder](#struktur-folder)
+  - [Panduan Git: Branch dan Commit](#panduan-git-branch-dan-commit)
+    - [Struktur branch](#struktur-branch)
+    - [Aturan branch](#aturan-branch)
+    - [Aturan commit](#aturan-commit)
+    - [Alur kerja langkah demi langkah](#alur-kerja-langkah-demi-langkah)
+    - [Jangan di-commit](#jangan-di-commit)
+  - [Endpoint Pencarian Lokasi Wilayah Jakarta](#endpoint-pencarian-lokasi-wilayah-jakarta)
+    - [Contoh Request](#contoh-request)
+    - [Contoh Response (Hasil Ditemukan)](#contoh-response-hasil-ditemukan)
+    - [Contoh Response (Tidak Ada Hasil)](#contoh-response-tidak-ada-hasil)
+  - [Tim](#tim)
 
 ---
 
 ## Dokumentasi per Bagian
 
 | Bagian                | Isi                                          | Panduan                                            |
-|-----------------------|----------------------------------------------|----------------------------------------------------|
+| --------------------- | -------------------------------------------- | -------------------------------------------------- |
 | Aplikasi Android      | Setup Android Studio, API key, struktur kode | [APP/AppDevelopment.md](APP/AppDevelopment.md)     |
 | Machine Learning      | Setup Python, dataset, model                 | [ML/ModelsDevelopment.md](ML/ModelsDevelopment.md) |
 | Git (branch & commit) | Aturan dan alur kerja untuk semua anggota    | [Di bawah](#panduan-git-branch-dan-commit)         |
@@ -35,7 +47,8 @@ Proyek Kelompok 4 · PPTI 24.
 - [x] Onboarding 4 halaman + permintaan izin lokasi
 - [x] Peta (MapLibre) dengan posisi pengguna
 - [x] Layer zona risiko di peta (masih data dummy `risk_zones.json`)
-- [ ] Pilih tujuan di peta, lalu minta rute ke OpenRouteService (`onDestinationPicked` masih TODO)
+- [ ] Pilih tujuan di peta, lalu minta rute ke OpenRouteService (`o
+nDestinationPicked` masih TODO)
 - [ ] Perbandingan rute: waktu, jarak, skor aman
 - [ ] Model Machine Learning prediksi risiko berdasarkan lokasi dan waktu (folder `ML/`)
 
@@ -43,16 +56,16 @@ Proyek Kelompok 4 · PPTI 24.
 
 ## Keputusan Teknologi
 
-| Komponen | Pilihan | Catatan |
-|---|---|---|
-| Platform & bahasa | Android native, **Kotlin** | `minSdk 24` (Android 7.0), `targetSdk` / `compileSdk 37` |
-| UI | XML layout + AppCompat, Material Components, ConstraintLayout | Belum memakai Jetpack Compose |
-| Library peta | **MapLibre Native Android SDK 13.7.1** | Open source, gratis |
-| Tile / style peta | **OpenFreeMap** (style `liberty`) | Gratis, tanpa API key |
-| Routing | **OpenRouteService (ORS)** | Gratis; API key dibaca dari `local.properties` lewat `BuildConfig.ORS_API_KEY` |
-| Data zona rawan | **GeoJSON** (`assets/risk_zones.json`) | Properti `risk` 0.0 sampai 1.0 diwarnai hijau, kuning, merah |
-| Machine Learning | **Python** (folder `ML/`) | Library ditambahkan ke `ML/req.txt` saat dipakai |
-| Build | Android Gradle Plugin 9.4.1, Gradle 9.6.0 | Versi dependency ada di `APP/gradle/libs.versions.toml` |
+| Komponen          | Pilihan                                                       | Catatan                                                                        |
+| ----------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Platform & bahasa | Android native, **Kotlin**                                    | `minSdk 24` (Android 7.0), `targetSdk` / `compileSdk 37`                       |
+| UI                | XML layout + AppCompat, Material Components, ConstraintLayout | Belum memakai Jetpack Compose                                                  |
+| Library peta      | **MapLibre Native Android SDK 13.7.1**                        | Open source, gratis                                                            |
+| Tile / style peta | **OpenFreeMap** (style `liberty`)                             | Gratis, tanpa API key                                                          |
+| Routing           | **OpenRouteService (ORS)**                                    | Gratis; API key dibaca dari `local.properties` lewat `BuildConfig.ORS_API_KEY` |
+| Data zona rawan   | **GeoJSON** (`assets/risk_zones.json`)                        | Properti `risk` 0.0 sampai 1.0 diwarnai hijau, kuning, merah                   |
+| Machine Learning  | **Python** (folder `ML/`)                                     | Library ditambahkan ke `ML/req.txt` saat dipakai                               |
+| Build             | Android Gradle Plugin 9.4.1, Gradle 9.6.0                     | Versi dependency ada di `APP/gradle/libs.versions.toml`                        |
 
 Alasan memilih MapLibre + OpenFreeMap + ORS: semuanya gratis dan tidak memerlukan kartu kredit, berbeda dengan Google Maps Platform.
 
@@ -86,12 +99,12 @@ main                          <- branch utama, selalu stabil dan bisa di-build
  └── feature-be-<nama-fitur>  <- backend: satu branch per fitur
 ```
 
-| Branch | Dipakai untuk | Dibuat dari | Digabung ke |
-|---|---|---|---|
-| `main` | Versi stabil | - | - |
-| `feature-ml` | Machine Learning (`ML/`) | `main` | `main`, via Pull Request tiap ada hasil yang stabil |
-| `feature-fe-<nama-page>` | Frontend: tampilan, layout XML, Activity UI. Contoh: `feature-fe-onboarding`, `feature-fe-map` | `main` | `main`, via Pull Request |
-| `feature-be-<nama-fitur>` | Backend: logika, data, API. Contoh: `feature-be-routing`, `feature-be-risk-zones` | `main` | `main`, via Pull Request |
+| Branch                    | Dipakai untuk                                                                                  | Dibuat dari | Digabung ke                                         |
+| ------------------------- | ---------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------------- |
+| `main`                    | Versi stabil                                                                                   | -           | -                                                   |
+| `feature-ml`              | Machine Learning (`ML/`)                                                                       | `main`      | `main`, via Pull Request tiap ada hasil yang stabil |
+| `feature-fe-<nama-page>`  | Frontend: tampilan, layout XML, Activity UI. Contoh: `feature-fe-onboarding`, `feature-fe-map` | `main`      | `main`, via Pull Request                            |
+| `feature-be-<nama-fitur>` | Backend: logika, data, API. Contoh: `feature-be-routing`, `feature-be-risk-zones`              | `main`      | `main`, via Pull Request                            |
 
 ### Aturan branch
 
@@ -106,13 +119,13 @@ main                          <- branch utama, selalu stabil dan bisa di-build
 
 Format: `tipe(area): ringkasan singkat`
 
-| Tipe | Dipakai untuk |
-|---|---|
-| `feat` | Fitur atau page baru |
-| `fix` | Perbaikan bug |
-| `refactor` | Merapikan kode tanpa mengubah perilaku |
-| `docs` | README atau dokumentasi |
-| `chore` | Konfigurasi, dependency, file pendukung |
+| Tipe       | Dipakai untuk                           |
+| ---------- | --------------------------------------- |
+| `feat`     | Fitur atau page baru                    |
+| `fix`      | Perbaikan bug                           |
+| `refactor` | Merapikan kode tanpa mengubah perilaku  |
+| `docs`     | README atau dokumentasi                 |
+| `chore`    | Konfigurasi, dependency, file pendukung |
 
 - Ringkasan dalam kalimat perintah, huruf kecil, maksimal sekitar 70 karakter.
 - Satu commit = satu perubahan yang utuh. Commit sering, jangan ditumpuk jadi satu commit besar.
@@ -199,12 +212,57 @@ Jika muncul konflik, buka file yang bertanda `<<<<<<<`, pilih isi yang benar, ha
 
 ---
 
+## Endpoint Pencarian Lokasi Wilayah Jakarta
+
+Mencari lokasi tujuan berdasarkan kata kunci nama tempat atau alamat untuk wilayah **Jakarta**, lalu mengembalikan daftar lokasi berisi **nama**, **alamat**, dan **koordinat**. Jika tidak ada hasil yang cocok, endpoint mengembalikan daftar kosong (`[]`) dengan pesan `"Lokasi tidak ditemukan"`.
+
+- **Endpoint:** `GET /api/v1/locations/search`
+- **Query Parameter:**
+  - `q` (`string`, wajib) — kata kunci nama tempat atau alamat di wilayah Jakarta.
+
+### Contoh Request
+
+```http
+GET /api/v1/locations/search?q=Klender HTTP/1.1
+Host: api.jagadia.local
+Accept: application/json
+```
+
+### Contoh Response (Hasil Ditemukan)
+
+```json
+{
+  "query": "Klender",
+  "message": "OK",
+  "results": [
+    {
+      "name": "Stasiun Klender / Area Klender",
+      "address": "Jl. Bekasi Timur Raya, Kel. Klender, Kec. Duren Sawit, Jakarta Timur, DKI Jakarta",
+      "coordinate": {
+        "latitude": -6.2127,
+        "longitude": 106.9002
+      }
+    }
+  ]
+}
+```
+
+### Contoh Response (Tidak Ada Hasil)
+
+```json
+{
+  "query": "Bandung",
+  "message": "Lokasi tidak ditemukan",
+  "results": []
+}
+```
+
 ## Tim
 
 Kelompok 4 · PPTI 24
 
 | Nama     | Peran                        | GitHub          |
-|----------|------------------------------|-----------------|
+| -------- | ---------------------------- | --------------- |
 | Agatha   | Product Owner & UI/UX Design | agathadys       |
 | Evan     | Scrum Master & ML Engineer   | EvanHaaaaa      |
 | Gerald   | Machine Learning             | GeraldC3lloz    |

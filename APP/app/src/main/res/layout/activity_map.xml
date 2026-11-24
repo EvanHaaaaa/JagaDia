@@ -1,6 +1,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
     <org.maplibre.android.maps.MapView android:id="@+id/mapView" android:layout_width="match_parent" android:layout_height="match_parent"/>
-    <!--  ========== TOP: logo + search + legend ==========  -->
+    <!--   ========== TOP: logo + search + legend ==========   -->
     <LinearLayout android:id="@+id/topBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="16dp" android:paddingTop="12dp" android:paddingEnd="16dp" app:layout_constraintTop_toTopOf="parent">
         <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:layout_marginBottom="12dp" android:gravity="center_vertical" android:orientation="horizontal">
             <ImageView android:layout_width="40dp" android:layout_height="40dp" android:contentDescription="@string/app_name" android:src="@drawable/ic_shield_logo"/>
@@ -11,6 +11,26 @@
                 <ImageView android:layout_width="22dp" android:layout_height="22dp" android:importantForAccessibility="no" android:src="@drawable/ic_search" app:tint="@color/jd_muted"/>
                 <EditText android:id="@+id/etSearch" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginStart="14dp" android:layout_weight="1" android:background="@null" android:hint="Mau ke mana?" android:imeOptions="actionSearch" android:importantForAutofill="no" android:inputType="text" android:maxLines="1" android:textColor="@color/jd_ink" android:textColorHint="@color/jd_muted" android:textSize="15sp"/>
             </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <!--   ========== Drop Down Map ==========   -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/searchDropdownCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/jd_sheet"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:id="@+id/searchDropdownList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="?android:attr/dividerHorizontal"
+                android:orientation="vertical"
+                android:showDividers="middle" />
         </com.google.android.material.card.MaterialCardView>
         <com.google.android.material.card.MaterialCardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="end" android:layout_marginTop="10dp" app:cardBackgroundColor="@color/jd_sheet" app:cardCornerRadius="10dp" app:cardElevation="3dp" app:strokeWidth="0dp">
             <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:paddingStart="12dp" android:paddingTop="7dp" android:paddingEnd="12dp" android:paddingBottom="7dp">
@@ -23,7 +43,7 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
-    <!--  ========== PERINGATAN LANGSUNG ==========  -->
+    <!--   ========== PERINGATAN LANGSUNG ==========   -->
     <com.google.android.material.card.MaterialCardView android:id="@+id/alertCard" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:layout_marginBottom="14dp" app:cardBackgroundColor="@color/jd_sheet" app:cardCornerRadius="16dp" app:cardElevation="8dp" app:layout_constraintBottom_toTopOf="@+id/sheet" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:strokeWidth="0dp">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="14dp">
             <ImageView android:layout_width="34dp" android:layout_height="34dp" android:importantForAccessibility="no" android:src="@drawable/ic_alert_circle"/>
@@ -35,272 +55,114 @@
             <ImageView android:id="@+id/btnAlertClose" android:layout_width="28dp" android:layout_height="28dp" android:layout_gravity="top" android:contentDescription="Tutup peringatan" android:padding="7dp" android:src="@drawable/ic_close" app:tint="@color/jd_muted"/>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
-    <!--  ========== TOMBOL LOKASIKU ==========  -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/btnMyLocation"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="12dp"
-        android:clickable="true"
-        android:focusable="true"
-        app:cardBackgroundColor="@color/jd_sheet"
-        app:cardCornerRadius="24dp"
-        app:cardElevation="6dp"
-        app:layout_constraintBottom_toTopOf="@+id/alertCard"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:strokeWidth="0dp">
-
-        <ImageView
-            android:id="@+id/ivMyLocation"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_gravity="center"
-            android:contentDescription="Lokasiku"
-            android:src="@drawable/ic_crosshair"
-            app:tint="@color/jd_teal_dark" />
+    <!--   ========== TOMBOL LOKASIKU ==========   -->
+    <com.google.android.material.card.MaterialCardView android:id="@+id/btnMyLocation" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginEnd="16dp" android:layout_marginBottom="12dp" android:clickable="true" android:focusable="true" app:cardBackgroundColor="@color/jd_sheet" app:cardCornerRadius="24dp" app:cardElevation="6dp" app:layout_constraintBottom_toTopOf="@+id/alertCard" app:layout_constraintEnd_toEndOf="parent" app:strokeWidth="0dp">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_gravity="center" android:contentDescription="Lokasiku" android:src="@drawable/ic_crosshair" app:tint="@color/jd_teal_dark"/>
     </com.google.android.material.card.MaterialCardView>
-    <!--  ========== BOTTOM SHEET: prediksi risiko + nav ==========  -->
-    <View
-        android:id="@+id/detailScrim"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="0"
-        android:background="#000000"
-        android:elevation="12dp"
-        android:visibility="gone" />
-    <!--  ========== BOTTOM SHEET (1 kartu: ringkasan -> detail saat ditarik) ==========  -->
-    <FrameLayout android:id="@+id/sheet" android:layout_width="0dp" android:layout_height="wrap_content" android:background="@drawable/bg_sheet" android:elevation="16dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
-        <!-- Tampilan ringkas (yang tampil dari awal) -->
-        <LinearLayout android:id="@+id/collapsedColumn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:orientation="vertical">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="20dp" android:paddingTop="14dp" android:paddingEnd="20dp">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:letterSpacing="0.06" android:text="PREDIKSI RISIKO" android:textColor="@color/jd_muted" android:textSize="10sp"/>
-                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:gravity="center_vertical" android:orientation="horizontal">
-                    <TextView android:id="@+id/tvRiskTitle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Risiko meningkat malam ini" android:textColor="@color/jd_teal_dark" android:textSize="17sp" android:textStyle="bold"/>
-                    <TextView android:id="@+id/tvRiskBadge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_badge" android:paddingStart="14dp" android:paddingTop="5dp" android:paddingEnd="14dp" android:paddingBottom="5dp" android:text="Rawan" android:textColor="#D64545" android:textSize="12sp" android:textStyle="bold"/>
-                </LinearLayout>
-                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:orientation="horizontal" android:weightSum="3">
-                    <TextView android:id="@+id/chipNow" style="@style/JdTimeChip" android:drawableStart="@drawable/ic_chip_clock" android:text="Sekarang"/>
-                    <TextView android:id="@+id/chip1h" style="@style/JdTimeChip" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:drawableStart="@drawable/ic_chip_clock" android:text="+1 jam"/>
-                    <TextView android:id="@+id/chipTonight" style="@style/JdTimeChip" android:drawableStart="@drawable/ic_chip_moon" android:text="Malam ini"/>
-                </LinearLayout>
-            </LinearLayout>
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="16dp" android:background="@color/jd_divider"/>
-            <LinearLayout android:id="@+id/bottomNav" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:weightSum="3">
-                <LinearLayout android:id="@+id/navMap" style="@style/JdNavItem">
-                    <ImageView style="@style/JdNavIcon" android:src="@drawable/ic_nav_map"/>
-                    <TextView style="@style/JdNavLabel" android:text="Peta"/>
-                </LinearLayout>
-                <LinearLayout android:id="@+id/navHistory" style="@style/JdNavItem">
-                    <ImageView style="@style/JdNavIcon" android:src="@drawable/ic_nav_history"/>
-                    <TextView style="@style/JdNavLabel" android:text="Riwayat"/>
-                </LinearLayout>
-                <LinearLayout android:id="@+id/navReport" style="@style/JdNavItem">
-                    <ImageView style="@style/JdNavIcon" android:src="@drawable/ic_nav_report"/>
-                    <TextView style="@style/JdNavLabel" android:text="Laporkan"/>
-                </LinearLayout>
-            </LinearLayout>
-    
-        </LinearLayout>
-        <!-- Tampilan detail (muncul memudar saat kartu memanjang ke atas) -->
-        <LinearLayout
-            android:id="@+id/detailSheet"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="32dp"
-            android:orientation="vertical"
-            android:paddingBottom="16dp"
-            android:visibility="gone">
-
-
-            <!-- Bagian atas (tidak ikut scroll) = area untuk ditarik ke bawah -->
-            <LinearLayout
-                android:id="@+id/detailHeader"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingStart="24dp"
-                    android:paddingTop="8dp"
-                    android:paddingEnd="24dp">
-
-                    <TextView
-                        android:id="@+id/tvDetailBadge"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bg_badge"
-                        android:paddingStart="18dp"
-                        android:paddingTop="6dp"
-                        android:paddingEnd="18dp"
-                        android:paddingBottom="6dp"
-                        android:text="Rawan"
-                        android:textColor="#D64545"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/tvDetailArea"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="14dp"
-                        android:textColor="@color/jd_teal_dark"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/tvDetailSub"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:textColor="@color/jd_muted"
-                        android:textSize="12sp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <ScrollView
-                android:id="@+id/detailScroll"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:overScrollMode="never"
-                android:scrollbars="none">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingStart="24dp"
-                    android:paddingTop="18dp"
-                    android:paddingEnd="24dp"
-                    android:paddingBottom="8dp">
-
-                    <!-- Skor keamanan -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bg_detail_card"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <TextView
-                            android:id="@+id/tvDetailScore"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:background="@drawable/bg_score_ring"
-                            android:gravity="center"
-                            android:textColor="@color/jd_teal_dark"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
-
-                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tingkat keamanan" android:textColor="@color/jd_muted" android:textSize="10sp" />
-                            <TextView android:id="@+id/tvDetailLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:textColor="@color/jd_teal_dark" android:textSize="20sp" android:textStyle="bold" />
-                            <TextView android:id="@+id/tvDetailAdvice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:textColor="@color/jd_muted" android:textSize="12sp" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <!-- Penerangan jalan + waktu prediksi -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginEnd="6dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/bg_detail_card"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal"
-                            android:padding="14dp">
-
-                            <FrameLayout android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/bg_icon_amber">
-                                <ImageView android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center" android:importantForAccessibility="no" android:src="@drawable/ic_sun" />
-                            </FrameLayout>
-
-                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_weight="1" android:orientation="vertical">
-                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Penerangan Jalan" android:textColor="@color/jd_muted" android:textSize="9sp" />
-                                <TextView android:id="@+id/tvDetailLighting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/jd_teal_dark" android:textSize="14sp" android:textStyle="bold" />
-                                <TextView android:id="@+id/tvDetailLightingDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/jd_muted" android:textSize="8sp" />
-                            </LinearLayout>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="6dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/bg_detail_card"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal"
-                            android:padding="14dp">
-
-                            <FrameLayout android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/bg_icon_blue">
-                                <ImageView android:layout_width="22dp" android:layout_height="22dp" android:layout_gravity="center" android:importantForAccessibility="no" android:src="@drawable/ic_chip_moon" app:tint="#3B6FD8" />
-                            </FrameLayout>
-
-                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_weight="1" android:orientation="vertical">
-                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Waktu Prediksi" android:textColor="@color/jd_muted" android:textSize="9sp" />
-                                <TextView android:id="@+id/tvDetailTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/jd_teal_dark" android:textSize="14sp" android:textStyle="bold" />
-                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data diperbarui berkala" android:textColor="@color/jd_muted" android:textSize="8sp" />
-                            </LinearLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <!-- Riwayat kejadian -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="22dp"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal">
-
-                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
-                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Riwayat Kejadian" android:textColor="@color/jd_teal_dark" android:textSize="14sp" android:textStyle="bold" />
-                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="30 hari terakhir di area ini" android:textColor="@color/jd_muted" android:textSize="11sp" />
-                        </LinearLayout>
-
-                        <TextView
-                            android:id="@+id/tvIncidentCount"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bg_detail_card"
-                            android:paddingStart="14dp"
-                            android:paddingTop="6dp"
-                            android:paddingEnd="14dp"
-                            android:paddingBottom="6dp"
-                            android:textColor="@color/jd_teal_dark"
-                            android:textSize="11sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/incidentList"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:background="@drawable/bg_detail_card"
-                        android:orientation="vertical" />
-                </LinearLayout>
-            </ScrollView>
-        </LinearLayout>
-        <!-- Handle (satu saja, di atas kedua tampilan) -->
-        <FrameLayout android:id="@+id/sheetHandleArea" android:layout_width="match_parent" android:layout_height="32dp">
+    <!--   ========== BOTTOM SHEET: prediksi risiko + nav ==========   -->
+    <LinearLayout android:id="@+id/sheet" android:layout_width="0dp" android:layout_height="wrap_content" android:background="@drawable/bg_sheet" android:elevation="16dp" android:orientation="vertical" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <FrameLayout android:id="@+id/handleZone" android:layout_width="match_parent" android:layout_height="36dp">
             <View android:layout_width="40dp" android:layout_height="4dp" android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:background="@drawable/bg_sheet_handle"/>
         </FrameLayout>
-    </FrameLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="20dp" android:paddingTop="14dp" android:paddingEnd="20dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:letterSpacing="0.06" android:text="PREDIKSI RISIKO" android:textColor="@color/jd_muted" android:textSize="10sp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:id="@+id/tvRiskTitle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Risiko meningkat malam ini" android:textColor="@color/jd_teal_dark" android:textSize="17sp" android:textStyle="bold"/>
+                <TextView android:id="@+id/tvRiskBadge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_badge" android:paddingStart="14dp" android:paddingTop="5dp" android:paddingEnd="14dp" android:paddingBottom="5dp" android:text="Rawan" android:textColor="#D64545" android:textSize="12sp" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:orientation="horizontal" android:weightSum="3">
+                <TextView android:id="@+id/chipNow" style="@style/JdTimeChip" android:drawableStart="@drawable/ic_chip_clock" android:text="Sekarang"/>
+                <TextView android:id="@+id/chip1h" style="@style/JdTimeChip" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:drawableStart="@drawable/ic_chip_clock" android:text="+1 jam"/>
+                <TextView android:id="@+id/chipTonight" style="@style/JdTimeChip" android:drawableStart="@drawable/ic_chip_moon" android:text="Malam ini"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="16dp" android:background="@color/jd_divider"/>
+        <LinearLayout android:id="@+id/bottomNav" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:weightSum="3">
+            <LinearLayout android:id="@+id/navMap" style="@style/JdNavItem">
+                <ImageView style="@style/JdNavIcon" android:src="@drawable/ic_nav_map"/>
+                <TextView style="@style/JdNavLabel" android:text="Peta"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/navHistory" style="@style/JdNavItem">
+                <ImageView style="@style/JdNavIcon" android:src="@drawable/ic_nav_history"/>
+                <TextView style="@style/JdNavLabel" android:text="Riwayat"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/navReport" style="@style/JdNavItem">
+                <ImageView style="@style/JdNavIcon" android:src="@drawable/ic_nav_report"/>
+                <TextView style="@style/JdNavLabel" android:text="Laporkan"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--   ========== PANEL DETAIL: muncul saat handle ditarik ke atas ==========   -->
+    <View android:id="@+id/scrim" android:layout_width="0dp" android:layout_height="0dp" android:alpha="0" android:background="#FFFFFF" android:elevation="12dp" android:outlineProvider="none" android:visibility="gone" app:layout_constraintBottom_toTopOf="@+id/sheet" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    <LinearLayout android:id="@+id/detailSheet" android:layout_width="0dp" android:layout_height="400dp" android:alpha="0" android:background="@drawable/bg_sheet" android:clickable="true" android:elevation="24dp" android:focusable="true" android:orientation="vertical" android:visibility="invisible" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <FrameLayout android:id="@+id/detailHandleZone" android:layout_width="match_parent" android:layout_height="36dp">
+            <View android:layout_width="40dp" android:layout_height="4dp" android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:background="@drawable/bg_sheet_handle"/>
+        </FrameLayout>
+        <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:overScrollMode="never" android:scrollbars="none">
+            <LinearLayout android:id="@+id/detailContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="20dp" android:paddingEnd="20dp" android:paddingBottom="24dp">
+                <!--  TODO: isi dari hasil prediksi untuk area yang dipilih  -->
+                <TextView android:id="@+id/tvDetailBadge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:background="@drawable/bg_badge" android:paddingStart="16dp" android:paddingTop="6dp" android:paddingEnd="16dp" android:paddingBottom="6dp" android:text="Rawan" android:textColor="#D64545" android:textSize="13sp" android:textStyle="bold"/>
+                <TextView android:id="@+id/tvDetailTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Bendungan Hilir" android:textColor="@color/jd_teal_dark" android:textSize="24sp" android:textStyle="bold"/>
+                <TextView android:id="@+id/tvDetailSub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Prediksi untuk malam ini" android:textColor="@color/jd_muted" android:textSize="13sp"/>
+                <!--  Kartu tingkat keamanan  -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:background="@drawable/bg_detail_card" android:gravity="center_vertical" android:orientation="horizontal" android:padding="14dp">
+                    <LinearLayout android:layout_width="64dp" android:layout_height="64dp" android:background="@drawable/bg_score_ring" android:gravity="center" android:orientation="horizontal">
+                        <TextView android:id="@+id/tvScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="32" android:textColor="@color/jd_teal_dark" android:textSize="18sp" android:textStyle="bold"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/100" android:textColor="@color/jd_muted" android:textSize="9sp"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tingkat keamanan" android:textColor="@color/jd_muted" android:textSize="10sp"/>
+                        <TextView android:id="@+id/tvScoreLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rawan" android:textColor="@color/jd_teal_dark" android:textSize="20sp" android:textStyle="bold"/>
+                        <TextView android:id="@+id/tvScoreAdvice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Hindari gang sepi dan pilih jalan utama" android:textColor="@color/jd_ink" android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--  Dua kartu kecil: penerangan jalan + waktu prediksi  -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:baselineAligned="false" android:orientation="horizontal" android:weightSum="2">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginEnd="6dp" android:layout_weight="1" android:background="@drawable/bg_detail_card_light" android:gravity="center_vertical" android:orientation="horizontal" android:padding="12dp">
+                        <ImageView android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/bg_icon_sun" android:importantForAccessibility="no" android:padding="10dp" android:src="@drawable/ic_sun"/>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Penerangan Jalan" android:textColor="@color/jd_muted" android:textSize="9sp"/>
+                            <TextView android:id="@+id/tvLighting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Terbatas" android:textColor="@color/jd_teal_dark" android:textSize="15sp" android:textStyle="bold"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Beberapa gang belum memiliki penerangan yang memadai" android:textColor="@color/jd_muted" android:textSize="8sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginStart="6dp" android:layout_weight="1" android:background="@drawable/bg_detail_card_light" android:gravity="center_vertical" android:orientation="horizontal" android:padding="12dp">
+                        <ImageView android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/bg_icon_moon" android:importantForAccessibility="no" android:padding="10dp" android:src="@drawable/ic_moon_blue"/>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Waktu Prediksi" android:textColor="@color/jd_muted" android:textSize="9sp"/>
+                            <TextView android:id="@+id/tvPredTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Malam Ini" android:textColor="@color/jd_teal_dark" android:textSize="15sp" android:textStyle="bold"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data diperbarui berkala" android:textColor="@color/jd_muted" android:textSize="8sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--  Riwayat kejadian  -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:gravity="center_vertical" android:orientation="horizontal">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Riwayat Kejadian" android:textColor="@color/jd_teal_dark" android:textSize="15sp" android:textStyle="bold"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="30 hari terakhir di area ini" android:textColor="@color/jd_muted" android:textSize="12sp"/>
+                    </LinearLayout>
+                    <TextView android:id="@+id/tvReportCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_detail_card" android:paddingStart="14dp" android:paddingTop="6dp" android:paddingEnd="14dp" android:paddingBottom="6dp" android:text="2 Laporan" android:textColor="@color/jd_ink" android:textSize="11sp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:background="@drawable/bg_detail_card_light" android:orientation="vertical">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="14dp">
+                        <ImageView android:layout_width="28dp" android:layout_height="28dp" android:importantForAccessibility="no" android:src="@drawable/ic_alert_circle"/>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jambret" android:textColor="@color/jd_teal_dark" android:textSize="13sp" android:textStyle="bold"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Jl. Bendungan Hilir" android:textColor="@color/jd_muted" android:textSize="11sp"/>
+                        </LinearLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 Hari lalu • 18.25" android:textColor="@color/jd_muted" android:textSize="10sp"/>
+                    </LinearLayout>
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#D5DCDF"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="14dp">
+                        <ImageView android:layout_width="28dp" android:layout_height="28dp" android:importantForAccessibility="no" android:src="@drawable/ic_alert_circle"/>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Begal" android:textColor="@color/jd_teal_dark" android:textSize="13sp" android:textStyle="bold"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Dekat pasar Benhil" android:textColor="@color/jd_muted" android:textSize="11sp"/>
+                        </LinearLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11 Hari lalu • 23.05" android:textColor="@color/jd_muted" android:textSize="10sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
