@@ -1,37 +1,27 @@
 package com.example.jagadiaapp
 
 import android.Manifest
-import android.annotation.SuppressLint
 import android.animation.ValueAnimator
-import android.content.Intent
+import android.view.MotionEvent
+import android.view.VelocityTracker
+import android.view.ViewConfiguration
+import android.view.animation.DecelerateInterpolator
+import androidx.activity.OnBackPressedCallback
+import androidx.core.view.doOnLayout
+import kotlin.math.abs
+import android.annotation.SuppressLint
 import android.content.pm.PackageManager
-import android.content.res.ColorStateList
-import android.graphics.Typeface
-import android.graphics.drawable.GradientDrawable
 import android.location.Location
 import android.location.LocationListener
 import android.location.LocationManager
 import android.graphics.Color
 import android.os.Bundle
-import android.text.SpannableString
-import android.text.Spanned
-import android.text.style.RelativeSizeSpan
-import android.text.style.StyleSpan
-import android.view.LayoutInflater
-import android.view.MotionEvent
-import android.view.VelocityTracker
-import android.view.ViewConfiguration
-import android.view.ViewGroup
-import android.view.animation.DecelerateInterpolator
-import android.widget.LinearLayout
-import android.widget.ScrollView
 import android.view.Gravity
 import android.view.View
-import android.widget.ImageView
 import android.widget.Toast
 import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.activity.OnBackPressedCallback
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -39,15 +29,12 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
-import androidx.core.widget.ImageViewCompat
-import com.google.android.material.card.MaterialCardView
 import org.maplibre.android.MapLibre
 import org.maplibre.android.camera.CameraPosition
 import org.maplibre.android.camera.CameraUpdateFactory
 import org.maplibre.android.geometry.LatLng
 import org.maplibre.android.geometry.LatLngBounds
 import org.maplibre.android.location.LocationComponentActivationOptions
-import org.maplibre.android.location.OnCameraTrackingChangedListener
 import org.maplibre.android.location.modes.CameraMode
 import org.maplibre.android.location.modes.RenderMode
 import org.maplibre.android.maps.MapLibreMap
@@ -61,11 +48,11 @@ import org.maplibre.android.style.layers.PropertyFactory
 import org.maplibre.android.style.layers.SymbolLayer
 import org.maplibre.android.style.sources.GeoJsonSource
 import org.maplibre.geojson.FeatureCollection
+import org.maplibre.geojson.Feature
+import org.maplibre.geojson.Point
 import org.maplibre.geojson.LineString
-import org.json.JSONObject
-import kotlin.math.abs
-import kotlin.math.roundToInt
-
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.launch
 class MapActivity : AppCompatActivity() {
 
     // ---------- 1. PROPERTI ----------
@@ -81,70 +68,33 @@ class MapActivity : AppCompatActivity() {
     private lateinit var chip1h: View
     private lateinit var chipTonight: View
 
+    // Panel detail yang ditarik dari handle
+    private lateinit var rootView: View
+    private lateinit var detailSheet: View
+    private lateinit var detailContent: View
+    private lateinit var scrim: View
+    private lateinit var myLocationBtn: View
+    private lateinit var backCallback: OnBackPressedCallback
+    private var sheetProgress = 0f        // 0 = tertutup, 1 = terbuka penuh
+    private var expandedHeightPx = 0
+    private var sheetAnimator: ValueAnimator? = null
+
+    // Rute aktif: garis di peta memendek mengikuti posisi pengguna
+    private val routeTracker = RouteTracker()
+    private var followUser = false   // kamera ikut posisi saat rute aktif
+
     private var zonesJson: String = ""
     private var timeMode = TimeMode.TONIGHT
 
     // Pendengar lokasi dari GPS provider (yang diisi Extended Controls emulator)
     private var gpsListener: LocationListener? = null
     private var lastGps: Location? = null
-    private var trackingListenerAdded = false
-
-    // Panel detail (ditarik dari handle bottom sheet)
-    private lateinit var collapsedColumn: View
-    private lateinit var detailSheet: View
-    private lateinit var detailScrim: View
-    private lateinit var detailHeader: View
-    private lateinit var detailScroll: ScrollView
-    private lateinit var tvDetailBadge: TextView
-    private lateinit var tvDetailArea: TextView
-    private lateinit var tvDetailSub: TextView
-    private lateinit var tvDetailScore: TextView
-    private lateinit var tvDetailLevel: TextView
-    private lateinit var tvDetailAdvice: TextView
-    private lateinit var tvDetailLighting: TextView
-    private lateinit var tvDetailLightingDesc: TextView
-    private lateinit var tvDetailTime: TextView
-    private lateinit var tvIncidentCount: TextView
-    private lateinit var incidentList: LinearLayout
-
-    private var detailBottomBase = 0
-    private var detailExpanded = false
-    private var dragging = false
-    private var dragMoved = false
-    private var dragStartY = 0f
-    private var dragStartProgress = 0f
-    private var expandProgress = 0f   // 0 = kartu ringkas, 1 = kartu penuh (detail)
-    private var collapsedH = 0
-    private var expandedH = 0
-    private var progressAnimator: ValueAnimator? = null
-    private var velocity: VelocityTracker? = null
-    private val touchSlop by lazy { ViewConfiguration.get(this).scaledTouchSlop }
-
-    private val backCallback = object : OnBackPressedCallback(false) {
-        override fun handleOnBackPressed() = animateDetailTo(0f)
-    }
-
-    private data class Incident(val type: String, val place: String, val whenText: String)
-    private data class Zone(
-        val area: String,
-        val lat: Double,
-        val lng: Double,
-        val risks: Map<String, Double>,
-        val lighting: String,
-        val incidents: List<Incident>
-    )
-    private var zones: List<Zone> = emptyList()
 
     // key = nama properti di risk_zones.json
-    private enum class TimeMode(
-        val key: String,
-        val title: String,
-        val chip: String,      // label singkat di panel detail
-        val forText: String    // subjudul di panel detail
-    ) {
-        NOW("risk_now", "Risiko saat ini di sekitarmu", "Sekarang", "Prediksi untuk saat ini"),
-        PLUS_1H("risk_1h", "Risiko 1 jam ke depan", "+1 Jam", "Prediksi untuk 1 jam ke depan"),
-        TONIGHT("risk_night", "Risiko meningkat malam ini", "Malam Ini", "Prediksi untuk malam ini")
+    private enum class TimeMode(val key: String, val title: String) {
+        NOW("risk_now", "Risiko saat ini di sekitarmu"),
+        PLUS_1H("risk_1h", "Risiko 1 jam ke depan"),
+        TONIGHT("risk_night", "Risiko meningkat malam ini")
     }
 
     private val locationPermissionLauncher = registerForActivityResult(
@@ -165,12 +115,17 @@ class MapActivity : AppCompatActivity() {
         setupEdgeToEdge()
         setupUi()
 
-        mapView = findViewById(R.id.mapView)
+        mapView = findViewById<MapView>(R.id.mapView)
         mapView.onCreate(savedInstanceState)
 
         mapView.getMapAsync { m ->
             map = m
             setupMapChrome(m)
+
+            // Peta digeser tangan -> berhenti mengikuti (tombol Lokasiku untuk mengikuti lagi)
+            m.addOnCameraMoveStartedListener { reason ->
+                if (reason == MapLibreMap.OnCameraMoveStartedListener.REASON_API_GESTURE) followUser = false
+            }
 
             // Style terang supaya blob zona kelihatan jelas (sesuai desain)
             m.setStyle("https://tiles.openfreemap.org/styles/positron") { style ->
@@ -181,12 +136,19 @@ class MapActivity : AppCompatActivity() {
 
                 addRiskLayer(style)   // zona dulu
                 addRouteLayer(style)  // rute sesudahnya, supaya tampil di atas zona
+                addDestinationLayer(style)
+
+                // Rute uji: assets/route.json (nanti diganti hasil OpenRouteService lewat showRoute)
+                runCatching {
+                    val json = assets.open("route.json").bufferedReader().use { it.readText() }
+                    val pts = parseRoutePoints(json)
+                    if (pts.size >= 2) setRoute(pts, follow = true)
+                }
 
                 // Data dummy zona: assets/risk_zones.json
                 runCatching {
                     zonesJson = assets.open("risk_zones.json").bufferedReader().use { it.readText() }
                     style.getSourceAs<GeoJsonSource>("risk-src")?.setGeoJson(zonesJson)
-                    zones = parseZones(zonesJson)
                 }
                 setTimeMode(timeMode)
 
@@ -210,31 +172,24 @@ class MapActivity : AppCompatActivity() {
 
     // ---------- 3. UI ----------
     private fun bindViews() {
-        topBar = findViewById(R.id.topBar)
-        sheet = findViewById(R.id.sheet)
-        alertCard = findViewById(R.id.alertCard)
-        tvRiskTitle = findViewById(R.id.tvRiskTitle)
-        tvRiskBadge = findViewById(R.id.tvRiskBadge)
-        chipNow = findViewById(R.id.chipNow)
-        chip1h = findViewById(R.id.chip1h)
-        chipTonight = findViewById(R.id.chipTonight)
+        topBar = findViewById<View>(R.id.topBar)
+        sheet = findViewById<View>(R.id.sheet)
+        alertCard = findViewById<View>(R.id.alertCard)
+        tvRiskTitle = findViewById<TextView>(R.id.tvRiskTitle)
+        tvRiskBadge = findViewById<TextView>(R.id.tvRiskBadge)
+        chipNow = findViewById<View>(R.id.chipNow)
+        chip1h = findViewById<View>(R.id.chip1h)
+        chipTonight = findViewById<View>(R.id.chipTonight)
 
-        collapsedColumn = findViewById(R.id.collapsedColumn)
-        detailSheet = findViewById(R.id.detailSheet)
-        detailScrim = findViewById(R.id.detailScrim)
-        detailHeader = findViewById(R.id.detailHeader)
-        detailScroll = findViewById(R.id.detailScroll)
-        tvDetailBadge = findViewById(R.id.tvDetailBadge)
-        tvDetailArea = findViewById(R.id.tvDetailArea)
-        tvDetailSub = findViewById(R.id.tvDetailSub)
-        tvDetailScore = findViewById(R.id.tvDetailScore)
-        tvDetailLevel = findViewById(R.id.tvDetailLevel)
-        tvDetailAdvice = findViewById(R.id.tvDetailAdvice)
-        tvDetailLighting = findViewById(R.id.tvDetailLighting)
-        tvDetailLightingDesc = findViewById(R.id.tvDetailLightingDesc)
-        tvDetailTime = findViewById(R.id.tvDetailTime)
-        tvIncidentCount = findViewById(R.id.tvIncidentCount)
-        incidentList = findViewById(R.id.incidentList)
+        rootView = findViewById<View>(R.id.root)
+        detailSheet = findViewById<View>(R.id.detailSheet)
+        detailContent = findViewById<View>(R.id.detailContent)
+        scrim = findViewById<View>(R.id.scrim)
+        myLocationBtn = findViewById<View>(R.id.btnMyLocation)
+
+        // Show Drop Down
+        searchDropdownCard = findViewById<View>(R.id.searchDropdownCard)
+        searchDropdownList = findViewById<LinearLayout>(R.id.searchDropdownList)
     }
 
     /** Peta tampil sampai ke bawah status bar & nav bar, UI digeser sesuai inset. */
@@ -244,13 +199,13 @@ class MapActivity : AppCompatActivity() {
         WindowCompat.getInsetsController(window, root).isAppearanceLightStatusBars = true
 
         val topBase = topBar.paddingTop
-        detailBottomBase = detailSheet.paddingBottom
         val navBar = findViewById<View>(R.id.bottomNav)
-        ViewCompat.setOnApplyWindowInsetsListener(root) { _, insets ->
+        val detailBase = detailContent.paddingBottom
+        ViewCompat.setOnApplyWindowInsetsListener(root) { _: View, insets: WindowInsetsCompat ->
             val bars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             topBar.updatePadding(top = topBase + bars.top)
             navBar.updatePadding(bottom = bars.bottom)
-            detailSheet.updatePadding(bottom = detailBottomBase + bars.bottom)
+            detailContent.updatePadding(bottom = detailBase + bars.bottom)
             insets
         }
     }
@@ -273,29 +228,9 @@ class MapActivity : AppCompatActivity() {
 
         // Bottom nav: Peta sedang aktif. TODO: buka halaman Riwayat & Laporkan.
         findViewById<View>(R.id.navHistory).setOnClickListener { /* TODO */ }
-        findViewById<View>(R.id.navReport).setOnClickListener { openReport() }
+        findViewById<View>(R.id.navReport).setOnClickListener { /* TODO */ }
 
-        setupDetailSheet()
-    }
-
-    /** Buka halaman Laporkan; kirim posisi GPS terakhir supaya peta laporan langsung di lokasi pengguna. */
-    private fun openReport() {
-        val i = Intent(this, ReportActivity::class.java)
-        lastGps?.let {
-            i.putExtra(ReportActivity.EXTRA_LAT, it.latitude)
-            i.putExtra(ReportActivity.EXTRA_LNG, it.longitude)
-        }
-        startActivity(i)
-    }
-
-    /** Tombol Lokasiku terisi (teal) saat kamera mengikuti pengguna, putih saat tidak. */
-    private fun updateLocationButton(tracking: Boolean) {
-        val card = findViewById<MaterialCardView>(R.id.btnMyLocation)
-        val icon = findViewById<ImageView>(R.id.ivMyLocation)
-        val bg = ContextCompat.getColor(this, if (tracking) R.color.jd_teal_dark else R.color.jd_sheet)
-        val fg = ContextCompat.getColor(this, if (tracking) R.color.jd_sheet else R.color.jd_teal_dark)
-        card.setCardBackgroundColor(bg)
-        ImageViewCompat.setImageTintList(icon, ColorStateList.valueOf(fg))
+        setupSheetDrag()
     }
 
     /** Logo & atribusi MapLibre dipindah ke bawah search bar supaya tidak ketutup bottom sheet. */
@@ -311,6 +246,116 @@ class MapActivity : AppCompatActivity() {
         }
     }
 
+    // ---------- PANEL DETAIL (tarik handle ke atas) ----------
+    private fun setupSheetDrag() {
+        backCallback = object : OnBackPressedCallback(false) {
+            override fun handleOnBackPressed() = animateSheetTo(0f)
+        }
+        onBackPressedDispatcher.addCallback(this, backCallback)
+
+        rootView.doOnLayout {
+            val compactH = rootView.height - sheet.top
+            expandedHeightPx = maxOf((rootView.height * 0.62f).toInt(), compactH + dp(260))
+            detailSheet.layoutParams = detailSheet.layoutParams.apply { height = expandedHeightPx }
+            applySheetProgress(0f)
+        }
+
+        attachSheetDrag(findViewById(R.id.handleZone))
+        attachSheetDrag(findViewById(R.id.detailHandleZone))
+        scrim.setOnClickListener { animateSheetTo(0f) }
+    }
+
+    /** Jarak (px) yang ditempuh panel dari posisi kompak sampai terbuka penuh. */
+    private fun sheetRange(): Float =
+        (expandedHeightPx - (rootView.height - sheet.top)).toFloat().coerceAtLeast(1f)
+
+    /** p = 0 (panel kompak) sampai 1 (panel detail terbuka penuh). */
+    private fun applySheetProgress(p: Float) {
+        sheetProgress = p
+        detailSheet.translationY = (1f - p) * sheetRange()
+        detailSheet.alpha = (p * 2.5f).coerceAtMost(1f)
+        detailSheet.visibility = if (p <= 0f) View.INVISIBLE else View.VISIBLE
+
+        scrim.alpha = p * 0.75f
+        scrim.visibility = if (p <= 0f) View.GONE else View.VISIBLE
+
+        // Kartu peringatan dan tombol lokasi memudar saat panel naik
+        val fade = 1f - (p * 2f).coerceAtMost(1f)
+        alertCard.alpha = fade
+        myLocationBtn.alpha = fade
+
+        backCallback.isEnabled = p > 0f
+    }
+
+    private fun animateSheetTo(target: Float) {
+        sheetAnimator?.cancel()
+        sheetAnimator = ValueAnimator.ofFloat(sheetProgress, target).apply {
+            duration = 240
+            interpolator = DecelerateInterpolator()
+            addUpdateListener { applySheetProgress(it.animatedValue as Float) }
+            start()
+        }
+    }
+
+    @SuppressLint("ClickableViewAccessibility")
+    private fun attachSheetDrag(zone: View) {
+        val slop = ViewConfiguration.get(this).scaledTouchSlop
+        var startRawY = 0f
+        var startProgress = 0f
+        var downTime = 0L
+        var tracker: VelocityTracker? = null
+
+        // Pakai koordinat layar (rawY) supaya kecepatan benar walau view-nya ikut bergerak
+        fun feed(ev: MotionEvent) {
+            val copy = MotionEvent.obtain(ev)
+            copy.setLocation(ev.rawX, ev.rawY)
+            tracker?.addMovement(copy)
+            copy.recycle()
+        }
+
+        zone.setOnTouchListener { v, ev ->
+            when (ev.actionMasked) {
+                MotionEvent.ACTION_DOWN -> {
+                    sheetAnimator?.cancel()
+                    startRawY = ev.rawY
+                    startProgress = sheetProgress
+                    downTime = ev.eventTime
+                    tracker = VelocityTracker.obtain()
+                    feed(ev)
+                    true
+                }
+                MotionEvent.ACTION_MOVE -> {
+                    feed(ev)
+                    val p = (startProgress + (startRawY - ev.rawY) / sheetRange()).coerceIn(0f, 1f)
+                    applySheetProgress(p)
+                    true
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    feed(ev)
+                    tracker?.computeCurrentVelocity(1000)
+                    val vy = tracker?.yVelocity ?: 0f
+                    tracker?.recycle()
+                    tracker = null
+
+                    val isTap = ev.actionMasked == MotionEvent.ACTION_UP &&
+                            abs(ev.rawY - startRawY) < slop && ev.eventTime - downTime < 300
+                    val target = when {
+                        isTap -> {
+                            v.performClick()
+                            if (startProgress < 0.5f) 1f else 0f   // ketuk handle = buka / tutup
+                        }
+                        vy < -800f -> 1f                            // lempar ke atas
+                        vy > 800f -> 0f                             // lempar ke bawah
+                        else -> if (sheetProgress > 0.5f) 1f else 0f
+                    }
+                    animateSheetTo(target)
+                    true
+                }
+                else -> false
+            }
+        }
+    }
+
     private fun setTimeMode(mode: TimeMode) {
         timeMode = mode
         chipNow.isSelected = mode == TimeMode.NOW
@@ -323,18 +368,14 @@ class MapActivity : AppCompatActivity() {
 
         tvRiskTitle.text = mode.title
         showLevel(maxRisk(mode.key))
-        if (detailExpanded) refreshDetail()
-    }
-
-    /** (label, warna latar, warna teks) untuk sebuah nilai risiko. */
-    private fun levelStyle(risk: Double) = when {
-        risk >= 0.7 -> Triple("Rawan", "#FBE0E0", "#D64545")
-        risk >= 0.4 -> Triple("Waspada", "#FDEFD3", "#B7791F")
-        else -> Triple("Aman", "#D7F0E3", "#1F7A4D")
     }
 
     private fun showLevel(risk: Double) {
-        val (label, bg, fg) = levelStyle(risk)
+        val (label, bg, fg) = when {
+            risk >= 0.7 -> Triple("Rawan", "#FBE0E0", "#D64545")
+            risk >= 0.4 -> Triple("Waspada", "#FDEFD3", "#B7791F")
+            else -> Triple("Aman", "#D7F0E3", "#1F7A4D")
+        }
         tvRiskBadge.text = label
         tvRiskBadge.setTextColor(Color.parseColor(fg))
         tvRiskBadge.background.mutate().setTint(Color.parseColor(bg))
@@ -352,6 +393,56 @@ class MapActivity : AppCompatActivity() {
     // ---------- 4. FUNGSI PETA ----------
     private fun onSearchSubmitted(query: String) {
         // TODO: geocoding `query`, lalu panggil onDestinationPicked(latLng)
+        lifecycleScope.launch {
+            val response = locationSearchEndpoint.searchJakartaLocations(query)
+            searchDropdownList.removeAllViews()
+
+            if (response.results.isEmpty()) {
+                searchDropdownCard.visibility = View.GONE
+                Toast.makeText(this@MapActivity, response.message, Toast.LENGTH_SHORT).show()
+                return@launch
+            }
+
+            response.results.forEach { item ->
+                val row = LinearLayout(this@MapActivity).apply {
+                    orientation = LinearLayout.VERTICAL
+                    setPadding(dp(14), dp(10), dp(14), dp(10))
+                    isClickable = true
+                    isFocusable = true
+                    val outValue = android.util.TypedValue()
+                    this.context.theme.resolveAttribute(android.R.attr.selectableItemBackground, outValue, true)
+                    setBackgroundResource(outValue.resourceId)
+                }
+
+                val tvName = TextView(this@MapActivity).apply {
+                    text = item.name
+                    setTextColor(Color.parseColor("#111827"))
+                    textSize = 14f
+                    setTypeface(typeface, android.graphics.Typeface.BOLD)
+                }
+
+                val tvAddressAndCoord = TextView(this@MapActivity).apply {
+                    text = "${item.address}\n(${item.coordinate.latitude}, ${item.coordinate.longitude})"
+                    setTextColor(Color.parseColor("#4B5563"))
+                    textSize = 12f
+                }
+
+                row.addView(tvName)
+                row.addView(tvAddressAndCoord)
+
+                row.setOnClickListener {
+                    val latLng = item.coordinate.toLatLng()
+                    findViewById<EditText>(R.id.etSearch).setText(item.name)
+                    searchDropdownCard.visibility = View.GONE
+                    map?.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 16.0), 600)
+                    onDestinationPicked(latLng)
+                }
+
+                searchDropdownList.addView(row)
+            }
+
+            searchDropdownCard.visibility = View.VISIBLE
+        }
     }
 
     private fun onDestinationPicked(latLng: LatLng) {
@@ -410,25 +501,90 @@ class MapActivity : AppCompatActivity() {
         )
     }
 
+    /** Dipakai untuk hasil OpenRouteService: tampilkan rute dan pas-kan kamera ke seluruh rute. */
     fun showRoute(geoJson: String) {
-        map?.style?.getSourceAs<GeoJsonSource>("route-src")?.setGeoJson(geoJson)
-
-        val line = FeatureCollection.fromJson(geoJson)
-            .features()?.firstOrNull()?.geometry() as? LineString
-        val pts = line?.coordinates()
-            ?.map { LatLng(it.latitude(), it.longitude()) } ?: return
+        val pts = parseRoutePoints(geoJson)
         if (pts.size < 2) return
-
-        // Lepas mode tracking, kalau tidak kamera akan ditarik balik ke posisi pengguna
-        map?.locationComponent?.takeIf { it.isLocationComponentActivated }
-            ?.cameraMode = CameraMode.NONE
-
+        setRoute(pts, follow = false)
         map?.animateCamera(
             CameraUpdateFactory.newLatLngBounds(LatLngBounds.Builder().includes(pts).build(), 120)
         )
     }
 
-    /** Tombol "Lokasiku": pusatkan kamera ke titik biru DAN aktifkan mode tracking (kamera mengikuti). */
+    // ---------- RUTE AKTIF: garis memendek saat bergerak ----------
+
+    /** Ambil titik-titik LineString dari GeoJSON (FeatureCollection atau satu Feature). */
+    private fun parseRoutePoints(geoJson: String): List<LatLng> {
+        val line = runCatching {
+            FeatureCollection.fromJson(geoJson).features()
+                ?.firstNotNullOfOrNull { it.geometry() as? LineString }
+        }.getOrNull() ?: runCatching {
+            Feature.fromJson(geoJson).geometry() as? LineString
+        }.getOrNull()
+        return line?.coordinates()?.map { LatLng(it.latitude(), it.longitude()) } ?: emptyList()
+    }
+
+    private fun setRoute(points: List<LatLng>, follow: Boolean) {
+        routeTracker.setRoute(points)
+        drawRoute(points)
+
+        val dest = points.last()
+        map?.style?.getSourceAs<GeoJsonSource>("dest-src")
+            ?.setGeoJson(Feature.fromGeometry(Point.fromLngLat(dest.longitude, dest.latitude)))
+
+        followUser = follow
+        lastGps?.let { updateRouteProgress(it) }
+    }
+
+    private fun drawRoute(points: List<LatLng>) {
+        val line = LineString.fromLngLats(points.map { Point.fromLngLat(it.longitude, it.latitude) })
+        map?.style?.getSourceAs<GeoJsonSource>("route-src")
+            ?.setGeoJson(Feature.fromGeometry(line))
+    }
+
+    private fun clearRoute() {
+        routeTracker.clear()
+        followUser = false
+        val empty = "{\"type\":\"FeatureCollection\",\"features\":[]}"
+        map?.style?.getSourceAs<GeoJsonSource>("route-src")?.setGeoJson(empty)
+        map?.style?.getSourceAs<GeoJsonSource>("dest-src")?.setGeoJson(empty)
+    }
+
+    /** Dipanggil tiap lokasi baru: potong bagian rute yang sudah dilewati. */
+    private fun updateRouteProgress(location: Location) {
+        if (!routeTracker.hasRoute) return
+        val result = routeTracker.update(LatLng(location.latitude, location.longitude))
+        when (result.status) {
+            RouteTracker.Status.ON_ROUTE -> {
+                drawRoute(result.remaining)
+                if (followUser) {
+                    map?.animateCamera(CameraUpdateFactory.newLatLng(result.remaining.first()), 800)
+                }
+            }
+            RouteTracker.Status.ARRIVED -> {
+                clearRoute()
+                Toast.makeText(this, "Kamu sudah sampai tujuan", Toast.LENGTH_LONG).show()
+            }
+            RouteTracker.Status.OFF_ROUTE -> {
+                // TODO: hitung ulang rute dari posisi sekarang lewat OpenRouteService
+            }
+            RouteTracker.Status.NO_ROUTE -> Unit
+        }
+    }
+
+    private fun addDestinationLayer(style: Style) {
+        style.addSource(GeoJsonSource("dest-src"))
+        style.addLayer(
+            CircleLayer("dest-layer", "dest-src").withProperties(
+                PropertyFactory.circleRadius(8f),
+                PropertyFactory.circleColor("#0F4C5C"),
+                PropertyFactory.circleStrokeWidth(3f),
+                PropertyFactory.circleStrokeColor("#FFFFFF")
+            )
+        )
+    }
+
+    /** Tombol "Lokasiku": pusatkan kamera ke titik biru. */
     private fun centerOnMyLocation() {
         val m = map ?: return
 
@@ -457,19 +613,13 @@ class MapActivity : AppCompatActivity() {
             return
         }
 
-        val lc = m.locationComponent
-        if (!lc.isLocationComponentActivated) return
-
-        // Pastikan titik biru ada di posisi terbaru, lalu pindahkan kamera sambil masuk mode tracking.
-        // Selama tracking, kamera ikut bergerak tiap lokasi baru; geser peta manual = tracking berhenti.
-        lc.forceLocationUpdate(loc)
-        lc.setCameraMode(
-            CameraMode.TRACKING,
-            600L,                              // durasi animasi ke lokasi (ms)
-            maxOf(m.cameraPosition.zoom, 16.0), // zoom: minimal 16
-            null,                              // bearing: biarkan
-            null,                              // tilt: biarkan
-            null
+        followUser = true
+        m.animateCamera(
+            CameraUpdateFactory.newLatLngZoom(
+                LatLng(loc.latitude, loc.longitude),
+                maxOf(m.cameraPosition.zoom, 16.0)
+            ),
+            600
         )
     }
 
@@ -482,19 +632,8 @@ class MapActivity : AppCompatActivity() {
                 .build()
         )
         lc.isLocationComponentEnabled = true
-        lc.cameraMode = CameraMode.TRACKING      // awal: kamera mengikuti titik biru
+        lc.cameraMode = CameraMode.NONE      // ganti ke CameraMode.TRACKING kalau kamera mau mengikuti titik biru
         lc.renderMode = RenderMode.COMPASS
-
-        // Sinkronkan tampilan tombol dengan status tracking (mis. berhenti saat peta digeser manual)
-        if (!trackingListenerAdded) {
-            trackingListenerAdded = true
-            lc.addOnCameraTrackingChangedListener(object : OnCameraTrackingChangedListener {
-                override fun onCameraTrackingDismissed() = updateLocationButton(false)
-                override fun onCameraTrackingChanged(currentMode: Int) =
-                    updateLocationButton(currentMode != CameraMode.NONE)
-            })
-        }
-        updateLocationButton(true)
         startGpsUpdates()
     }
 
@@ -509,6 +648,7 @@ class MapActivity : AppCompatActivity() {
             override fun onLocationChanged(location: Location) {
                 lastGps = location
                 map?.locationComponent?.forceLocationUpdate(location)
+                updateRouteProgress(location)
             }
 
             // Wajib ada untuk Android lama (di bawah API 30)
@@ -531,225 +671,6 @@ class MapActivity : AppCompatActivity() {
         gpsListener = null
     }
 
-    // ---------- 4b. PANEL DETAIL (tarik handle bottom sheet ke atas) ----------
-    private fun parseZones(json: String): List<Zone> = runCatching {
-        val arr = JSONObject(json).getJSONArray("features")
-        (0 until arr.length()).map { i ->
-            val f = arr.getJSONObject(i)
-            val p = f.getJSONObject("properties")
-            val c = f.getJSONObject("geometry").getJSONArray("coordinates")
-            val inc = p.optJSONArray("incidents")
-            Zone(
-                area = p.optString("area", p.optString("name", "Area ini")),
-                lng = c.getDouble(0),
-                lat = c.getDouble(1),
-                risks = TimeMode.values().associate { it.key to p.optDouble(it.key, 0.0) },
-                lighting = p.optString("lighting", "Memadai"),
-                incidents = (0 until (inc?.length() ?: 0)).map { j ->
-                    inc!!.getJSONObject(j).let {
-                        Incident(it.optString("type"), it.optString("place"), it.optString("when"))
-                    }
-                }
-            )
-        }
-    }.getOrDefault(emptyList())
-
-    /** Zona terdekat dari posisi GPS (kalau belum ada GPS: dari titik tengah kamera). */
-    private fun nearestZone(): Zone? {
-        if (zones.isEmpty()) return null
-        val ref = lastGps?.let { LatLng(it.latitude, it.longitude) }
-            ?: map?.cameraPosition?.target
-            ?: return zones.first()
-        val out = FloatArray(1)
-        return zones.minByOrNull {
-            Location.distanceBetween(ref.latitude, ref.longitude, it.lat, it.lng, out)
-            out[0]
-        }
-    }
-
-    /** Isi panel detail dengan data zona terdekat + mode waktu yang sedang dipilih. */
-    private fun refreshDetail() {
-        val z = nearestZone()
-        val risk = z?.risks?.get(timeMode.key) ?: maxRisk(timeMode.key)
-        val (label, bg, fg) = levelStyle(risk)
-        val fgColor = Color.parseColor(fg)
-        val muted = ContextCompat.getColor(this, R.color.jd_muted)
-
-        tvDetailBadge.text = label
-        tvDetailBadge.setTextColor(fgColor)
-        tvDetailBadge.background.mutate().setTint(Color.parseColor(bg))
-
-        tvDetailArea.text = z?.area ?: "Area sekitarmu"
-        tvDetailSub.text = timeMode.forText
-
-        // Skor keamanan: makin tinggi risiko, makin rendah skor
-        val safety = ((1.0 - risk) * 100).roundToInt().coerceIn(0, 100)
-        val scoreText = SpannableString("$safety/100").apply {
-            val start = safety.toString().length
-            setSpan(RelativeSizeSpan(0.55f), start, length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-            setSpan(StyleSpan(Typeface.NORMAL), start, length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-        }
-        tvDetailScore.text = scoreText
-        (tvDetailScore.background.mutate() as? GradientDrawable)?.setStroke(dp(3), fgColor)
-
-        tvDetailLevel.text = label
-        tvDetailAdvice.text = when (label) {
-            "Rawan" -> "Hindari gang sepi dan pilih jalan utama"
-            "Waspada" -> "Tetap waspada dan hindari jalan yang sepi"
-            else -> "Area relatif aman, tetap jaga barang bawaanmu"
-        }
-
-        val lighting = z?.lighting ?: "Memadai"
-        tvDetailLighting.text = lighting
-        tvDetailLightingDesc.text = when (lighting) {
-            "Terbatas" -> "Beberapa gang belum memiliki penerangan yang memadai"
-            "Baik" -> "Penerangan jalan merata di area ini"
-            else -> "Sebagian besar ruas jalan sudah cukup terang"
-        }
-        tvDetailTime.text = timeMode.chip
-
-        // Riwayat kejadian
-        val items = z?.incidents.orEmpty()
-        tvIncidentCount.text = "${items.size} Laporan"
-        incidentList.removeAllViews()
-        if (items.isEmpty()) {
-            incidentList.addView(TextView(this).apply {
-                text = "Belum ada laporan kejadian di area ini"
-                textSize = 12f
-                setTextColor(muted)
-                setPadding(dp(14), dp(16), dp(14), dp(16))
-            })
-        }
-        val inflater = LayoutInflater.from(this)
-        items.forEachIndexed { i, inc ->
-            if (i > 0) {
-                incidentList.addView(
-                    View(this).apply {
-                        setBackgroundColor(ContextCompat.getColor(this@MapActivity, R.color.jd_divider))
-                    },
-                    LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, dp(1))
-                )
-            }
-            val row = inflater.inflate(R.layout.item_incident, incidentList, false)
-            row.findViewById<TextView>(R.id.tvIncType).text = inc.type
-            row.findViewById<TextView>(R.id.tvIncPlace).text = inc.place
-            row.findViewById<TextView>(R.id.tvIncWhen).text = inc.whenText
-            incidentList.addView(row)
-        }
-    }
-
-    @SuppressLint("ClickableViewAccessibility")
-    private fun setupDetailSheet() {
-        // Satu kartu saja: tarik di mana pun yang bukan tombol/scroll (handle, judul, header detail)
-        sheet.setOnTouchListener { _, ev -> onDetailDrag(ev) }
-        detailScrim.setOnClickListener { animateDetailTo(0f) }
-        onBackPressedDispatcher.addCallback(this, backCallback)
-    }
-
-    /** Hitung tinggi kartu ringkas & kartu penuh. Hanya valid saat kartu sedang ringkas. */
-    private fun measureSheetRange() {
-        val root = findViewById<View>(R.id.root)
-        if (expandProgress == 0f && sheet.height > 0) collapsedH = sheet.height
-        expandedH = maxOf((root.height * 0.64f).toInt(), collapsedH + dp(160))
-    }
-
-    private fun onDetailDrag(ev: MotionEvent): Boolean {
-        when (ev.actionMasked) {
-            MotionEvent.ACTION_DOWN -> {
-                progressAnimator?.cancel()
-                dragging = true
-                dragMoved = false
-                dragStartY = ev.rawY
-                dragStartProgress = expandProgress
-                if (expandProgress == 0f) measureSheetRange()
-                velocity?.recycle()
-                velocity = VelocityTracker.obtain().also { it.addMovement(ev) }
-                if (!detailExpanded) refreshDetail()
-            }
-            MotionEvent.ACTION_MOVE -> {
-                velocity?.addMovement(ev)
-                val dy = ev.rawY - dragStartY
-                if (!dragMoved && abs(dy) > touchSlop) dragMoved = true
-                val range = (expandedH - collapsedH).toFloat()
-                if (dragMoved && range > 0f) {
-                    // tarik ke atas (dy negatif) = kartu makin tinggi
-                    applyProgress(dragStartProgress - dy / range)
-                }
-            }
-            MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
-                velocity?.addMovement(ev)
-                velocity?.computeCurrentVelocity(1000)
-                val vy = velocity?.yVelocity ?: 0f
-                velocity?.recycle()
-                velocity = null
-
-                val expand = when {
-                    // ketukan: buka (kalau sudah terbuka, tetap terbuka)
-                    !dragMoved -> ev.actionMasked == MotionEvent.ACTION_UP || detailExpanded
-                    abs(vy) > 800f -> vy < 0f              // lemparan cepat
-                    else -> expandProgress > 0.5f          // lepas: ikut sisi terdekat
-                }
-                dragging = false
-                dragMoved = false
-                animateDetailTo(if (expand) 1f else 0f)
-            }
-        }
-        return true
-    }
-
-    private fun animateDetailTo(target: Float) {
-        val opening = target >= 1f && !detailExpanded
-        detailExpanded = target >= 1f
-        backCallback.isEnabled = detailExpanded
-        if (collapsedH == 0 || expandedH == 0) measureSheetRange()
-        if (detailExpanded) refreshDetail()
-        if (opening) detailScroll.scrollTo(0, 0)
-
-        progressAnimator?.cancel()
-        progressAnimator = ValueAnimator.ofFloat(expandProgress, target).apply {
-            duration = 250
-            interpolator = DecelerateInterpolator()
-            addUpdateListener { applyProgress(it.animatedValue as Float) }
-            start()
-        }
-    }
-
-    /**
-     * p = 0..1. Satu kartu yang sama memanjang ke atas: tinggi kartu naik,
-     * tampilan ringkas memudar, tampilan detail muncul di tempat yang sama.
-     */
-    private fun applyProgress(p: Float) {
-        expandProgress = p.coerceIn(0f, 1f)
-        val lp = sheet.layoutParams
-        if (expandProgress <= 0f) {
-            lp.height = ViewGroup.LayoutParams.WRAP_CONTENT
-            detailSheet.visibility = View.GONE
-            collapsedColumn.alpha = 1f
-            collapsedColumn.visibility = View.VISIBLE
-        } else {
-            lp.height = (collapsedH + (expandedH - collapsedH) * expandProgress).toInt()
-            detailSheet.visibility = View.VISIBLE
-            detailSheet.alpha = ((expandProgress - 0.3f) / 0.7f).coerceIn(0f, 1f)
-            val a = (1f - expandProgress * 2.5f).coerceIn(0f, 1f)
-            collapsedColumn.alpha = a
-            collapsedColumn.visibility = if (a > 0f) View.VISIBLE else View.INVISIBLE
-        }
-        sheet.layoutParams = lp
-
-        // Peta digelapkan sedikit; kartu peringatan & tombol lokasi memudar lalu disembunyikan
-        detailScrim.alpha = 0.32f * expandProgress
-        detailScrim.visibility = if (expandProgress > 0f) View.VISIBLE else View.GONE
-
-        val fade = (1f - expandProgress * 2f).coerceIn(0f, 1f)
-        val btn = findViewById<View>(R.id.btnMyLocation)
-        btn.alpha = fade
-        btn.visibility = if (fade > 0f) View.VISIBLE else View.INVISIBLE
-        if (alertCard.visibility != View.GONE) {   // GONE = sudah ditutup pengguna, jangan dimunculkan lagi
-            alertCard.alpha = fade
-            alertCard.visibility = if (fade > 0f) View.VISIBLE else View.INVISIBLE
-        }
-    }
-
     // ---------- 5. LIFECYCLE (wajib diteruskan ke MapView) ----------
     override fun onStart() {
         super.onStart()
@@ -769,4 +690,11 @@ class MapActivity : AppCompatActivity() {
         super.onSaveInstanceState(outState)
         mapView.onSaveInstanceState(outState)
     }
+
+    // Backend: Untuk search point
+    private val locationSearchEndpoint: LocationSearchEndpoint = JakartaLocationSearchService()
+
+    // Daftar Hasil Search
+    private lateinit var searchDropdownCard: View
+    private lateinit var searchDropdownList: LinearLayout
 }
