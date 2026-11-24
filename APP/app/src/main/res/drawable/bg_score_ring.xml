@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Warna garis di-set dari MapActivity sesuai level (Aman / Waspada / Rawan) -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
-    <solid android:color="#00000000" />
+    <solid android:color="#FBFCFC" />
     <stroke android:width="3dp" android:color="#E04B4B" />
 </shape>

@@ -1,7 +1,0 @@
-Frontend ada di
-JagaDia\APP\app\src\main\assets
-JagaDia\APP\app\src\main\java\com\example\jagadiaapp
-JagaDia\APP\app\src\main\res\color
-JagaDia\APP\app\src\main\res\drawable
-JagaDia\APP\app\src\main\res\layout
-JagaDia\APP\app\src\main\AndroidManifest.xml
